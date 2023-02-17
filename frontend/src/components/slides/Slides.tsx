@@ -2,15 +2,24 @@ import React from 'react'
 //@ts-ignore
 import { FullPage, Slide } from 'react-full-page';
 import FirstSlide from "./FirstSlide";
+import FourthSlide from './FourthSlide';
+import SecondSlide from './SecondSlide';
+import ThirdSlide from './ThirdSlide';
 
 const Slides: React.FC = () => {
   return (
     <FullPage>
-            <Slide style={{height :'20vh'}}>
+            <Slide >
               <FirstSlide/>
             </Slide>
             <Slide>
-              <h1>Inner slide content</h1>
+              <SecondSlide/>
+            </Slide>
+            <Slide>
+              <ThirdSlide/>
+            </Slide>
+            <Slide>
+              <FourthSlide/>
             </Slide>
     </FullPage>
   )

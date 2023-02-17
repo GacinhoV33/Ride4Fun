@@ -1,5 +1,5 @@
 html, body, #root, .app, .content{
-  height: 130vh;
+  height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -10,7 +10,7 @@ html, body, #root, .app, .content{
 }
 
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 1vw;
 }
 
 ::-webkit-scrollbar-track{

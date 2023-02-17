@@ -1,0 +1,10 @@
+.tiles{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10%; // ???
+}
+
+.tile{
+    height: 100%;
+    width: 100%;
+}
