@@ -4,7 +4,7 @@ import PlaceHolder from '../common/PlaceHolder'
 import TeamPhotos from '../common/TeamPhotos'
 
 const SecondSlide: React.FC = () => {
-    const teamMembers: TeamMember[] = [{name: 'Bartosz', surname: 'Wajda', title: 'title', imgPath: 'none'}, {name: 'Justyna', surname: 'Wójtowicz', title: 'title', imgPath: 'none'}]
+    const teamMembers: TeamMember[] = [{name: 'Bartosz', surname: 'Wajda', title: 'title', imgPath: '../../images/MemberBartek.jpg'}, {name: 'Justyna', surname: 'Wójtowicz', title: 'title', imgPath: 'none'}]
   
     return (
     <React.Fragment>

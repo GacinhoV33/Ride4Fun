@@ -6,7 +6,7 @@ export type modeType = 'dark' | 'light';
 export const tokens = (mode: modeType) => ({
     ...(mode === 'dark' ? {
         primary: {
-            100: "#e0e0e0",
+            100: "#FF0011",
             200: "#c2c2c2",
         },
         secondary: {

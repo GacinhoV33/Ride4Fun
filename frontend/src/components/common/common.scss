@@ -2,3 +2,26 @@
     width: 100%;
     height: 6.5vh;
 }
+
+.team-photos-main{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+
+    .team-photos{
+        height: 66.6vh;
+        width: 66.6vw;
+        border: black solid 1px;
+        display: flex;
+        padding: 2%;
+        gap: 5%;
+    }
+}   
+
+.text-member{
+    position: absolute; 
+    left: 0;
+    right: 0; 
+    margin: auto;
+    top: 30%;
+}
