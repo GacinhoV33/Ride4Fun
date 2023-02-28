@@ -2,17 +2,23 @@ import React, { useRef } from 'react'
 import * as yup from 'yup';
 import { Formik } from 'formik';
 import { Box, Button, TextField } from '@mui/material';
-import {SMTPClient} from 'emailjs'
 import useMediaQuery from '@mui/material/useMediaQuery';
+import emailjs from '@emailjs/browser';
 
+export type UserData  = {
+    firstName: string;
+    lastName: string; 
+    email: string;
+    contact: string;
+    message: string;
+}
 
-const initialValues = {
+const initialValues: UserData = {
     firstName: '',
     lastName: '',
     email: '',
     contact: '',
-    address1: '',
-    address2: '',
+    message: ' '
   }
   
   const phoneRegExp = /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
@@ -43,23 +49,42 @@ const initialValues = {
 const FormComponent: React.FC = () => {
 
 const isNonMobile = useMediaQuery("(min-width: 600px");
-  const handleFormSubmit = (values: any) => {
-    // Here we handle submit form submitions
-    // Validating - Adding to Database - Response with success/failure
-    console.log(values);
-}
-const form = useRef();
-// const sendEmail = (e) => {
+// const handleFormSubmit = (e: any) => {
 //     e.preventDefault();
-//     emailjs.sendForm()
+//     // Here we handle submit form submitions
+//     // Validating - Adding to Database - Response with success/failure
+//     sendEmail(e);
+//     // console.log(values);
 // }
+const form = useRef();
+
+function handleSubmit(success: boolean, error: any = null){
+    if(success){
+        console.log("It's success");
+    }else{
+        console.log("It's not success");
+        if(error){
+            console.log("error")
+        }
+    }
+}
+
+const sendEmail = (e: UserData) => {
+    //@ts-ignore
+    emailjs.sendForm('service_vpzn6cc', 'template_4c2k2il', form.current, 'wgvECPZIuSzFYwy-j').then((result) => {
+          result.text == 'OK' ? handleSubmit(true) : handleSubmit(false);
+      }, (error) => {
+            handleSubmit(false);
+      });
+  };
 
   return (
     <Box width='100vw' display='flex' justifyContent='center'>
         <Box m='20px' width='50%' >
-            <Formik onSubmit={handleFormSubmit} initialValues={initialValues} validationSchema={userSchema}>
+            <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
-                    <form onSubmit={handleSubmit}>
+                    //@ts-ignore
+                    <form onSubmit={handleSubmit} ref={form}>
                         <Box display='grid' gap='30px' gridTemplateColumns='repeat(4, minmax(0, 1fr)' sx={{"& > div" : {gridColumn: isNonMobile ? undefined : "span 4"}}}>
                             <TextField fullWidth variant='filled' type='text' label='Imie' onBlur={handleBlur} onChange={handleChange} value={values.firstName} name='firstName' error={!!touched.firstName && !!errors.firstName} helperText={touched.firstName && errors.firstName} sx={{gridColumn: 'span 2'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Nazwisko' onBlur={handleBlur} onChange={handleChange} value={values.lastName} name='lastName' error={!!touched.lastName && !!errors.lastName} helperText={touched.lastName && errors.lastName} sx={{gridColumn: 'span 2'}}/>
