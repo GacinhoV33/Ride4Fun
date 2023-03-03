@@ -10,8 +10,8 @@ const TeamPhotos: React.FC<TeamPhotoProps> = ({teamMembers}) => {
   return (
     <div className='team-photos-main'>
       <div className='team-photos'>
-            {teamMembers.map(({name, surname, imgPath, title}) => (
-                <Member name={name} surname={surname} imgPath={require('../../images/MemberBartek.jpg')} title={title}/>
+            {teamMembers.map(({name, surname, imgPath, title, description}) => (
+                <Member name={name} surname={surname} imgPath={require('../../images/MemberBartek.jpg')} title={title} description={description}/>
             ))}
         </div>
     </div>

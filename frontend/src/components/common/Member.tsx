@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TeamMember } from '../slides/SecondSlide'
 
-const Member: React.FC<TeamMember> = ({name, surname, imgPath, title}) => {
+const Member: React.FC<TeamMember> = ({name, surname, imgPath, title, description}) => {
   const [isPhotoBlurred, setPhotoBlurred] = useState<Boolean>(false);
   return (
     <div style={{position: 'relative', height: '100%', width: '100%'}}>
@@ -18,11 +18,14 @@ const Member: React.FC<TeamMember> = ({name, surname, imgPath, title}) => {
         <div className='text-member'
         onMouseEnter={() => setPhotoBlurred(true)} onMouseLeave={() => setPhotoBlurred(false)}
         > 
-          <h1 style={{zIndex: '2', color: 'rgba(255, 255, 255, 1)', fontSize: '6vh', textAlign: 'center'}}> {name} {surname} </h1>
+                  <h6 style={{zIndex: '2', color: 'rgba(255, 255, 255, 1)', fontSize: '3.5vh', textAlign: 'center'}}> {description} </h6>
+          {/* <h1 style={{zIndex: '2', color: 'rgba(255, 255, 255, 1)', fontSize: '6vh', textAlign: 'center'}}> {name} {surname} </h1> */}
         </div> 
         : 
         null}
-      
+      <div style={{display: 'flex', justifyContent: 'center', color: 'red'}}>
+        <h1>{name} {surname}</h1>
+      </div>
     </div>
     
   )
