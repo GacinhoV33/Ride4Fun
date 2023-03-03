@@ -8,6 +8,7 @@ import NavbarComponent from "./components/navbar/NavbarComponent";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/contact/Contact";
 import Slides from "./components/slides/Slides";
+import Trainings from "./components/trainings/Trainings";
 
 export default function App() {
   const [theme, colorMode] = useMode();
@@ -24,6 +25,7 @@ export default function App() {
               <Route path='/' element={<Slides/>}/>
               <Route path='/about' element={<AboutUs/>}/>
               <Route path='/contact' element={<Contact/>}/>
+              <Route path='/trainings' element={<Trainings/>}/>
             </Routes>
         </div>
       </ThemeProvider>

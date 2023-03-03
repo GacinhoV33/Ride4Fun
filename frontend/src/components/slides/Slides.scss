@@ -7,6 +7,14 @@
     width: 99vw;
     height: 100vh;
     background-size: 100% 130%;
+    position: relative; 
+    .social-container{
+        position: absolute;
+        top: 10%;
+        right: 4%;
+        width: 13vw;
+        height: 6.5vh;
+    }
 }
 
 .slide-second{

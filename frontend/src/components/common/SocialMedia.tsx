@@ -6,7 +6,7 @@ import Alert from 'react-bootstrap/Alert';
 
 const EMAIL_BARTEK = 'bartosz_wajda@gmail.com'; // #TODO Change
 
-const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row'}) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row', copyOrientation='up'}) => {
   const [showCopyAlert, setShowCopyAlert] = useState<boolean>(false);
   function copyEmailToClipboard(){
     // Do stuff 
@@ -14,11 +14,11 @@ const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row'}) => {
     setShowCopyAlert(true);
     setTimeout(() => {
       setShowCopyAlert(false)
-    }, 4000);
+    }, 7000);
   }
   
   return (
-    <div style={{height: '100%', gap: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', ...{...orientation === 'row' ? {flexDirection: 'row'} : {flexDirection: 'column'}}}}>
+    <div style={{height: '100%', width: '100%', gap: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', ...{...orientation === 'row' ? {flexDirection: 'row'} : {flexDirection: 'column'}}}}>
         <FontAwesomeIcon 
             icon={faGoogle} 
             className='icon-social'
@@ -34,17 +34,15 @@ const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row'}) => {
             className='icon-social'
             onClick={copyEmailToClipboard}
           /> 
-           <FontAwesomeIcon 
-            // color='pink'
+           {/* <FontAwesomeIcon 
             icon={faTiktok} 
             className='icon-social'
             onClick={copyEmailToClipboard}
-          /> 
+          />  */}
           {showCopyAlert ? 
-            <Alert variant='secondary'>
-              <AiOutlineCopy size={24}/>
-              gacek.filip12@gmail.com copied to the clipboard.
-            </Alert> : <div style={{height: '8vh'}}> - </div>} 
+            <Alert variant='secondary' style={{position: 'absolute', textAlign: 'center', ...{...copyOrientation === 'up' ? {bottom: '100%'} : {top: '70%'}}}}>
+              <h4>Adres gacek.filip12@gmail.com został skopiowany do schowka.</h4>
+            </Alert> : null} 
     </div>
   )
 }
@@ -52,7 +50,8 @@ const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row'}) => {
 export default SocialMedia;
 
 export type OrientationType = 'row' | 'column';
-
+export type CopyOrientationType = 'down' | 'up'
 export interface SocialMediaProps{
   orientation?: OrientationType
+  copyOrientation?: CopyOrientationType
 };

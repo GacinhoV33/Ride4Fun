@@ -8,11 +8,16 @@ const NavbarComponent: React.FC = ({ }) => {
         <AppBar color='transparent' className='navbar-main'>
             <Toolbar variant='regular'>
                 <div className='logo'>
-                    LOGO
+                    <img src={require('../../images/Logo_czarne.png')} alt='logo_navbar' style={{height: '6vw', width: '6vw'}}/>
                 </div>
                 <div className='element-nav'>
                     <Link to='/' className='nav-link'>
                         Strona Główna
+                    </Link>
+                </div>
+                <div className='element-nav'>
+                    <Link to='/trainings' className='nav-link'>
+                        Szkolenia
                     </Link>
                 </div>
                 <div className='element-nav'>

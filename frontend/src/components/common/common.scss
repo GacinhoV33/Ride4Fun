@@ -9,13 +9,15 @@
     align-items: center;
     justify-content: space-between;
 
-    .icon-social{
-        width: 75%;
-        height: 75%;
-        cursor: pointer;
-        &:hover{
-            color: #AAA;
-        }
+}
+
+
+.icon-social{
+    width: 75%;
+    height: 75%;
+    cursor: pointer;
+    &:hover{
+        color: #AAA;
     }
 }
 
