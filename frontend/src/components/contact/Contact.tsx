@@ -2,7 +2,7 @@ import React from 'react'
 import FormComponent from './FormComponent';
 import ContactInfo from './ContactInfo';
 import PlaceHolder from '../common/PlaceHolder';
-
+import './styles.scss';
 
 
 
@@ -10,11 +10,14 @@ import PlaceHolder from '../common/PlaceHolder';
 const Contact: React.FC = () => {
   
   return (
-    <div>
-        <PlaceHolder/>
+    <React.Fragment>
+      {/* <PlaceHolder/> */}
+      <div  className='contact'>
         <ContactInfo/>
         <FormComponent/>
-    </div>
+      </div>
+    </React.Fragment>
+    
   )
 }
 

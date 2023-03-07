@@ -41,7 +41,7 @@ const sendEmail = (e: UserData) => {
   };
 
   return (
-    <Box width='100vw' display='flex' alignItems='center' flexDirection='column'>
+    <Box width='100vw' display='flex' alignItems='center' flexDirection='column' marginTop='10vh'>
         <Box m='20px' width='50%' >
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
@@ -91,8 +91,8 @@ const initialValues: UserData = {
   const userSchema = yup.object().shape({
     firstName: yup.string().required("Wymagane"),
     lastName: yup.string().required("Wymagane"),
-    email: yup.string().email("Nieprawidłowy email").required("Wymagane"),  // email validation is build-in yup
-    contact: yup.string().matches(phoneRegExp, "Nieprawidłowy numer").required("Wymagane"), //Regex validation and required
+    email: yup.string().email("Nieprawidłowy email").required("Podaj swój e-mail"),  // email validation is build-in yup
+    contact: yup.string().matches(phoneRegExp, "Nieprawidłowy numer"), //Regex validation and required
     message: yup.string()
   })
   

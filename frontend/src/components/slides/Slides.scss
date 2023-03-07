@@ -22,10 +22,17 @@
 }
 
 .slide-third{
-    background: url("../../images/BackgroundSlide3.jpg");
     width: 99vw;
     height: 100vh;
     background-size: 100% 120%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20vh;
+    .third-content{
+        margin-top: 10vh;
+        display: flex;
+        gap: 10vh;
+    }
 
 }   
 
