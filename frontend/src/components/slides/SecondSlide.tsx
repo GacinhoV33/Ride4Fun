@@ -2,6 +2,7 @@ import React from 'react'
 import OurTeam from '../common/OurTeam'
 import PlaceHolder from '../common/PlaceHolder'
 import TeamPhotos from '../common/TeamPhotos'
+import OurOffer from '../OurOffer/OurOffer'
 
 const SecondSlide: React.FC = () => {
     const teamMembers: TeamMember[] = [
@@ -12,8 +13,9 @@ const SecondSlide: React.FC = () => {
     return (
     <React.Fragment>
         <PlaceHolder/>
-        <OurTeam/>
-        <TeamPhotos teamMembers={teamMembers}/>
+        <OurOffer/>
+        {/* <OurTeam/>
+        <TeamPhotos teamMembers={teamMembers}/> */}
     </React.Fragment>
   )
 }

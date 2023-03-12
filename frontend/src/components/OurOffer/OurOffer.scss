@@ -1,0 +1,12 @@
+.ouroffer-main{
+    width: 99vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ouroffer-content{
+        background-color: #ffffff;
+        display: flex;
+        box-shadow: 3px 2px #332233, 3px 1px 2px #221122;
+    }
+}
