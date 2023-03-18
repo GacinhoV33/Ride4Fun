@@ -8,7 +8,7 @@ const Tiles: React.FC = () => {
     return (
     <div className='tiles'>
         {tiles.map(({tileName}) => (
-            <Tile tileName={tileName}/>
+            <Tile tileName={tileName} key={`${tileName}-tile`}/>
         ))}
     </div>
   )

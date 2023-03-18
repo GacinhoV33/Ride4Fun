@@ -3,11 +3,26 @@
 }
 
 .slide-first{
-    background: url("../../images/BackgroundSlide1.jfif");
+    background: url("../../../public/images/main.jpg");
     width: 99vw;
     height: 100vh;
     background-size: 100% 130%;
     position: relative; 
+    display: flex;
+    flex-direction: column;
+
+    .navs{
+        color: white;
+        font-size: 3.5vh;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover{
+            color: #eee;
+            text-shadow: 2px 2px #888;
+        }
+    }
+    
+
     .social-container{
         position: absolute;
         top: 10%;

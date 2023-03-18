@@ -2,6 +2,7 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 //<FontAwesomeIcon icon="fa-sharp fa-regular fa-person-biking-mountain" />
@@ -11,34 +12,44 @@ export type TrainingItemProps = {
     icon: IconDefinition, 
     color: string,
     srcPath: string,
+    linkPath: string,
+    buttonText: string,
 }
 
-const TrainingItem: React.FC<TrainingItemProps> = ({textTitle, description, icon, color, srcPath}) => {
-  return (
-    <div style={{height: '80vh', width: '20vw', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+const TrainingItem: React.FC<TrainingItemProps> = ({textTitle, description, icon, color, srcPath, linkPath, buttonText}) => {
+    function handleClick(){
+
+    }
+    return (
+    <div style={{height: '80vh', width: '25vw', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start'}}>
         <div>
-            <img style={{width: '20vw', height: '35vh', paddingBottom: '0px'}} src={require(`./${srcPath}`)}>
+            <img style={{width: '25vw', height: '35vh', paddingBottom: '0px'}} src={`./images/${srcPath}`}>
             </img>
         </div>
 
-        <div style={{color: color, height: '20vh'}}>
+        <div style={{color: color, height: '10vh', textAlign: 'center'}}>
                 {textTitle}
         </div>
-
-        <div style={{padding: '5px 0'}}>
-            <FontAwesomeIcon icon={icon} style={{margin: '0 10px', height: '4vh'}}/>
+        <div style={{marginTop: '2vh'}}>
+            <FontAwesomeIcon icon={icon} style={{margin: '0px 0px', height: '4vh'}}/>
         </div>
+        
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '30vh'}}>
+       
+            <div style={{padding: '5px 10px', textAlign: 'center', justifyContent: 'center', display: 'flex', alignItems: 'center', height: '100%', fontSize: '1.75', fontWeight: '600'}}>
+                {description}
+            </div>
 
-        <div style={{padding: '5px 10px', textAlign: 'center'}}>
-            {description}
+            <div>
+                <Link to={`${linkPath}`} style={{textDecoration: 'none'}}>
+                    <Button variant="contained" style={{background: color, color: 'white', padding: '10px'}} onClick={() => handleClick()}>
+                        Contained
+                    </Button>
+                </Link>
+                
+            </div>
         </div>
-
-        <div>
-            <Button variant="contained" style={{background: color, color: 'white', padding: '10px'}}>
-                Contained
-            </Button>
-
-        </div>
+        
     </div>
   )
 }
