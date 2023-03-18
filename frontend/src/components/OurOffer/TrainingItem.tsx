@@ -6,30 +6,30 @@ import React from 'react';
 
 //<FontAwesomeIcon icon="fa-sharp fa-regular fa-person-biking-mountain" />
 export type TrainingItemProps = {
-    title: string,
+    textTitle: JSX.Element,
     description: string, 
     icon: IconDefinition, 
     color: string,
     srcPath: string,
 }
 
-const TrainingItem: React.FC<TrainingItemProps> = ({title, description, icon, color, srcPath}) => {
+const TrainingItem: React.FC<TrainingItemProps> = ({textTitle, description, icon, color, srcPath}) => {
   return (
-    <div style={{height: '75vh', width: '20vw', border: '1px solid black', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div style={{height: '80vh', width: '20vw', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div>
-            <img style={{width: '20vw', height: '35vh'}} src={require(`./${srcPath}`)}>
+            <img style={{width: '20vw', height: '35vh', paddingBottom: '0px'}} src={require(`./${srcPath}`)}>
             </img>
         </div>
 
-        <div style={{color: color}}>
-            <h2>{title}</h2>
+        <div style={{color: color, height: '20vh'}}>
+                {textTitle}
         </div>
 
-        <div style={{padding: '10px 0'}}>
+        <div style={{padding: '5px 0'}}>
             <FontAwesomeIcon icon={icon} style={{margin: '0 10px', height: '4vh'}}/>
         </div>
 
-        <div style={{padding: '10px', textAlign: 'center'}}>
+        <div style={{padding: '5px 10px', textAlign: 'center'}}>
             {description}
         </div>
 

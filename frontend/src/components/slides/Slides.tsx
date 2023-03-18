@@ -4,6 +4,7 @@ import { FullPage, Slide } from 'react-full-page';
 import FirstSlide from "./FirstSlide";
 import FourthSlide from './FourthSlide';
 import SecondSlide from './SecondSlide';
+import FifthSlide from './FifthSlide';
 import ThirdSlide from './ThirdSlide';
 
 const Slides: React.FC = () => {
