@@ -3,7 +3,8 @@ import React from 'react'
 const Trainings: React.FC = () => {
   return (
     <div>
-        Trainings
+       Szkółka R4F Academy | WYJAZDY | PÓŁKOLONIE
+       content dla każdej z zakładek - jest w Wordzie. 
     </div>
   )
 }

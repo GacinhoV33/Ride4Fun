@@ -52,8 +52,18 @@
 }   
 
 .fourth-slide{
+    background: url('../../../public/images/fourthSlide.png');
     position: relative;
     height: 100%;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .iframe-styles{
+        width: 37.5vw;
+        height: 57.5vh;
+    }
 }
 
 .slide-third{
@@ -80,9 +90,12 @@
     flex: 5;
     padding: 2.5vh;
     .button-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-style: italic;
-        height: 6vh;
-        width: 9vw;
+        height: 7.5vh;
+        width: 11vw;
         font-size: 2vh;
         font-weight: 600;
         background-color: green;
