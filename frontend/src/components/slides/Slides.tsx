@@ -7,17 +7,22 @@ import SecondSlide from './SecondSlide';
 import FifthSlide from './FifthSlide';
 import ThirdSlide from './ThirdSlide';
 
-const Slides: React.FC = () => {
+
+export interface SlidesProps{
+  setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const Slides: React.FC<SlidesProps> = ({setCurrentTab}) => {
   return (
     <FullPage>
             <Slide >
               <FirstSlide/>
             </Slide>
             <Slide>
-              <SecondSlide/>
+              <SecondSlide setCurrentTab={setCurrentTab}/>
             </Slide>
             <Slide>
-              <ThirdSlide/>
+              <ThirdSlide />
             </Slide>
             <Slide>
               <FourthSlide/>

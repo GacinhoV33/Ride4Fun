@@ -4,7 +4,11 @@ import PlaceHolder from '../common/PlaceHolder'
 import TeamPhotos from '../common/TeamPhotos'
 import OurOffer from '../OurOffer/OurOffer'
 
-const SecondSlide: React.FC = () => {
+export interface SecondSlideProps{
+    setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const SecondSlide: React.FC<SecondSlideProps> = ({setCurrentTab}) => {
     const teamMembers: TeamMember[] = [
      {name: 'Bartosz', surname: 'Wajda', title: 'title', imgPath: '../../images/MemberBartek.jpg', description: 'This is some basic description. Text is generated to visualize how it will look. This one is for Bartek.'},
      {name: 'Justyna', surname: 'Wójtowicz', title: 'title', imgPath: 'none', description: 'This is second basic description. Text is generated to visualize how it will look. This one is for Justyna'}
@@ -13,7 +17,7 @@ const SecondSlide: React.FC = () => {
     return (
     <React.Fragment>
         <PlaceHolder/>
-        <OurOffer/>
+        <OurOffer setCurrentTab={setCurrentTab}/>
         {/* <OurTeam/>
         <TeamPhotos teamMembers={teamMembers}/> */}
     </React.Fragment>

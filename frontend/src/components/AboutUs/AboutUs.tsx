@@ -8,12 +8,13 @@ const AboutUs: React.FC = () => {
     <div>
       <PlaceHolder/>
       <div>
-        <Iframe
+        
+        {/* <Iframe
                 url={`https://www.youtube.com/embed/bV4dPFsyA7w`}
                 className='iframe-styles'
                 position="relative"
 
-              />
+              /> */}
       </div>
     </div>
   )

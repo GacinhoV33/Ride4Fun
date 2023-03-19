@@ -13,6 +13,8 @@ export type TrainingItemProps = {
   srcPath: string;
   linkPath: string;
   buttonText: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
+  index: number;
 };
 
 const TrainingItem: React.FC<TrainingItemProps> = ({
@@ -23,8 +25,12 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
   srcPath,
   linkPath,
   buttonText,
+  setCurrentTab,
+  index
 }) => {
-  function handleClick() {}
+  function handleClick() {
+    setCurrentTab(index);
+  }
   return (
     <div
       style={{

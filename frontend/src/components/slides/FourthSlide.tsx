@@ -11,7 +11,7 @@ const FourthSlide: React.FC = () => {
       <PlaceHolder />
 
       <h1 style={{background: 'green'}}> NASZA BAZA SZKOLENIOWA </h1>
-      <div style={{ display: "flex", marginLeft: '5vw', alignItems: 'center'}}>
+      <div style={{ display: "flex", marginLeft: '5vw', alignItems: 'flex-start', position: 'relative', marginTop: '3vh'}}>
         <div
           style={{
             flex: 4,
@@ -46,6 +46,7 @@ const FourthSlide: React.FC = () => {
           rozbudowa bike parku o kolejne dwie trasy zjazdowe. Nie byłeś u nas ?
           Sprawdź film z naszej bazy szkoleniowej!
         </div>
+        <img alt='logo-fourthslide' src='./images/logoBike.png' style={{width: '30vh', height: '40vh', position: 'absolute', bottom: '-15vh', right: '15vh'}}/>
       </div>
     </div>
   );

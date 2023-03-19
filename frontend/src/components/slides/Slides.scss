@@ -52,7 +52,9 @@
 }   
 
 .fourth-slide{
-    background: url('../../../public/images/fourthSlide.png');
+    background: url('../../../public/images/fourthSlideNoLogo.png');
+    background-repeat: no-repeat;
+    background-size: auto;
     position: relative;
     height: 100%;
     width: 99vw;
