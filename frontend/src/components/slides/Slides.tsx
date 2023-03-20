@@ -4,7 +4,7 @@ import { FullPage, Slide } from 'react-full-page';
 import FirstSlide from "./FirstSlide";
 import FourthSlide from './FourthSlide';
 import SecondSlide from './SecondSlide';
-import FifthSlide from './FifthSlide';
+import ImagesPortfolio from './ImagesPortfolio';
 import ThirdSlide from './ThirdSlide';
 
 
@@ -14,8 +14,8 @@ export interface SlidesProps{
 
 const Slides: React.FC<SlidesProps> = ({setCurrentTab}) => {
   return (
-    <FullPage>
-            <Slide >
+    <FullPage >
+            <Slide onSlideLeave={() => console.log('Blabla')}>
               <FirstSlide/>
             </Slide>
             <Slide>

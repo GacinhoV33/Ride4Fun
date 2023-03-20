@@ -75,6 +75,7 @@ const LeftContent = () => {
     <div className="left-content">
       <img
         src="./images/thirdSlideFirst.jpg"
+        alt="left-content-img"
         style={{
           width: "60%",
           height: "90%",
@@ -86,6 +87,7 @@ const LeftContent = () => {
       />
       <img
         src="./images/thirdSlideSecond.jpg"
+        alt="right-content-img"
         style={{
           width: "60%",
           height: "90%",

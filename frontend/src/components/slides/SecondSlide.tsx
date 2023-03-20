@@ -1,7 +1,5 @@
 import React from 'react'
-import OurTeam from '../common/OurTeam'
 import PlaceHolder from '../common/PlaceHolder'
-import TeamPhotos from '../common/TeamPhotos'
 import OurOffer from '../OurOffer/OurOffer'
 
 export interface SecondSlideProps{

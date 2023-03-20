@@ -34,7 +34,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
   return (
     <div
       style={{
-        height: "80vh",
+        height: "82.5vh",
         width: "25vw",
         display: "flex",
         flexDirection: "column",
@@ -96,7 +96,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
           <Link to={`${linkPath}`} style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
-              style={{ background: color, color: "white", padding: "10px" }}
+              style={{ background: color, color: "white", padding: "10px", fontWeight: '600', letterSpacing: '0.15rem' }}
               onClick={() => handleClick()}
             >
               {buttonText}

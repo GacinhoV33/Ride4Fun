@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact";
 import Slides from "./components/slides/Slides";
 import Trainings from "./components/trainings/Trainings";
 import { useState } from "react";
+import NavMui from "./components/navbar/NavMui";
 
 export default function App() {
   const [theme, colorMode] = useMode();
@@ -23,7 +24,8 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="app" style={{color: colors.secondary[200]}}>
-          <NavbarComponent/>
+          {/* <NavbarComponent/> */}
+          <NavMui/>
             <Routes>
               <Route path='/' element={<Slides setCurrentTab={setCurrentTab}/>}/>
               <Route path='/about' element={<AboutUs/>}/>
