@@ -8,7 +8,8 @@ import { Button } from "@mui/material";
 import ContactAcademy from "./ContactAcademy";
 import ImagesPortfolio from "../slides/ImagesPortfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Prices from "./Prices";
 export interface TrainingProps {
   currentTab: number;
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
@@ -33,7 +34,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
       <PlaceHolder />
       <Tabs value={currentTab} centered style={{ marginTop: "4vh" }}>
         <Tab
-          label="Wyjazdy"
+          label="Szkolenia"
           onClick={(event) => handleChange(event, 0)}
           className="section-styles"
         />
@@ -43,7 +44,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
           className="section-styles"
         />
         <Tab
-          label="Półkolonie"
+          label="Wyjazdy"
           onClick={(event) => handleChange(event, 2)}
           className="section-styles"
         />
@@ -79,11 +80,37 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               Na szkoleniach pracujemy nad :
             </div>
             {trainingFeatures.map((featureName, index) => (
-              <div key={`${featureName}-${index}`} style={{height: '5vh', fontSize: '3vh', display: 'flex', alignItems: 'center', gap: '0.75vw'}}>
+              <div
+                key={`${featureName}-${index}`}
+                style={{
+                  height: "5vh",
+                  fontSize: "3vh",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.75vw",
+                }}
+              >
                 {featureName}
-                <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green'}} />{" "}
+                <FontAwesomeIcon
+                  icon={faCircleCheck}
+                  style={{ color: "lightgreen" }}
+                />{" "}
               </div>
             ))}
+
+            <img
+              src="./images/szkoleniaInd1.jpg"
+              alt="szkolInd1"
+              style={{ width: "75%" }}
+            />
+            <div style={{ fontSize: "2.5vh", textAlign: "center" }}>
+              Program każdego szkolenia dobierany jest indywidualnie do Twoich
+              potrzeb oraz postępów 💪 <br />
+              Naszą bazą szkoleniową jest Bike Park Marcinka w Tarnowie. <br />
+              Możliwość zorganizowania szkolenia grupowego w dowolnym Bike Parku
+              w Całej Polsce!
+            </div>
+            <Prices />
           </div>
         </div>
       )}
@@ -161,7 +188,30 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
           {/* <img alt='R4F-academy' src=''/> */}
         </div>
       )}
-      {currentTab === 2 && <div className="content-trainings"></div>}
+      {currentTab === 2 && (
+        <div className="content-trainings">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              fontSize: "2.5vh",
+            }}
+          >
+            <div>
+              Zapraszamy na jednodniowe wyjazdy szkoleniowe z Ride4Fun! Cały
+              dzień w najlepszych Polskich Bike Parkach pod okiem instruktora
+              wraz z dobrą ekipą to recepta na udany weekend!
+            </div>
+            <img
+              alt="wyjazdy1"
+              src="./images/wyjazdy1.jpg"
+              style={{ width: "66%" }}
+            />
+            <h1>Terminy już wkrótce!!!</h1>
+          </div>
+        </div>
+      )}
     </Box>
   );
 };

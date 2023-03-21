@@ -16,7 +16,7 @@ const ImagesPortfolio: React.FC = ({}) => {
       {itemData.map((item, index) => (
           <ImageListItem key={item.img + index} cols={item.cols || 1} rows={item.rows || 1}>
             <img
-              src={require(`../../images/${item.img}`)}
+              src={`./images/${item.img}`}
               style={{width: `${item.cols || 1 *  121}`, height: `${item.rows || 1 * 121}`}}
               alt={item.title}
               loading="lazy"

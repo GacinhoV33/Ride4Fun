@@ -15,7 +15,7 @@ export interface SlidesProps{
 const Slides: React.FC<SlidesProps> = ({setCurrentTab}) => {
   return (
     <FullPage >
-            <Slide onSlideLeave={() => console.log('Blabla')}>
+            <Slide>
               <FirstSlide/>
             </Slide>
             <Slide>

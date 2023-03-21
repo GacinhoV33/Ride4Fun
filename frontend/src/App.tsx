@@ -24,13 +24,12 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="app" style={{color: colors.secondary[200]}}>
-          {/* <NavbarComponent/> */}
           <NavMui/>
             <Routes>
-              <Route path='/' element={<Slides setCurrentTab={setCurrentTab}/>}/>
-              <Route path='/about' element={<AboutUs/>}/>
-              <Route path='/contact' element={<Contact/>}/>
-              <Route path='/trainings' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>}/>
+              <Route path='/' element={<Slides setCurrentTab={setCurrentTab} key='route1'/>}/>
+              <Route path='/about' element={<AboutUs/>} key='route2'/>
+              <Route path='/contact' element={<Contact/>} key='route3'/>
+              <Route path='/trainings' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route4'/>
             </Routes>
         </div>
       </ThemeProvider>
