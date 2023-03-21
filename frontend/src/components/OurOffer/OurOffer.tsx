@@ -13,7 +13,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
   const trainingItem = [
     {
       textTitle: (
-        <span style={{ fontSize: "3.5vh", textAlign: "center" }}>
+        <span className='ourOffer-title'>
           {" "}
           Szkolenia indywidualne <br /> i grupowe{" "}
         </span>
@@ -28,7 +28,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
     },
     {
       textTitle: (
-        <span style={{ fontSize: "3.5vh", textAlign: "center" }}>
+        <span className='ourOffer-title'>
           Klub Rowerowy <br />
           Ride4Fun Academy
         </span>
@@ -43,7 +43,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
     },
     {
       textTitle: (
-        <span style={{ fontSize: "3.5vh", textAlign: "center" }}>
+        <span className='ourOffer-title'>
           Jednodniowe <br /> wyjazdy
         </span>
       ),

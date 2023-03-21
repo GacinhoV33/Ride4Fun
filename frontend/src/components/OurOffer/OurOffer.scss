@@ -7,7 +7,94 @@
     .ouroffer-content{
         background-color: #ffffff;
         display: flex;
+        border: 2px solid #222;
         // box-shadow: 3px 2px #332233, 3px 1px 2px #221122;
+    }
+}
+
+.training-item{
+    height:82.5vh;
+    width:25vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+   
+      
+    .training-img{
+        width:25vw;
+        height:32.5vh;
+        padding-bottom:0px;
+            
+    }
+
+    .training-title{
+        height:10vh;
+        text-align:center;
+        font-weight:600;
+        letter-spacing:0.15vh;
+    }
+
+    .training-icon-content{
+        margin-top:2.5vh;
+        width:100%;
+        text-align:center;
+    }
+
+    .training-description{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-end;
+        height:30vh;
+        margin-bottom:3vh;
+
+    }
+
+    .training-button{
+        color:white;
+        padding:10px;
+        font-weight:600;
+        letter-spacing:0.15rem;
+    }
+
+    .training-icon{
+        margin: 0px 0px; 
+        height: 4vh; 
+    }
+
+    
+    @media (max-width: 900px){
+        width:33.3vw;
+        height: 75vh;
+        .training-icon{
+            height: 4vw; 
+            margin-top: 2vw;
+
+        }
+        .training-description{
+            height: 50vh;
+            justify-content: space-evenly;
+        }
+
+        .training-button{
+            font-size: 2.5vw;
+            width: 31vw;
+        }
+       
+        .training-img{
+            width:33.3vw;
+            height:20.5vh;
+            padding-bottom:0px;       
+        }
+
+        .training-title{
+            height:5vh;
+            text-align:center;
+            font-weight:600;
+            letter-spacing:0.15vh;
+        }
     }
 }
 
@@ -20,4 +107,16 @@
     height: 100%;
     font-size: 1.75vh;
     font-weight: 600;
+    @media (max-width: 900px){
+        font-size: 2.5vw;
+    }
+}
+
+.ourOffer-title{
+    font-size: 3.5vh;
+    text-align: center;
+    @media (max-width: 900px){
+        font-size: 1.75vw;
+        font-weight: 700;
+    }
 }

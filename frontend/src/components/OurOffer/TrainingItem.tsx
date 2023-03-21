@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import './OurOffer.scss';
+import {isMobile} from 'react-device-detect';
 //<FontAwesomeIcon icon="fa-sharp fa-regular fa-person-biking-mountain" />
 export type TrainingItemProps = {
   textTitle: JSX.Element;
@@ -33,48 +34,36 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
   }
   return (
     <div
-      style={{
-        height: "82.5vh",
-        width: "25vw",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "flex-start",
-      }}
+      className='training-item'
     >
       <div>
         <img
-          style={{ width: "25vw", height: "32.5vh", paddingBottom: "0px" }}
+          className='training-img'
           src={`./images/${srcPath}`}
-        ></img>
+          alt={`${textTitle}img-training`}
+        />
       </div>
 
-      <div style={{ color: color, height: "10vh", textAlign: "center", fontWeight: '600', letterSpacing: '0.15vh' }}>
+      <div className='training-title' style={{color: color}}>
         {textTitle}
       </div>
       <div
-        style={{
-          marginTop: "2vh",
-          borderRight: color === "green" ? undefined : "1px solid black",
-          width: "100%",
-          textAlign: "center",
-        }}
+        className='training-icon-content'
+        // style={{
+        //   borderRight: buttonText === "Wyjazdy" || isMobile ? undefined : "1px solid black",
+        // }}
       >
         <FontAwesomeIcon
           icon={icon}
-          style={{ margin: "0px 0px", height: "4vh" }}
+          className='training-icon'
+          // style={{ }}
         />
       </div>
 
       <div
+        className='training-description'
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          height: "30vh",
-          marginBottom: "3vh",
-          borderRight: color === "green" ? undefined : "1px solid black",
+          borderRight: buttonText === "Wyjazdy" ? undefined : "1px solid black",
         }}
       >
         <div
@@ -87,7 +76,8 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
           <Link to={`${linkPath}`} style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
-              style={{ background: color, color: "white", padding: "10px", fontWeight: '600', letterSpacing: '0.15rem' }}
+              className='training-button'
+              style={{ background: color}}
               onClick={() => handleClick()}
             >
               {buttonText}
