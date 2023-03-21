@@ -10,12 +10,12 @@
     position: relative; 
     display: flex;
     flex-direction: column;
-
     .navs{
         color: white;
         font-size: 3.5vh;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
+
         &:hover{
             color: #eee;
             text-shadow: 2px 2px #888;
@@ -73,7 +73,7 @@
     width: 99vw;
     display: flex;
     padding: 10vh 7.5vw;
-    background-color: #111;
+    background: linear-gradient(#888, #a53);
     gap: 3vw;
 }
 

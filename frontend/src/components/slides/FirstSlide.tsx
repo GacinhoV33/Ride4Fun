@@ -14,7 +14,7 @@ const FirstSlide: React.FC<FirstSlideProps> = ({}) => {
       <div style={{position: 'absolute', left: '12vw', top: '15vh'}}>
           <img src={'./images/Logo_biale.png'} alt='logo' style={{width: '50vh', height: '50vh'}}/>
       </div>
-      <div style={{fontSize: '7vh', color: '#eee', fontWeight: 600, marginTop: '20vh', marginRight: '25vw', textAlign: 'right', lineHeight: '7.3vh', letterSpacing: '0.3vh'}}>
+      <div style={{fontSize: '7vh', color: '#eee', fontWeight: 800, marginTop: '20vh', marginRight: '25vw', textAlign: 'right', lineHeight: '7.3vh', letterSpacing: '0.4vh'}}>
         SZKOLENIA <br/>ROWEROWE
       </div>
       <div style={{display: 'flex', justifyContent: 'flex-end', marginTop: '3vh', gap: '1.5vw', marginRight: '15vw'}}>

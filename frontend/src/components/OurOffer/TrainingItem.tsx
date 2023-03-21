@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import './OurOffer.scss';
 //<FontAwesomeIcon icon="fa-sharp fa-regular fa-person-biking-mountain" />
 export type TrainingItemProps = {
   textTitle: JSX.Element;
@@ -49,7 +49,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
         ></img>
       </div>
 
-      <div style={{ color: color, height: "10vh", textAlign: "center" }}>
+      <div style={{ color: color, height: "10vh", textAlign: "center", fontWeight: '600', letterSpacing: '0.15vh' }}>
         {textTitle}
       </div>
       <div
@@ -78,16 +78,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
         }}
       >
         <div
-          style={{
-            padding: "5px 10px",
-            textAlign: "center",
-            justifyContent: "center",
-            display: "flex",
-            alignItems: "center",
-            height: "100%",
-            fontSize: "1.75",
-            fontWeight: "600",
-          }}
+        className="content-training-item"
         >
           {description}
         </div>

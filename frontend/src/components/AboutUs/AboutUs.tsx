@@ -6,7 +6,7 @@ import "./AboutUs.scss";
 const AboutUs: React.FC = () => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: 'center' }}
     >
       <PlaceHolder />
       <div
@@ -60,6 +60,10 @@ const AboutUs: React.FC = () => {
         alt="aboutUs3"
         style={{ width: "50%", height: "60%" }}
       />
+      <div style={{height: '10vh', width: '100%'}}>
+        <br></br>
+        <br/>
+      </div>
     </div>
   );
 };

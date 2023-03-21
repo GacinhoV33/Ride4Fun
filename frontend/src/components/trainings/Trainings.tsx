@@ -30,28 +30,33 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
     setCurrentTab(newTab);
   };
   return (
-    <Box sx={{ width: "100%", bgcolor: "#eee" }}>
+    <Box sx={{ width: "100%"}}>
       <PlaceHolder />
-      <Tabs value={currentTab} centered style={{ marginTop: "4vh" }}>
+      <Tabs value={currentTab} centered style={{ marginTop: "4vh" }} indicatorColor='secondary'
+>
         <Tab
           label="Szkolenia"
           onClick={(event) => handleChange(event, 0)}
           className="section-styles"
+          style={currentTab === 0 ? {color: '#f55'} : undefined}
         />
         <Tab
           label="R4F Academy"
           onClick={(event) => handleChange(event, 1)}
           className="section-styles"
+          style={currentTab === 1 ? {color: '#fa5'} : undefined}
         />
         <Tab
           label="Wyjazdy"
           onClick={(event) => handleChange(event, 2)}
           className="section-styles"
+          style={currentTab === 2? {color: '#ae1'} : undefined}
+
         />
       </Tabs>
 
       {currentTab === 0 && (
-        <div className="content-trainings">
+        <div className="content-trainings" >
           <h1> Szkolenia indywidualne i grupowe </h1>
           <p style={{ fontSize: "2.75vh" }}>
             Chcesz poprawić swoją technikę jazdy, poczuć się bezpieczniej na

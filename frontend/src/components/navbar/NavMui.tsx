@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" style={{ background: "lightgreen" }}>
+    <AppBar position="fixed" style={{ background: 'transparent' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -83,7 +83,7 @@ function ResponsiveAppBar() {
                 <Button
                   key={`${menuItem}-${index}`}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block", fontSize: '2vh', marginRight: '1vw' }}
+                  sx={{ my: 1, color: "white", display: "block", fontSize: '1.25vw', marginRight: '1vw', fontWeight: '500', fontFamily: 'fantasy', letterSpacing: '0.2vw' }}
                 >
                   {menuItem}
                 </Button>

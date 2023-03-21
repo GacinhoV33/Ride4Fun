@@ -16,8 +16,6 @@ const SecondSlide: React.FC<SecondSlideProps> = ({setCurrentTab}) => {
     <React.Fragment>
         <PlaceHolder/>
         <OurOffer setCurrentTab={setCurrentTab}/>
-        {/* <OurTeam/>
-        <TeamPhotos teamMembers={teamMembers}/> */}
     </React.Fragment>
   )
 }

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
 html, body, #root, .app, .content{
   height: 100%;
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  background: #e1e1e1;
+  font-family: 'Orbitron', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  background: #d2d8c3;
 }
 
 .app{
