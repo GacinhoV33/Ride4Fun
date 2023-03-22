@@ -1,0 +1,8 @@
+.contact-content{
+    margin: 20px;
+    width: 50%;
+    @media (max-width: 900px){
+        width: 95%;
+        // font-size: 12px !important;
+    }
+}

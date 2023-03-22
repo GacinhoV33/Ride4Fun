@@ -23,21 +23,8 @@ const pages = [
   { menuItem: "Kontakt", linkPath: "/contact" },
 ];
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  
   return (
     <AppBar position="fixed" style={{ background: 'transparent' }}>
       <Container maxWidth="xl">
@@ -73,8 +60,8 @@ function ResponsiveAppBar() {
               <Link to={linkPath} style={{textDecoration: 'none'}}>
                 <Button
                   key={`${menuItem}-${index}`}
-                  className='navButton'
                   sx={{ my: 1, color: "white", display: "block", marginRight: '1vw', fontWeight: '500', fontFamily: 'fantasy', letterSpacing: '0.2vw', zIndex: '20' }}
+                  className='navButton2'
                 >
                   {menuItem}
                 </Button>

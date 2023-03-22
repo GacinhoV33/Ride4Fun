@@ -5,6 +5,7 @@ import { Box, Button, TextField } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import emailjs from '@emailjs/browser';
 import SendAlert from '../contact/SendAlert';
+import './ContactAcademy.scss';
 
 const ContactAcademy: React.FC = () => {
     
@@ -40,7 +41,7 @@ const sendEmail = (e: UserData) => {
   return (
     <Box width='100%' display='flex' alignItems='center' flexDirection='column' marginTop='10vh' height='100%' style={{background: '#eee'}} >
         {showAlert && <SendAlert setShowAlert={setShowAlert} success={isSuccess}/>}
-        <Box m='20px' width='50%' >
+        <Box className='contact-content'>
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
                     //@ts-ignore

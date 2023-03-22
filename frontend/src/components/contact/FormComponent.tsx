@@ -5,7 +5,7 @@ import { Box, Button, TextField } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import emailjs from '@emailjs/browser';
 import SendAlert from './SendAlert';
-
+import './styles.scss';
 
 
 const FormComponent: React.FC = () => {
@@ -42,7 +42,7 @@ const sendEmail = (e: UserData) => {
 
   return (
     <Box width='100vw' display='flex' alignItems='center' flexDirection='column' marginTop='10vh'>
-        <Box m='20px' width='50%' >
+        <Box className='contact-content'>
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
                     //@ts-ignore

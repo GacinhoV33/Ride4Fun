@@ -1,27 +1,81 @@
-.slide-main{
-
-}
-
 .slide-first{
     background: url("../../../public/images/main.jpg");
     width: 99vw;
+    @media (max-width: 900px){
+        width: 100vw;
+    }
     height: 100vh;
     background-size: 100% 130%;
     position: relative; 
     display: flex;
     flex-direction: column;
+    .header-first-slide{
+        font-size:7vh;
+        color:#eee;
+        font-weight:800;
+        margin-top:20vh;
+        margin-right:25vw;
+        text-align:right;
+        line-height:7.3vh;
+        letter-spacing:0.4vh;
+        @media (max-width : 900px) {
+            font-size: 4vh;
+            width: 100vw;
+            text-align: center;
+            margin-top: 15vh;
+        }
+    }
+
+    .navs-first-slide{
+        display:flex;
+        justify-content:flex-end;
+        margin-top:3vh;
+        gap:1.5vw;
+        margin-right:15vw;
+        @media (max-width : 900px) {
+            // font-size: 2vh;
+            margin-top: 5.5vh;
+            flex-direction: column;
+        }
+    }
+
     .navs{
         color: white;
         font-size: 3.5vh;
         font-weight: 700;
         text-decoration: none;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover{
             color: #eee;
             text-shadow: 2px 2px #888;
         }
+
+        @media (max-width: 900px){
+            margin-top: 3vh;
+            width: 100vw;
+            text-align: center;
+        }
     }
     
+    .logo-container-first-slide{
+        position:absolute;
+        left:12vw;
+        top:15vh;
+        @media (max-width: 900px){
+            left: 50vw;
+            top: 75vh;
+        }
+        .logo-first-slide{
+            width: 50vh;
+            height: 50vh;
+            @media (max-width: 900px) {
+                width: 25vh;
+                height: 25vh;
+            } 
+        }
+    }
 
     .social-container{
         position: absolute;

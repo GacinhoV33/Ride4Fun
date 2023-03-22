@@ -1,5 +1,11 @@
 .contact{
-
     background: url('../../images/contact4.jfif');
+}
 
+.contact-content{
+    margin: 20px;
+    width: 50%;
+    @media (max-width: 900px){
+        width: 75%;
+    }
 }
