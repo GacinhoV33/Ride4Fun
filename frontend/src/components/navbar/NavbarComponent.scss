@@ -21,3 +21,21 @@
     }
     
 }
+
+
+.nav-img-logo{
+    width: 3.5vw;
+    height: 3.5vw;
+    @media (max-width: 900px){
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+.navButton{
+    font-size: 1.25vw;
+    @media (max-width: 900px){
+        font-size: 1.4vh;
+
+    }
+}
