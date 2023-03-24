@@ -1,10 +1,10 @@
 import React from "react";
-import Iframe from "react-iframe";
+// import Iframe from "react-iframe";
 import Footer from "../common/Footer";
 import PlaceHolder from "../common/PlaceHolder";
 import Tiles from "../Tiles/Tiles";
 import "./Slides.scss";
-
+import Iframe from "react-iframe";
 const FourthSlide: React.FC = () => {
   return (
     <div className="fourth-slide">
@@ -21,24 +21,11 @@ const FourthSlide: React.FC = () => {
             alignItems: "flex-start",
           }}
         >
-          {/* <div>
-            <img
-              src="./images/fourthSlide.png"
-              alt="slide4"
-              style={{ width: "37.5vw", height: "37.5vh" }}
-            />
-          </div> */}
-{/* 
-          <Iframe
-            url={`https://www.youtube.com/embed/bV4dPFsyA7w`}
-            className="iframe-styles"
-            position="relative"
-            title='Youtube Video'
-          /> */}
-          <iframe 
-          src={`https://www.youtube.com/embed/bV4dPFsyA7w`}
+     
+          <Iframe 
+          url={`https://www.youtube.com/embed/bV4dPFsyA7w`}
           className="iframe-styles"
-          title='Youtube Video'
+          title='Youtube-Video'
           />
         </div>
         <div style={{ flex: 5, fontSize: '3vh' }}>
