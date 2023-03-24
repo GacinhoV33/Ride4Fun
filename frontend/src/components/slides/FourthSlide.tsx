@@ -1,10 +1,8 @@
 import React from "react";
-// import Iframe from "react-iframe";
-import Footer from "../common/Footer";
 import PlaceHolder from "../common/PlaceHolder";
-import Tiles from "../Tiles/Tiles";
 import "./Slides.scss";
 import Iframe from "react-iframe";
+
 const FourthSlide: React.FC = () => {
   return (
     <div className="fourth-slide">
@@ -20,8 +18,8 @@ const FourthSlide: React.FC = () => {
             flexDirection: "column",
             alignItems: "flex-start",
           }}
-        >
-     
+       >
+
           <Iframe 
           url={`https://www.youtube.com/embed/bV4dPFsyA7w`}
           className="iframe-styles"

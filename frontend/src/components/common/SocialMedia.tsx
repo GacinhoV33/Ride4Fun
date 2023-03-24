@@ -34,11 +34,6 @@ const SocialMedia: React.FC<SocialMediaProps> = ({orientation = 'row', copyOrien
             className='icon-social'
             onClick={copyEmailToClipboard}
           /> 
-           {/* <FontAwesomeIcon 
-            icon={faTiktok} 
-            className='icon-social'
-            onClick={copyEmailToClipboard}
-          />  */}
           {showCopyAlert ? 
             <Alert variant='secondary' style={{position: 'absolute', textAlign: 'center', ...{...copyOrientation === 'up' ? {bottom: '100%'} : {top: '70%'}}}}>
               <h4>Adres gacek.filip12@gmail.com został skopiowany do schowka.</h4>

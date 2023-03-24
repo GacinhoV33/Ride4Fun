@@ -4,8 +4,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import './OurOffer.scss';
-import {isMobile} from 'react-device-detect';
-//<FontAwesomeIcon icon="fa-sharp fa-regular fa-person-biking-mountain" />
+
 export type TrainingItemProps = {
   textTitle: JSX.Element;
   description: string;
@@ -49,14 +48,10 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
       </div>
       <div
         className='training-icon-content'
-        // style={{
-        //   borderRight: buttonText === "Wyjazdy" || isMobile ? undefined : "1px solid black",
-        // }}
       >
         <FontAwesomeIcon
           icon={icon}
           className='training-icon'
-          // style={{ }}
         />
       </div>
 

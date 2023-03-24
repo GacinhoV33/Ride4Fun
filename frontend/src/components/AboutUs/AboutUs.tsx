@@ -1,13 +1,14 @@
 import React from "react";
-import Iframe from "react-iframe";
 import PlaceHolder from "../common/PlaceHolder";
 import "./AboutUs.scss";
+import { SocialIcon } from 'react-social-icons';
 
 const AboutUs: React.FC = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: 'center' }}
     >
+      
       <PlaceHolder />
       <div
         style={{
@@ -63,6 +64,15 @@ const AboutUs: React.FC = () => {
       <div style={{height: '10vh', width: '100%'}}>
         <br></br>
         <br/>
+        <br/>
+        <br/>
+      </div>
+      <div className='footer-about'>
+          <span  className='footer-title'>Sprawdź nasze socjale </span>
+          <SocialIcon url={'https://www.facebook.com/profile.php?id=100083105601877'} target='_blank' className="social-icon-aboutUs"/>
+          <SocialIcon url={'https://www.instagram.com/wajda_bartekk/'} target='_blank' className="social-icon-aboutUs"/>
+          <SocialIcon url={'https://www.tiktok.com/@marcinn_gortat?lang=pl-PL'} target='_blank' className="social-icon-aboutUs"/>
+
       </div>
     </div>
   );

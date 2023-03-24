@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PlaceHolder from "../common/PlaceHolder";
-import SocialMedia from "../common/SocialMedia";
 import "./Slides.scss";
 
 export interface FirstSlideProps {}
@@ -15,6 +13,7 @@ const FirstSlide: React.FC<FirstSlideProps> = ({}) => {
           src={"./images/Logo_biale.png"}
           alt="logo"
         />
+        {/* #TODO - puste miejsca na formacie PHONE */}
       </div>
       <div
       className="header-first-slide"

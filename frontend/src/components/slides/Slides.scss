@@ -3,6 +3,8 @@
     width: 99vw;
     @media (max-width: 900px){
         width: 100vw;
+        background: url("../../../public/images/memberBartek.jpg") !important; 
+        
     }
     height: 100vh;
     background-size: 100% 130%;
@@ -118,7 +120,7 @@
     flex-direction: column;
     .iframe-styles{
         width: 37.5vw;
-        height: 57.5vh;
+        height: 52.5vh;
     }
 }
 
