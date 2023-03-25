@@ -25,23 +25,13 @@ const RightContent = () => {
   return (
     <div className="right-content">
       <span
-        style={{
-          fontSize: "5.5vh",
-          fontWeight: 700,
-          color: "#56d",
-          fontStyle: "italic",
-        }}
+       className='title-meet'
       >
         POZNAJMY SIĘ
       </span>
       <div style={{ borderBottom: "4px solid #56d", width: "35%" }} />
       <div
-        style={{
-          fontSize: "3.75vh",
-          color: "#6ae",
-          marginTop: "6vh",
-          fontWeight: "600",
-        }}
+        className="title-header"
       >
         Bartosz Wajda | Założyciel R4F | Główny trener
       </div>

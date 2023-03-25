@@ -131,6 +131,11 @@
     padding: 10vh 7.5vw;
     background: linear-gradient(#888, #a53);
     gap: 3vw;
+
+    @media (max-width: 900px){
+        flex-direction: column;
+
+    }
 }
 
 .left-content{
@@ -147,6 +152,24 @@
     height: 100%;
     flex: 5;
     padding: 2.5vh;
+    .title-meet{
+        font-size: 5.5vh;
+        font-weight: 700;
+        color: #56d;
+        font-style: italic;
+        @media (max-width: 900px){
+            font-size: 6.5vw;
+        }
+
+    .title-header{
+            font-size: 3.75vh;
+            color: #6ae;
+            margin-top: 6vh;
+            font-weight: 600;
+    }
+    
+    }
+
     .button-about{
         display: flex;
         justify-content: center;
