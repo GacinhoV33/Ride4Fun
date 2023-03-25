@@ -15,7 +15,9 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
       textTitle: (
         <span className='ourOffer-title'>
           {" "}
-          Szkolenia indywidualne <br /> i grupowe{" "}
+          {/* Szkolenia indywidualne <br /> i grupowe{" "} */}
+          SZKOLENIA INDYWIDUALNE <br /> I GRUPOWE{" "}
+
         </span>
       ),
       icon: faPersonBiking,

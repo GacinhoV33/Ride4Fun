@@ -19,7 +19,7 @@ const pages = [
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="fixed" style={{ background: 'transparent' }}>
+    <AppBar position="fixed" style={{ background: 'rgba(10, 10, 10, 0.2)  ' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -48,13 +48,14 @@ function ResponsiveAppBar() {
 
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           
-          <Box sx={{ flexGrow: 1, display: {xs: 'flex', md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: {xs: 'flex', md: "flex" } }} >
             {pages.map(({ menuItem, linkPath }, index) => (
-              <Link to={linkPath} style={{textDecoration: 'none'}}>
+              <Link to={linkPath} style={{textDecoration: 'none'}} >
                 <Button
                   key={`${menuItem}-${index}`}
                   sx={{ my: 1, color: "white", display: "block", marginRight: '1vw', fontWeight: '500', fontFamily: 'fantasy', letterSpacing: '0.2vw', zIndex: '20' }}
-                  className='navButton2'
+                  className='navButton2 nav-link-item'
+                  
                 >
                   {menuItem}
                 </Button>
