@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
 .slide-first{
     background: url("../../../public/images/main.jpg");
     width: 99vw;
@@ -16,7 +18,6 @@
         color:#eee;
         font-weight:800;
         margin-top:20vh;
-        // margin-right:25vw;
         text-align: center;
         line-height:7.3vh;
         letter-spacing:0.4vh;
@@ -33,10 +34,7 @@
         justify-content: center;
         margin-top:5vh;
         gap:1.5vw;
-        // margin-right:15vw;
-        // text-align: center;
         @media (max-width : 900px) {
-            // font-size: 2vh;
             margin-top: 5.5vh;
             flex-direction: column;
         }
@@ -64,8 +62,8 @@
     
     .logo-container-first-slide{
         position:absolute;
-        left:21vw;
-        top:9vh;
+        left:16vw;
+        top: 5vh;
         @media (max-width: 900px){
             left: 50vw;
             top: 75vh;
@@ -113,6 +111,8 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: relative;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
     height: 100%;
     width: 99vw;
     display: flex;
@@ -131,6 +131,8 @@
         font-weight: 700;
         margin-bottom: 2.5vh;
         background: rgba(10 , 10, 10, 0.2);
+        font-family: 'Orbitron', sans-serif;
+
     }
 }
 
@@ -139,7 +141,6 @@
     width: 99vw;
     display: flex;
     padding: 10vh 7.5vw;
-    // background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
     gap: 3vw;
 
     @media (max-width: 900px){
@@ -164,7 +165,7 @@
     .title-meet{
         font-size: 5.5vh;
         font-weight: 700;
-        color: #5c3;
+        color: #B70000;
         font-style: italic;
         @media (max-width: 900px){
             font-size: 6.5vw;
@@ -186,13 +187,13 @@
         width: 11vw;
         font-size: 2vh;
         font-weight: 600;
-        background-color: #5c3;
+        background-color: #B70000;
         color: #fafafa;
         text-decoration: none;
         &:hover{
-            
-            background-color: #6d4;
-            color: #eee;
+            transition: ease-in-out .6s;
+            background: #fafafa;
+            color: #B70000;
         }
     }
 

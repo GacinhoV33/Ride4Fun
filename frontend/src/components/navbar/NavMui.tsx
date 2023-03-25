@@ -19,7 +19,7 @@ const pages = [
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="fixed" style={{ background: 'rgba(10, 10, 10, 0.2)' }}>
+    <AppBar position="fixed" style={{background: 'rgba(10, 10, 10, 1)', borderBottom: '1px solid #fafafa'}}>
       <Container maxWidth="xl" style={{display: 'flex', justifyContent: 'flex-start !important', marginRight: '40vh'}}>
         <Toolbar disableGutters>
           <Typography

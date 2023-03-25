@@ -36,10 +36,10 @@ const RightContent = () => {
         Bartosz Wajda | Założyciel R4F | Główny trener
       </div>
       <div>
-        <p style={{ fontSize: "3vh", color: '#fafafa' }}>
+        <p style={{ fontSize: "3.5vh", color: '#fafafa', fontFamily: "'Lato', sans-serif" , fontWeight: '400', fontStyle: 'italic'}}>
           Hej! Jestem Bartek. Pasjonuję się kolarstwem górskim od 13 lat. Od
           kilku lat jestem licencjonowanym instruktorem turystyki rowerowej,
-          narciarstwa zjazdowego, <br/> a na Krakowskim AWF zbierałem niezbędne
+          narciarstwa zjazdowego, a na Krakowskim AWF zbierałem niezbędne
           doświadczenie w pracy z dziećmi i młodzieżą. Skutecznie zarażam pasją
           do gór młodych i tych nieco starszych niezależnie czy to zima czy
           lato!

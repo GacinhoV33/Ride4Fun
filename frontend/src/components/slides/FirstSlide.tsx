@@ -36,10 +36,7 @@ const FirstSlide: React.FC<FirstSlideProps> = ({}) => {
           <div className="navs">PÓŁKOLONIE</div>
         </Link>
       </div>
-      {/* <PlaceHolder/>
-      <div className='social-container'>
-        <SocialMedia orientation='row' copyOrientation='down'/>
-      </div> */}
+
     </div>
   );
 };

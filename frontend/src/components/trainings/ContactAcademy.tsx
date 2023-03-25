@@ -39,7 +39,7 @@ const sendEmail = (e: UserData) => {
       });
   };
   return (
-    <Box width='100%' display='flex' alignItems='center' flexDirection='column' marginTop='10vh' height='100%' style={{background: '#eee'}} >
+    <Box width='100%' display='flex' alignItems='center' flexDirection='column' marginTop='10vh' height='100%'>
         {showAlert && <SendAlert setShowAlert={setShowAlert} success={isSuccess}/>}
         <Box className='contact-content'>
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
@@ -97,7 +97,7 @@ const initialValues: UserData = {
     firstName: yup.string().required("Wymagane"),
     lastName: yup.string().required("Wymagane"),
     email: yup.string().email("Nieprawidłowy email").required("Podaj swój e-mail"),  // email validation is build-in yup
-    contact: yup.string().matches(phoneRegExp, "Nieprawidłowy numer"), //Regex validation and required
+    contact: yup.string().matches(phoneRegExp, "Nieprawidłowy numer").required('Wymagane'), //Regex validation and required
     message: yup.string(),
     age: yup.string().required('Wymagane'),
     level: yup.string().required('Wymagane')

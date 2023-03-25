@@ -26,7 +26,7 @@ const FourthSlide: React.FC = () => {
           title='Youtube-Video'
           />
         </div>
-        <div style={{ flex: 5, fontSize: '2.75vh', color: '#fafafa', padding: '25px' }}>
+        <div style={{ flex: 5, fontSize: '2.95vh', fontWeight: '700', color: '#fafafa', padding: '25px' }}>
           Szkolenia odbywają się w nowym miejscu na Polskiej mapie miejscówek
           rowerowych, a dokładnie w Bike Park Marcinka <br/>w Tarnowie. Miejsce na ten
           moment dysponuje jedną trasą podjazdową i trzema zjazdowymi o różnym

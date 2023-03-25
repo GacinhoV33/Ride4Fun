@@ -23,7 +23,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
       icon: faPersonBiking,
       description:
         "Chciałbyś poprawić swoją technikę jazdy i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!",
-      color: "#5c3",
+      color: "#B70000",
       srcPath: "item1.jpg",
       linkPath: "trainings",
       buttonText: "SPRAWDŹ NASZĄ OFERTĘ",
@@ -38,7 +38,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
       icon: faMountainSun,
       description:
         "Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy i rozpoczęcie nowych znajomości!",
-      color: "#5c3",
+      color: "#B70000",
       srcPath: "item2.jpg",
       linkPath: "trainings",
       buttonText: "DOŁĄCZ DO NAS",
@@ -52,7 +52,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
       icon: faCar,
       description:
         "Szkolenia jednodniowe to dobra propozycja na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki w Polsce, zimą zaś szkolimy na nartach i snowboardzie.",
-      color: "#5c3",
+      color: "#B70000",
       srcPath: "item3.jpg",
       linkPath: "trainings",
       buttonText: "ZOBACZ WIĘCEJ",
