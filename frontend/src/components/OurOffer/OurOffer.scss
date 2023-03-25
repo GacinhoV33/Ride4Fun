@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     .ouroffer-content{
-        background-color: #ffffff;
+        background-color: rgba(10 , 10, 10, 0.2);
         display: flex;
         border: 2px solid #222;
         // box-shadow: 3px 2px #332233, 3px 1px 2px #221122;
@@ -49,6 +49,7 @@
         justify-content:flex-end;
         height:30vh;
         margin-bottom:3vh;
+        color: #fafafa;
 
     }
 
@@ -57,11 +58,15 @@
         padding:10px;
         font-weight:600;
         letter-spacing:0.15rem;
+        &:hover{
+            background: #4b2 !important;
+        }
     }
 
     .training-icon{
         margin: 0px 0px; 
         height: 4vh; 
+        color: #fafafa;
     }
 
     
@@ -114,6 +119,7 @@
 
 .ourOffer-title{
     font-size: 2.75vh;
+    font-style: italic;
     text-align: center;
     font-weight: 800;
     text-transform: uppercase;

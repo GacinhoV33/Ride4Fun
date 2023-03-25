@@ -58,7 +58,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
       <div
         className='training-description'
         style={{
-          borderRight: buttonText === "Wyjazdy" ? undefined : "1px solid black",
+          borderRight: buttonText === "ZOBACZ WIĘCEJ" ? undefined : "1px solid #fafafa",
         }}
       >
         <div
