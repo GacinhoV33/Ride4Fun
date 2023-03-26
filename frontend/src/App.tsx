@@ -23,7 +23,7 @@ export default function App() {
     <colorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        <div className="app" style={{color: colors.secondary[200]}}>
+        <div className="app" >
           <NavMui/>
             <Routes>
               <Route path='/' element={<Slides setCurrentTab={setCurrentTab} key='route1'/>}/>

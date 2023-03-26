@@ -12,6 +12,7 @@ const AboutUs: React.FC = () => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
+        background: "rgba(25, 25, 25, 0.95) !important"
       }}
     >
       <PlaceHolder />
@@ -20,8 +21,8 @@ const AboutUs: React.FC = () => {
           letterSpacing: "0.2rem",
           fontSize: "2.75vh",
           fontWeight: "600",
-          marginTop: "5%",
-          padding: "2.5% 15%",
+          marginTop: "3.5vh",
+          padding: "2.5vh 15%",
           textAlign: "center",
         }}
       >
@@ -33,7 +34,7 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs1.jpg"
         alt="aboutUs1"
-        style={{ height: "65%" }}
+        style={{ height: "65vh" }}
       />
       <div
         style={{
@@ -49,7 +50,7 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs2.jpg"
         alt="aboutUs2"
-        style={{ height: "65%" }}
+        style={{ height: "65vh" }}
       />
       <div
         style={{
@@ -65,7 +66,7 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs3.jpg"
         alt="aboutUs3"
-        style={{ height: "65%" }}
+        style={{ height: "65vh" }}
       />
 
       <div style={{ fontSize: "3vh", marginTop: "5vh" }}>
@@ -78,7 +79,7 @@ const AboutUs: React.FC = () => {
           padding: "0 17.5%",
           marginTop: "5vh",
           fontSize: "2vh",
-          height: "100%",
+          height: "auto",
         }}
       >
         <b>Hej! Jestem Bartek.</b> <br />
@@ -94,17 +95,17 @@ const AboutUs: React.FC = () => {
           Tarnowie pod nazwą Bike Park Marcinka.
         </span>
       </div>
-      <div style={{display: "flex", gap: '4vw', justifyContent: 'center', height: '100%', width: '100%'}}>
+      <div style={{display: "flex", gap: '4vw', justifyContent: 'center', height: 'auto', width: '100%'}}>
         <img
         src="./images/aboutUsBartek.jpg"
         alt='aboutus-bartek'
-        style={{height: '70%'}}
+        style={{height: '70vh'}}
         />
         
         <img
          src="./images/aboutUsBartek2.jpg"
          alt='aboutus-bartek'
-         style={{height: '70%'}}
+         style={{height: '70vh'}}
         />
 
       </div>
