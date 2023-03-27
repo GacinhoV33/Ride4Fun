@@ -9,7 +9,7 @@ const FourthSlide: React.FC = () => {
       {/* <PlaceHolder /> */}
 
       <div className='title-fourth-slide'> NASZA BAZA SZKOLENIOWA </div>
-      <div style={{ display: "flex", marginLeft: '5vw', alignItems: 'flex-start', position: 'relative', marginTop: '2vh'}}>
+      <div style={{ display: "flex", marginLeft: '5vw', alignItems: 'center', position: 'relative', marginTop: '2vh', justifyContent: 'center'}}>
         <div
           style={{
             flex: 4,
@@ -26,7 +26,7 @@ const FourthSlide: React.FC = () => {
           title='Youtube-Video'
           />
         </div>
-        <div style={{ flex: 5, fontSize: '2.95vh', fontWeight: '700', color: '#fafafa', padding: '25px' }}>
+        <div style={{ flex: 5, fontSize: '2.95vh', fontWeight: '700', color: '#cacaca', padding: '25px' }}>
           Szkolenia odbywają się w nowym miejscu na Polskiej mapie miejscówek
           rowerowych, a dokładnie w Bike Park Marcinka <br/>w Tarnowie. Miejsce na ten
           moment dysponuje jedną trasą podjazdową i trzema zjazdowymi o różnym
@@ -39,7 +39,7 @@ const FourthSlide: React.FC = () => {
           Nie byłeś u nas ? <br/>
           Sprawdź film z naszej bazy szkoleniowej!
         </div>
-        <img alt='logo-fourthslide' src='./images/logoBike.png' style={{width: '30vh', height: '40vh', position: 'absolute', bottom: '-15vh', right: '10vh'}}/>
+        <img alt='logo-fourthslide' src='./images/logoBike.png' style={{width: '30vh', height: '40vh', position: 'absolute', bottom: '-15vh', right: '7.5vh'}}/>
       </div>
     </div>
   );

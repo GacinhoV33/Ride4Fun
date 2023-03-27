@@ -5,3 +5,7 @@
         width: 95%;
     }
 }
+
+.css-1rv476z-MuiInputBase-input-MuiFilledInput-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px rgba(0.25, 0.25, 0.25, 0.5) inset !important;
+}

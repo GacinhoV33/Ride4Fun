@@ -9,8 +9,9 @@ import ContactAcademy from "./ContactAcademy";
 import ImagesPortfolio from "../slides/ImagesPortfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
+import "react-multi-carousel/lib/styles.css";
 export interface TrainingProps {
   currentTab: number;
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
@@ -154,41 +155,40 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               3 godziny - <strong>220zł</strong>
             </div>
             <div>Ceny za szkolenie grupowe ustalane są indywidualnie*</div>
-
-            {/* <Carousel style={{width: '75vw', height: '50vh', display: 'flex'}}>
-            
-            <Carousel.Item  key={`${2}-index`}>
-                <img
-                  // className="d-block w-100"
-                  src={'./images/aboutUs1.jpg'}
-                  alt={`${2}-index-alt`}
-                  style={{ height: '50%', display: 'block', width: '75%'}}
-                />
-                <Carousel.Caption>
-                  <h3>text</h3>
-                  <p>
-                   text
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item> */}
-              {/* {carouselItems.map(({text, src}, index) => (
-                <Carousel.Item interval={1000} key={`${src}-index`}>
-                <img
-                  // className="d-block w-100"
-                  src={src}
-                  alt={`${src}-index-alt`}
-                  style={{ height: '50%', display: 'block', width: '75%'}}
-                />
-                <Carousel.Caption>
-                  <h3>{text}</h3>
-                  <p>
-                   {text}
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              ))} */}
-              
-            {/* </Carousel> */}
+            <div
+              style={{ width: "99vw", height: "40vh", margin: "4vh" }}
+              className="carousel-media"
+            >
+              <Carousel
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={6000}
+                keyBoardControl={true}
+                transitionDuration={1500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                {carouselItems.map(({ text, src }, index) => (
+                  <div key={`${src}- ${index}`}>
+                    <img
+                      src={src}
+                      alt={`${src}-${index}-alt`}
+                      style={{
+                        width: "30vw",
+                        height: "40vh",
+                        marginLeft: "1.25vw",
+                      }}
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
 
             <div
               style={{
@@ -209,7 +209,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               treningi dla dzieci i młodzieży !
             </div>
             <h1 style={{ color: "#fafafa" }}>Masz pytania ? </h1>
-            <div style={{ fontSize: "2vh" }}>
+            <div style={{ fontSize: "2vh", marginBottom: '2vh' }}>
               Skontaktuj się znami w zakładce <Link to="/contact">KONTAKT</Link>
             </div>
           </div>
@@ -242,37 +242,92 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 gap: "1.5vh",
               }}
             >
-              <div style={{ display: "flex", justifyContent: "center", fontSize: '3.75vh' }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  fontSize: "3.75vh",
+                }}
+              >
                 <Button
                   variant="contained"
                   // color="success"
                   onClick={() => scrollToForm()}
-                  className='button-zapisz'
+                  className="button-zapisz"
                 >
                   Zapisz się
                 </Button>
               </div>
 
-              <div  style={{color: '#fafafa', fontFamily: "'Lato', sans-serif"}}>
-                <b style={{color: '#B70000', fontFamily: "'Orbitron', sans-serif"}}>Termin:</b> Dokładnie dni treningów podane zostaną po
-                zakończeniu naboru oraz ustaleniu grup. <br />
+              <div
+                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              >
+                <b
+                  style={{
+                    color: "#B70000",
+                    fontFamily: "'Orbitron', sans-serif",
+                  }}
+                >
+                  Termin:
+                </b>{" "}
+                Dokładnie dni treningów podane zostaną po zakończeniu naboru
+                oraz ustaleniu grup. <br />
               </div>
-              <div  style={{color: '#fafafa', fontFamily: "'Lato', sans-serif"}}>
-                <b style={{color: '#B70000', fontFamily: "'Orbitron', sans-serif"}}>Lokalizacja: </b> Trenujemy w Bike Park Marcinka
-                zlokalizowanym przy Ul. Harcerskiej w Tarnowie. <br />
+              <div
+                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              >
+                <b
+                  style={{
+                    color: "#B70000",
+                    fontFamily: "'Orbitron', sans-serif",
+                  }}
+                >
+                  Lokalizacja:{" "}
+                </b>{" "}
+                Trenujemy w Bike Park Marcinka zlokalizowanym przy Ul.
+                Harcerskiej w Tarnowie. <br />
               </div>
-              <div  style={{color: '#fafafa', fontFamily: "'Lato', sans-serif"}}>
-                <b style={{color: '#B70000', fontFamily: "'Orbitron', sans-serif"}}>Grupy: </b>Początkująca i Średniozaawansowana dla dzieci od 8
-                roku życia. Młodszych adeptów zapraszamy na zajęcia indywidualne
-                ! <br />
+              <div
+                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              >
+                <b
+                  style={{
+                    color: "#B70000",
+                    fontFamily: "'Orbitron', sans-serif",
+                  }}
+                >
+                  Grupy:{" "}
+                </b>
+                Początkująca i Średniozaawansowana dla dzieci od 8 roku życia.
+                Młodszych adeptów zapraszamy na zajęcia indywidualne ! <br />
               </div>
-              <div  style={{color: '#fafafa', fontFamily: "'Lato', sans-serif"}}>
+              <div
+                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              >
                 {" "}
-                <b style={{color: '#B70000', fontFamily: "'Orbitron', sans-serif"}}>Czas trwania: </b> Trening trwa dwie godziny. <br />{" "}
+                <b
+                  style={{
+                    color: "#B70000",
+                    fontFamily: "'Orbitron', sans-serif",
+                  }}
+                >
+                  Czas trwania:{" "}
+                </b>{" "}
+                Trening trwa dwie godziny. <br />{" "}
               </div>
 
-              <div  style={{color: '#fafafa', fontFamily: "'Lato', sans-serif"}}>
-                <b style={{color: '#B70000', fontFamily: "'Orbitron', sans-serif"}}>Cena: </b> 200pln/miesiąc <br />
+              <div
+                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              >
+                <b
+                  style={{
+                    color: "#B70000",
+                    fontFamily: "'Orbitron', sans-serif",
+                  }}
+                >
+                  Cena:{" "}
+                </b>{" "}
+                200pln/miesiąc <br />
               </div>
             </div>
           </div>
@@ -291,10 +346,17 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               fontSize: "2.5vh",
             }}
           >
-            <div style={{textAlign: 'center', fontFamily: "'Lato', sans-serif", marginBottom: '5vh', fontSize: '2.75vh'}}>
-              Zapraszamy na jednodniowe wyjazdy szkoleniowe z Ride4Fun! <br/> Cały
-              dzień w najlepszych Polskich Bike Parkach pod okiem instruktora
-              wraz z dobrą ekipą to recepta na udany weekend!
+            <div
+              style={{
+                textAlign: "center",
+                fontFamily: "'Lato', sans-serif",
+                marginBottom: "5vh",
+                fontSize: "2.75vh",
+              }}
+            >
+              Zapraszamy na jednodniowe wyjazdy szkoleniowe z Ride4Fun! <br />{" "}
+              Cały dzień w najlepszych Polskich Bike Parkach pod okiem
+              instruktora wraz z dobrą ekipą to recepta na udany weekend!
             </div>
             <img
               alt="wyjazdy1"
@@ -322,11 +384,28 @@ const trainingFeatures = [
   "Wideoanalizą",
 ];
 
+const carouselItems = [
+  { src: "./images/AboutUs1.jpg", text: " blabla" },
+  { src: "./images/AboutUs1.jpg", text: " blabla" },
+  { src: "./images/AboutUs1.jpg", text: " blabla" },
+  { src: "./images/AboutUs1.jpg", text: " blabla" },
+  { src: "./images/AboutUs1.jpg", text: " blabla" },
+];
 
-const carouselItems = [ 
-  {src: './images/AboutUs1.jpg', text: ' blabla'},
-  {src: './images/AboutUs1.jpg', text: ' blabla'},
-  {src: './images/AboutUs1.jpg', text: ' blabla'},
-  {src: './images/AboutUs1.jpg', text: ' blabla'},
-  {src: './images/AboutUs1.jpg', text: ' blabla'},
-]
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
