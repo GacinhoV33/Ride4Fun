@@ -5,28 +5,19 @@ import { SocialIcon } from "react-social-icons";
 import Iframe from "react-iframe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Carousel from "react-multi-carousel";
+import { responsive } from "../trainings/Trainings";
+import "react-multi-carousel/lib/styles.css";
 
 const AboutUs: React.FC = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-        background: "rgba(25, 25, 25, 0.95) !important",
-      }}
+    className="aboutUs-main"
+
     >
       <PlaceHolder />
       <div
-        style={{
-          letterSpacing: "0.2rem",
-          fontSize: "2.75vh",
-          fontWeight: "600",
-          marginTop: "3.5vh",
-          padding: "2.5vh 15%",
-          textAlign: "center",
-        }}
+        className="first-title"
       >
         Jesteśmy Tarnowską ekipą zrzeszającą pasjonatów kolarstwa górskiego
         nastawionych przede wszystkim na czerpaniu jak największej radości{" "}
@@ -36,15 +27,10 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs1.jpg"
         alt="aboutUs1"
-        style={{ height: "65vh" }}
+        className= 'photo-aboutUs'
       />
       <div
-        style={{
-          letterSpacing: "0.2rem",
-          fontSize: "3vh",
-          fontWeight: "600",
-          padding: "2.5% 15%",
-        }}
+        className="aboutUs-w-sezonie"
       >
         W sezonie spotkasz nas na trasach, eventach oraz zawodach w całej
         Polsce.
@@ -52,15 +38,10 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs2.jpg"
         alt="aboutUs2"
-        style={{ height: "65vh" }}
+        className= 'photo-aboutUs'
       />
       <div
-        style={{
-          letterSpacing: "0.2rem",
-          fontSize: "2.5vh",
-          fontWeight: "600",
-          padding: "2.5% 15%",
-        }}
+       className="aboutUs-poza-rower"
       >
         Poza rowerowym teamem odpalamy szkolenia z techniki jazdy indywidualne
         oraz grupowe na różnym poziomie zaawansowania.
@@ -68,24 +49,18 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs3.jpg"
         alt="aboutUs3"
-        style={{ height: "65vh" }}
+        className= 'photo-aboutUs'
       />
 
-      <div style={{ fontSize: "3vh", marginTop: "5vh" }}>
+      <div className="aboutUs-szkolenia">
         Za szkolenia odpowiedzialny jest założyciel Ride4Fun{" "}
         <b style={{ fontStyle: "italic" }}>Bartosz Wajda</b>.
       </div>
       <div
-        style={{
-          textAlign: "left",
-          padding: "0 17.5%",
-          marginTop: "5vh",
-          fontSize: "2vh",
-          height: "auto",
-        }}
+        className='aboutUs-jestBartek'
       >
-        <b>Hej! Jestem Bartek.</b> <br />
-        <span style={{ fontFamily: "'Lato', sans-serif", fontSize: "2.5vh" }}>
+        <b className="jestBartek-strong">Hej! Jestem Bartek.</b> <br />
+        <span className="aboutUs-Bartek-text">
           Pasjonuję się kolarstwem górskim od 13 lat. Od kilku lat jestem
           licencjonowanym instruktorem turystyki rowerowej, narciarstwa
           zjazdowego, a na Krakowskim AWF zbierałem niezbędne doświadczenie w
@@ -97,40 +72,49 @@ const AboutUs: React.FC = () => {
           Tarnowie pod nazwą Bike Park Marcinka.
         </span>
       </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "4vw",
-          justifyContent: "center",
-          height: "auto",
-          width: "100%",
-        }}
-      >
-        <img
-          src="./images/aboutUsBartek.jpg"
-          alt="aboutus-bartek"
-          style={{ height: "70vh" }}
-        />
 
-        <img
-          src="./images/aboutUsBartek2.jpg"
-          alt="aboutus-bartek"
-          style={{ height: "70vh" }}
-        />
-      </div>
       <div
-        style={{
-          fontFamily: "'Lato', sans-serif",
-          fontSize: "2.5vh",
-          padding: "0 17.5%",
-          marginTop: "5vh",
-        }}
+              style={{ width: "90vw", height: "75vh", margin: "4vh" }}
+              className="carousel-media"
+            >
+              <Carousel
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={6000}
+                keyBoardControl={true}
+                transitionDuration={1500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                {carouselItems.map(({ text, src }, index) => (
+                  <div key={`${src}- ${index}`}>
+                    <img
+                      src={src}
+                      alt={`${src}-${index}-alt`}
+                      style={{
+                        width: "50vh",
+                        height: "75vh",
+                        // marginLeft: "0.5vw",
+                      }}
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+      <div
+       className="aboutUs-od5lat"
       >
         Od 5 lat w raz z ekipą Ride4Fun i Stowarzyszeniem Sportowym Sokół Tarnów
         organizuję jedyne downhillowe zawody w okolicy z Cyklu „ Tarnowskie
         ściganki”.
       </div>
-      <div style={{ fontSize: "2.75vh", margin: "5vh 0", fontWeight: "600" }}>
+      <div className='aboutUs-sprawdz-to'>
         Sprawdź jak wyglądały zawody na otwarcie Bike Parku !
       </div>
       <Iframe
@@ -140,10 +124,9 @@ const AboutUs: React.FC = () => {
       />
 
       <div
+        className="aboutUs-widzac"
         style={{
-          fontSize: "2.5vh",
-          padding: "2% 15%",
-          fontFamily: "'Lato', sans-serif",
+      
         }}
       >
         Widząc ogromne zainteresowanie tym miejscem, rosnącą społeczność
@@ -161,7 +144,7 @@ const AboutUs: React.FC = () => {
       <div className="footer-about">
         <FontAwesomeIcon
           icon={faUser}
-          style={{ width: "2vw", height: "2vw", marginRight: "1vw" }}
+          className='footer-user-icon'
         />
         <span className="footer-title">Sprawdź nasze socjale </span>
         <SocialIcon
@@ -185,3 +168,11 @@ const AboutUs: React.FC = () => {
 };
 
 export default AboutUs;
+
+const carouselItems = [
+  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
+  { src: "./images/aboutUsBartek2.jpg", text: " blabla" },
+  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
+  { src: "./images/aboutUsBartek2.jpg", text: " blabla" },
+  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
+];

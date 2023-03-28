@@ -392,7 +392,7 @@ const carouselItems = [
   { src: "./images/AboutUs1.jpg", text: " blabla" },
 ];
 
-const responsive = {
+export const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,

@@ -56,7 +56,7 @@ const FourthSlide: React.FC = () => {
         </div>
         <img
           alt="logo-fourthslide"
-          src="./images/logoBike.png"
+          src="./images/logoBikeUpdt.png"
           className="logo-fourth-slide"
         />
       </div>

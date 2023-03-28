@@ -1,43 +1,166 @@
-.iframe-styles{
-    // width: 50vw;
-    height: 50vh !important;
-    width: 50vw !important;
-    max-height: 600px !important;
+.iframe-styles {
+  // width: 50vw;
+  height: 50vh !important;
+  width: 50vw !important;
+  max-height: 600px !important;
+  @media (max-width: 900px){
+    width: 80vw !important;
+    height: 30vh !important;
+  }
 }
 
-.footer-about{
-    position: fixed;
-    display: flex;
-    border-top: 2px solid #112;
-    bottom: 0;
-    width: 100%;
-    height: 7.5vh;
-    background: rgba(40, 40, 40, 1);
-    align-items: center;
-    justify-content: center;
-    .social-icon-aboutUs{
-        margin: 0 0.75vw;
-        color: #eee;
-        @media (max-width: 900px){
-            height: 2.5vw;
-            width: 2.5vw;
-        }
+.aboutUs-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(25, 25, 25, 0.95) !important;
+  .first-title {
+    letter-spacing: 0.2rem;
+    font-size: 2.75vh;
+    font-weight: 600;
+    margin-top: 3.5vh;
+    padding: 2.5vh 15%;
+    text-align: center;
+    @media (max-width: 900px) {
+      font-size: 1.5vh;
+      margin-top: 0;
+      padding: 2.5vh 7.5%;
     }
+  }
+  .photo-aboutUs {
+    width: 90vw;
+  }
 
+  .aboutUs-sprawdz-to {
+    font-size: 2.75vh;
+    margin: 5vh 0;
+    width: 90vw;
+    font-weight: 600;
+    @media (max-width: 900px) {
+      margin: 1.5vh 0;
+      padding: 0 5vw;
+      font-size: 2.25vh;
+    }
+  }
+
+  .aboutUs-w-sezonie {
+    letter-spacing: 0.2rem;
+    font-size: 3vh;
+    font-weight: 600;
+    padding: 2.5% 15%;
     @media (max-width: 900px){
-        padding-left: 5%;
+        font-size: 2.5vw;
     }
-    
-    .footer-title{
-        font-size: 3.5vh;
-        font-weight: 700; 
-        margin-right: 2vw;
+  }
+
+  .aboutUs-poza-rower{
+    letter-spacing:0.2rem;
+    font-size:2.5vh;
+    font-weight:600;
+    padding:2.5% 15%;
+    @media (max-width: 900px) {
+        font-size: 2.5vw;;
+      }
+}
+
+    .aboutUs-szkolenia{
+        font-size: 3vh; 
+        margin-top: 5vh;
+        @media (max-width: 900px) {
+            font-size: 3.5vw;
+            width: 90vw;
+          }
+    }
+
+    .aboutUs-jestBartek{
+        text-align:left;
+        padding:0 17.5%;
+        margin-top:5vh;
+        font-size:2vh;
+        height:auto;
+        .jestBartek-strong{
+            font-size: 2.5vh;
+        }
+
         @media (max-width: 900px){
-            font-size: 2.5vw;
-            margin-right: 5vw;
-
-
+            padding: 0 10%;
         }
     }
 
+    .aboutUs-Bartek-text{
+        font-family: 'Lato', sans-serif; 
+        font-size: 2.5vh;
+        @media (max-width: 900px) {
+            font-size: 2.75vw;
+        } 
+    }
+
+    .aboutUs-od5lat{
+        font-family:'Lato', sans-serif;
+        font-size:2.5vh;
+        padding:0 17.5%;
+        margin-top:5vh;
+        @media (max-width: 900px){
+            padding: 0 10%;
+            margin-top: 1.5vh;
+            font-size: 1.75vh;
+        }
+    }
+
+    .aboutUs-widzac{
+        font-size: 2.5vh;
+        padding: 2% 15%;
+        font-family: 'Lato', sans-serif;
+        @media (max-width: 900px){
+            font-size: 1.75vh;
+        }
+    }
+
+}
+
+
+.footer-about {
+  position: fixed;
+  display: flex;
+  border-top: 2px solid #112;
+  bottom: 0;
+  width: 100%;
+  height: 7.5vh;
+  background: rgba(40, 40, 40, 1);
+  align-items: center;
+  justify-content: center;
+  .social-icon-aboutUs {
+    margin: 0 0.75vw;
+    color: #eee;
+    @media (max-width: 900px) {
+      height: 2.5vw;
+      width: 2.5vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding-left: 5%;
+  }
+
+  .footer-user-icon{
+    width: 2vw; 
+    height: 2vw; 
+    margin-right: 1vw ;
+    @media (max-width: 900px) {
+        // padding-left: 5%;
+        width: 5vw;
+        height: 5vw;
+      }
+}
+
+  .footer-title {
+    font-size: 3.5vh;
+    font-weight: 700;
+    margin-right: 2vw;
+    @media (max-width: 900px) {
+      font-size: 2.5vw;
+      margin-right: 5vw;
+    }
+  }
 }

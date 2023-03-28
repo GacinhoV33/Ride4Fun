@@ -180,16 +180,16 @@
   }
 
   .logo-fourth-slide{
-    width: 30vh;
-    height: 40vh;
+    width: 27vh;
+    height: 27vh;
     position: absolute;
-    bottom: -17.5vh;
-    right: 7.5vh;
+    bottom: -12.5vh;
+    right: 5.5vh;
     @media (max-width: 900px){
-        width: 30vw;
-        height: 40vw;
-        bottom: -12.5vh;
-        right: 5vh;
+        width: 27vw;
+        height: 27vw;
+        bottom: -1vh;
+        right: 1vh;
     }
 }
 }
