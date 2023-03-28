@@ -76,7 +76,7 @@
         height: 75vh;
         .training-icon{
             height: 4vw; 
-            margin-top: 2vw;
+            // margin-top: 2vw;
 
         }
         .training-description{
@@ -85,8 +85,9 @@
         }
 
         .training-button{
-            font-size: 2.5vw;
-            width: 31vw;
+            font-size: 2vw;
+            width: 31.5vw;
+            font-weight: 800;
         }
        
         .training-img{
@@ -96,10 +97,14 @@
         }
 
         .training-title{
-            height:15vh;
+            display: flex;
+            align-items: center;
             text-align:center;
             font-weight:800;
             letter-spacing:0.15vh;
+            font-size: 2vh;
+            height: 8vh;
+            // margin-bottom: 5vw;
         }
     }
 }
@@ -125,7 +130,7 @@
     font-weight: 800;
     text-transform: uppercase;
     @media (max-width: 900px){
-        font-size: 1.75vw;
-        font-weight: 700;
+        font-size: 2vw;
+        // font-weight: 800;
     }
 }

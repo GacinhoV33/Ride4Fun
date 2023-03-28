@@ -1,202 +1,313 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
 
-.slide-first{
-    background: url("../../../public/images/main.jpg");
-    width: 99vw;
-    @media (max-width: 900px){
-        width: 100vw;
-        background: url("../../../public/images/memberBartek.jpg") !important; 
-        
-    }
-    height: 100vh;
-    background-size: 100% 130%;
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    .header-first-slide{
-        font-size:7vh;
-        color:#eee;
-        font-weight:800;
-        margin-top:20vh;
-        text-align: center;
-        line-height:7.3vh;
-        letter-spacing:0.4vh;
-        @media (max-width : 900px) {
-            font-size: 4vh;
-            width: 100vw;
-            text-align: center;
-            margin-top: 15vh;
-        }
-    }
-
-    .navs-first-slide{
-        display:flex;
-        justify-content: center;
-        margin-top:5vh;
-        gap:1.5vw;
-        @media (max-width : 900px) {
-            margin-top: 5.5vh;
-            flex-direction: column;
-        }
-    }
-
-    .navs{
-        color: white;
-        font-size: 3.5vh;
-        font-weight: 700;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:hover{
-            color: #eee;
-            text-shadow: 2px 2px #888;
-        }
-
-        @media (max-width: 900px){
-            margin-top: 3vh;
-            width: 100vw;
-            text-align: center;
-        }
-    }
-    
-    .logo-container-first-slide{
-        position:absolute;
-        left:16vw;
-        top: 5vh;
-        @media (max-width: 900px){
-            left: 50vw;
-            top: 75vh;
-        }
-        .logo-first-slide{
-            width: 35vh;
-            height: 35vh;
-            @media (max-width: 900px) {
-                width: 25vh;
-                height: 25vh;
-            } 
-        }
-    }
-
-    .social-container{
-        position: absolute;
-        top: 10%;
-        right: 4%;
-        width: 13vw;
-        height: 6.5vh;
-    }
-}
-
-.slide-second{
-    padding: 3%;
-}
-
-.slide-fifth{
-    width: 99vw;
-    height: 100vh;
-    background-size: 100% 120%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20vh;
-    .fifth-content{
-        margin-top: 10vh;
-        display: flex;
-        gap: 10vh;
-    }
-
-}   
-
-.fourth-slide{
-    background: url('../../../public/images/fourthSlideNoLogo.png');
+.slide-first {
+  background: url("../../../public/images/main.jpg");
+  width: 99vw;
+  @media (max-width: 900px) {
+    width: 100vw;
+    background: url("../../../public/images/main_phone.png") !important;
     background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    height: 100%;
-    width: 99vw;
+    background-size: 100% 100% !important;
+  }
+  height: 100vh;
+  background-size: 100% 130%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .header-first-slide {
+    font-size: 7vh;
+    color: #eee;
+    font-weight: 800;
+    margin-top: 20vh;
+    text-align: center;
+    line-height: 7.3vh;
+    letter-spacing: 0.4vh;
+    @media (max-width: 900px) {
+      font-size: 4vh;
+      width: 100vw;
+      text-align: center;
+      margin-top: 22.5vh;
+    }
+  }
+
+  .navs-first-slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    gap: 1.5vw;
+    @media (max-width: 900px) {
+      margin-top: 35.5vh;
+      flex-direction: column;
+      // margin-bottom: 15vh;
+    }
+  }
+
+  .navs {
+    color: #fafafa;
+    font-size: 3.5vh;
+    font-weight: 700;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    .iframe-styles{
-        width: 37.5vw;
-        height: 52.5vh;
-        margin: 2vw 0;
+    &:hover {
+      color: #eee;
+      text-shadow: 2px 2px #888;
     }
 
-    .title-fourth-slide{
-        padding: 10px;
-        color: rgba(255, 255, 255, 0.95);
-        font-size: 5vh;
-        font-weight: 700;
-        margin-bottom: 2.5vh;
-        background: rgba(10 , 10, 10, 0.2);
-        font-family: 'Orbitron', sans-serif;
+    @media (max-width: 900px) {
+      margin-top: 2vh;
+      width: 100vw;
+      font-size: 2.25vh;
 
+      text-align: center;
     }
+  }
+
+  .logo-container-first-slide {
+    position: absolute;
+    left: 16vw;
+    top: 5vh;
+    @media (max-width: 900px) {
+      // position: relative;
+      left: 15vw;
+      top: 0vh !important;
+    }
+    .logo-first-slide {
+      width: 35vh;
+      height: 35vh;
+
+      @media (max-width: 900px) {
+        width: 25vh;
+        height: 25vh;
+        top: 2vh;
+        left: 10vw;
+      }
+    }
+  }
+
+  .social-container {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    width: 13vw;
+    height: 6.5vh;
+  }
 }
 
-.slide-third{
-    height: 92vh;
-    width: 99vw;
-    display: flex;
-    padding: 10vh 7.5vw;
-    gap: 3vw;
+.slide-second {
+  padding: 3%;
+}
 
+.slide-fifth {
+  width: 99vw;
+  height: 100vh;
+  background-size: 100% 120%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vh;
+  .fifth-content {
+    margin-top: 10vh;
+    display: flex;
+    gap: 10vh;
+  }
+}
+
+.fourth-slide {
+  background: url("../../../public/images/fourthSlideNoLogo.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  height: 100%;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .iframe-styles {
+    width: 37.5vw;
+    height: 52.5vh;
+    margin: 2vw 0;
+    @media (max-width: 900px){
+        width: 80vw !important;
+        height: 35vh !important;
+    }
+  }
+
+
+
+  .title-content-yt{
+    display:flex;
+    margin-left:5vw;
+    align-items:center;
+    position:relative;
+    margin-top:2vh;
+    justify-content:center;
     @media (max-width: 900px){
         flex-direction: column;
-    }
-}
 
-.left-content{
-    height: 100%;
-    width: 100%;
-    flex: 4;
-    padding: 2.5vh;
-    position: relative;
+      }
+  }
 
-}
-
-.right-content{
-    width: 100%;
-    height: 100%;
-    flex: 5;
-    padding: 2.5vh;
-    .title-meet{
-        font-size: 5.5vh;
-        font-weight: 700;
-        color: #B70000;
-        font-style: italic;
-        @media (max-width: 900px){
-            font-size: 6.5vw;
-        }
-
-    }
-    .title-header{
-        font-size: 2.25vh;
-
-        margin-top: 1vh;
-        font-weight: 600;
-}
-    .button-about{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-style: italic;
-        height: 7.5vh;
-        width: 11vw;
-        font-size: 2vh;
-        font-weight: 600;
-        background-color: #B70000;
-        color: #fafafa;
-        text-decoration: none;
-        &:hover{
-            transition: ease-in-out .6s;
-            background: #fafafa;
-            color: #B70000;
-        }
+  .title-fourth-slide {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 5vh;
+    font-weight: 700;
+    margin-bottom: 2.5vh;
+    background: rgba(10, 10, 10, 0.2);
+    font-family: "Orbitron", sans-serif;
+    @media (max-width: 900px){
+        font-size: 2.5vh;
     }
 
     
+    }
+    .text-fourth-slide{
+        flex:5;
+        font-size:2.95vh;
+        font-weight:700;
+        color: #fafafa;
+        padding:25px;
+
+        @media(max-width: 900px){
+            font-size: 1.45vh;
+        }
+    
+  }
+
+  .logo-fourth-slide{
+    width: 30vh;
+    height: 40vh;
+    position: absolute;
+    bottom: -17.5vh;
+    right: 7.5vh;
+    @media (max-width: 900px){
+        width: 30vw;
+        height: 40vw;
+        bottom: -12.5vh;
+        right: 5vh;
+    }
+}
+}
+
+.slide-third {
+  height: 92vh;
+  width: 99vw;
+  display: flex;
+  padding: 10vh 7.5vw;
+  gap: 3vw;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 2vh;
+  }
+}
+
+.left-content {
+  height: 100%;
+  width: 100%;
+  flex: 4;
+  padding: 4.5vh;
+  position: relative;
+
+  .left-content-img {
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+  .right-content-img {
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    z-index: 2;
+  }
+
+  @media (max-width: 900px) {
+    // width: 100%;
+    // flex: 3;
+    padding: 2.5vh;
+    // margin-top: 0;
+    .right-content-img {
+      top: 7.5vh;
+      width: 50vw !important;
+      height: 35vh !important;
+    }
+
+    .left-content-img {
+      width: 50vw !important;
+      height: 35vh !important;
+    }
+  }
+}
+
+.right-content {
+  width: 100%;
+  height: 100%;
+  flex: 5;
+  padding: 2.5vh;
+  .title-meet {
+    font-size: 5.5vh;
+    font-weight: 700;
+    color: #b70000;
+    font-style: italic;
+    @media (max-width: 900px) {
+      font-size: 6.5vw;
+    //   margin-top: 2vh;
+    }
+  }
+  .title-header {
+    font-size: 2.25vh;
+
+    margin-top: 1vh;
+    font-weight: 600;
+    @media (max-width: 900px) {
+      font-size: 2.5vw;
+    }
+    }
+    .bartek-about{
+        font-size: 3.25vh;
+        color:#fafafa;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-style:italic;
+        @media (max-width: 900px){
+            font-size: 3.75vw;
+        }
+  }
+
+
+  .button-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    height: 7.5vh;
+    width: 11vw;
+    font-size: 2vh;
+    font-weight: 600;
+    background-color: #b70000;
+    color: #fafafa;
+    text-decoration: none;
+    &:hover {
+      transition: ease-in-out 0.6s;
+      background: #fafafa;
+      color: #b70000;
+    }
+
+    @media (max-width: 900px){
+        width: 75vw;
+        margin-left: 5vw;
+        height: 3.5vh;
+
+    }
+  }
 }

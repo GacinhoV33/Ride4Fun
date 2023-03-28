@@ -12,11 +12,12 @@
     bottom: 0;
     width: 100%;
     height: 7.5vh;
-    background-color: #eee;
+    background: rgba(40, 40, 40, 1);
     align-items: center;
-    padding-left: 20%;
+    justify-content: center;
     .social-icon-aboutUs{
         margin: 0 0.75vw;
+        color: #eee;
         @media (max-width: 900px){
             height: 2.5vw;
             width: 2.5vw;

@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
         <div style={{ textAlign: "center" }}>
           Lub zadzwoń na numer: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>+48 796 210 700</span> <br />
         </div>
-        <div style={{textAlign: 'center', marginTop: '2.5vh'}}>Albo napisz na mail: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>SzkoleniaRide4Fun@gmail.com</span> </div>
+        <div style={{textAlign: 'center', marginTop: '2.5vh', zIndex: '1'}}>Albo napisz na mail: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>SzkoleniaRide4Fun@gmail.com</span> </div>
         <img
           className="logo-first-slide"
           src={"./images/Logo_biale.png"}

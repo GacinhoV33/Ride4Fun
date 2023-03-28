@@ -26,7 +26,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
       color: "#B70000",
       srcPath: "item1.jpg",
       linkPath: "trainings",
-      buttonText: "SPRAWDŹ NASZĄ OFERTĘ",
+      buttonText: "SPRAWDŹ OFERTĘ",
     },
     {
       textTitle: (

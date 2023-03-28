@@ -41,7 +41,7 @@ const sendEmail = (e: UserData) => {
   };
 
   return (
-    <Box width='100vw' display='flex' alignItems='center' flexDirection='column' marginTop='10vh'>
+    <Box className='formComponent-contact'>
         <Box className='contact-content'>
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (

@@ -3,6 +3,8 @@ import PlaceHolder from "../common/PlaceHolder";
 import "./AboutUs.scss";
 import { SocialIcon } from "react-social-icons";
 import Iframe from "react-iframe";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUs: React.FC = () => {
   return (
@@ -12,7 +14,7 @@ const AboutUs: React.FC = () => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        background: "rgba(25, 25, 25, 0.95) !important"
+        background: "rgba(25, 25, 25, 0.95) !important",
       }}
     >
       <PlaceHolder />
@@ -95,21 +97,35 @@ const AboutUs: React.FC = () => {
           Tarnowie pod nazwą Bike Park Marcinka.
         </span>
       </div>
-      <div style={{display: "flex", gap: '4vw', justifyContent: 'center', height: 'auto', width: '100%'}}>
+      <div
+        style={{
+          display: "flex",
+          gap: "4vw",
+          justifyContent: "center",
+          height: "auto",
+          width: "100%",
+        }}
+      >
         <img
-        src="./images/aboutUsBartek.jpg"
-        alt='aboutus-bartek'
-        style={{height: '70vh'}}
-        />
-        
-        <img
-         src="./images/aboutUsBartek2.jpg"
-         alt='aboutus-bartek'
-         style={{height: '70vh'}}
+          src="./images/aboutUsBartek.jpg"
+          alt="aboutus-bartek"
+          style={{ height: "70vh" }}
         />
 
+        <img
+          src="./images/aboutUsBartek2.jpg"
+          alt="aboutus-bartek"
+          style={{ height: "70vh" }}
+        />
       </div>
-      <div  style={{ fontFamily: "'Lato', sans-serif", fontSize: "2.5vh", padding: '0 17.5%', marginTop: '5vh'}}>
+      <div
+        style={{
+          fontFamily: "'Lato', sans-serif",
+          fontSize: "2.5vh",
+          padding: "0 17.5%",
+          marginTop: "5vh",
+        }}
+      >
         Od 5 lat w raz z ekipą Ride4Fun i Stowarzyszeniem Sportowym Sokół Tarnów
         organizuję jedyne downhillowe zawody w okolicy z Cyklu „ Tarnowskie
         ściganki”.
@@ -143,6 +159,10 @@ const AboutUs: React.FC = () => {
         <br />
       </div>
       <div className="footer-about">
+        <FontAwesomeIcon
+          icon={faUser}
+          style={{ width: "2vw", height: "2vw", marginRight: "1vw" }}
+        />
         <span className="footer-title">Sprawdź nasze socjale </span>
         <SocialIcon
           url={"https://www.facebook.com/profile.php?id=100083105601877"}
@@ -150,12 +170,12 @@ const AboutUs: React.FC = () => {
           className="social-icon-aboutUs"
         />
         <SocialIcon
-          url={"https://www.instagram.com/wajda_bartekk/"}
+          url={'https://www.instagram.com/szkoleniaride4fun.pl/'}
           target="_blank"
           className="social-icon-aboutUs"
         />
         <SocialIcon
-          url={"https://www.tiktok.com/@marcinn_gortat?lang=pl-PL"}
+          url={"https://www.youtube.com/channel/UCwR8Nug7AmiUP4W4t5SSJJA"}
           target="_blank"
           className="social-icon-aboutUs"
         />

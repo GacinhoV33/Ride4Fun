@@ -36,7 +36,7 @@ const RightContent = () => {
         Bartosz Wajda | Założyciel R4F | Główny trener
       </div>
       <div>
-        <p style={{ fontSize: "3.5vh", color: '#fafafa', fontFamily: "'Lato', sans-serif" , fontWeight: '400', fontStyle: 'italic'}}>
+        <p className='bartek-about'>
           Hej! Jestem Bartek. Pasjonuję się kolarstwem górskim od 13 lat. Od
           kilku lat jestem licencjonowanym instruktorem turystyki rowerowej,
           narciarstwa zjazdowego, a na Krakowskim AWF zbierałem niezbędne
@@ -66,26 +66,13 @@ const LeftContent = () => {
       <img
         src="./images/thirdSlideFirst.jpg"
         alt="left-content-img"
-        style={{
-          width: "60%",
-          height: "90%",
-          position: "absolute",
-          top: "0px",
-          left: "0px",
-          zIndex: 1,
-        }}
+        className="left-content-img"
       />
       <img
         src="./images/thirdSlideSecond.jpg"
         alt="right-content-img"
-        style={{
-          width: "60%",
-          height: "90%",
-          position: "absolute",
-          top: "10%",
-          right: "0px",
-          zIndex: 2,
-        }}
+        className="right-content-img"
+        
       />
     </div>
   );

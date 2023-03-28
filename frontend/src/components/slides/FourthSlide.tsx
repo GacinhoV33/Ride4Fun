@@ -1,7 +1,5 @@
 import React from "react";
-import PlaceHolder from "../common/PlaceHolder";
 import "./Slides.scss";
-import Iframe from "react-iframe";
 
 const FourthSlide: React.FC = () => {
   return (
@@ -10,14 +8,7 @@ const FourthSlide: React.FC = () => {
 
       <div className="title-fourth-slide"> NASZA BAZA SZKOLENIOWA </div>
       <div
-        style={{
-          display: "flex",
-          marginLeft: "5vw",
-          alignItems: "center",
-          position: "relative",
-          marginTop: "2vh",
-          justifyContent: "center",
-        }}
+      className="title-content-yt"
       >
         <div
           style={{
@@ -47,13 +38,8 @@ const FourthSlide: React.FC = () => {
           /> */}
         </div>
         <div
-          style={{
-            flex: 5,
-            fontSize: "2.95vh",
-            fontWeight: "700",
-            color: "#cacaca",
-            padding: "25px",
-          }}
+        className="text-fourth-slide"
+         
         >
           Szkolenia odbywają się w nowym miejscu na Polskiej mapie miejscówek
           rowerowych, a dokładnie w Bike Park Marcinka <br />w Tarnowie. Miejsce
@@ -71,13 +57,7 @@ const FourthSlide: React.FC = () => {
         <img
           alt="logo-fourthslide"
           src="./images/logoBike.png"
-          style={{
-            width: "30vh",
-            height: "40vh",
-            position: "absolute",
-            bottom: "-15vh",
-            right: "7.5vh",
-          }}
+          className="logo-fourth-slide"
         />
       </div>
     </div>

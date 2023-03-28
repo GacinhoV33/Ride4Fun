@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './styles.scss';
 
 const ContactInfo: React.FC = () => {
   return (
-    <div style={{width: '100%', height: '10vh', marginTop: '15vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+    <div  className='contact-info'>
         <h1>
           Masz jakieś pytania? 
         </h1>
