@@ -11,14 +11,9 @@ import "react-multi-carousel/lib/styles.css";
 
 const AboutUs: React.FC = () => {
   return (
-    <div
-    className="aboutUs-main"
-
-    >
+    <div className="aboutUs-main">
       <PlaceHolder />
-      <div
-        className="first-title"
-      >
+      <div className="first-title">
         Jesteśmy Tarnowską ekipą zrzeszającą pasjonatów kolarstwa górskiego
         nastawionych przede wszystkim na czerpaniu jak największej radości{" "}
         <br />z tej wspaniałej rowerowej zajawki.
@@ -27,38 +22,32 @@ const AboutUs: React.FC = () => {
       <img
         src="./images/aboutUs1.jpg"
         alt="aboutUs1"
-        className= 'photo-aboutUs'
+        className="photo-aboutUs"
       />
-      <div
-        className="aboutUs-w-sezonie"
-      >
+      <div className="aboutUs-w-sezonie">
         W sezonie spotkasz nas na trasach, eventach oraz zawodach w całej
         Polsce.
       </div>
       <img
         src="./images/aboutUs2.jpg"
         alt="aboutUs2"
-        className= 'photo-aboutUs'
+        className="photo-aboutUs"
       />
-      <div
-       className="aboutUs-poza-rower"
-      >
+      <div className="aboutUs-poza-rower">
         Poza rowerowym teamem odpalamy szkolenia z techniki jazdy indywidualne
         oraz grupowe na różnym poziomie zaawansowania.
       </div>
       <img
         src="./images/aboutUs3.jpg"
         alt="aboutUs3"
-        className= 'photo-aboutUs'
+        className="photo-aboutUs"
       />
 
       <div className="aboutUs-szkolenia">
         Za szkolenia odpowiedzialny jest założyciel Ride4Fun{" "}
         <b style={{ fontStyle: "italic" }}>Bartosz Wajda</b>.
       </div>
-      <div
-        className='aboutUs-jestBartek'
-      >
+      <div className="aboutUs-jestBartek">
         <b className="jestBartek-strong">Hej! Jestem Bartek.</b> <br />
         <span className="aboutUs-Bartek-text">
           Pasjonuję się kolarstwem górskim od 13 lat. Od kilku lat jestem
@@ -74,47 +63,42 @@ const AboutUs: React.FC = () => {
       </div>
 
       <div
-              style={{ width: "90vw", height: "75vh", margin: "4vh" }}
-              className="carousel-media"
-            >
-              <Carousel
-                swipeable={true}
-                draggable={true}
-                showDots={false}
-                responsive={responsive}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={6000}
-                keyBoardControl={true}
-                transitionDuration={1500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-              >
-                {carouselItems.map(({ text, src }, index) => (
-                  <div key={`${src}- ${index}`}>
-                    <img
-                      src={src}
-                      alt={`${src}-${index}-alt`}
-                      style={{
-                        width: "50vh",
-                        height: "75vh",
-                        // marginLeft: "0.5vw",
-                      }}
-                    />
-                  </div>
-                ))}
-              </Carousel>
-            </div>
-      <div
-       className="aboutUs-od5lat"
+        // style={{ width: "90vw", height: "75vh", margin: "4vh" }}
+        className="carousel-media carousel-aboutUs"
       >
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          showDots={false}
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={6000}
+          keyBoardControl={true}
+          transitionDuration={1500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          {carouselItems.map(({ text, src }, index) => (
+            <div key={`${src}- ${index}`}>
+              <img
+                src={src}
+                alt={`${src}-${index}-alt`}
+                className='carousel-aboutUs-item'
+                
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <div className="aboutUs-od5lat">
         Od 5 lat w raz z ekipą Ride4Fun i Stowarzyszeniem Sportowym Sokół Tarnów
         organizuję jedyne downhillowe zawody w okolicy z Cyklu „ Tarnowskie
         ściganki”.
       </div>
-      <div className='aboutUs-sprawdz-to'>
+      <div className="aboutUs-sprawdz-to">
         Sprawdź jak wyglądały zawody na otwarcie Bike Parku !
       </div>
       <Iframe
@@ -123,29 +107,16 @@ const AboutUs: React.FC = () => {
         title="Youtube-Video"
       />
 
-      <div
-        className="aboutUs-widzac"
-        style={{
-      
-        }}
-      >
+      <div className="aboutUs-widzac" style={{}}>
         Widząc ogromne zainteresowanie tym miejscem, rosnącą społeczność
         rowerową oraz masę nowych młodych osób chcący zaznać adrenaliny i
         spróbować swoich sił w tej stosunkowo świeżej dyscyplinie postanowiłem
         pomóc wielu osobom bezpiecznie i przede wszystkim świadomie stawiać
         pierwsze kroki w rowerowej ekstremie czego efektem jest Ride4Fun!
       </div>
-      <div style={{ height: "10vh", width: "100%" }}>
-        <br></br>
-        <br />
-        <br />
-        <br />
-      </div>
+      
       <div className="footer-about">
-        <FontAwesomeIcon
-          icon={faUser}
-          className='footer-user-icon'
-        />
+        <FontAwesomeIcon icon={faUser} className="footer-user-icon" />
         <span className="footer-title">Sprawdź nasze socjale </span>
         <SocialIcon
           url={"https://www.facebook.com/profile.php?id=100083105601877"}
@@ -153,7 +124,7 @@ const AboutUs: React.FC = () => {
           className="social-icon-aboutUs"
         />
         <SocialIcon
-          url={'https://www.instagram.com/szkoleniaride4fun.pl/'}
+          url={"https://www.instagram.com/szkoleniaride4fun.pl/"}
           target="_blank"
           className="social-icon-aboutUs"
         />

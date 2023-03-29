@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -20,17 +20,26 @@ export interface TrainingProps {
 const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
   function scrollToForm() {
     const { top } = contactRef.current.getBoundingClientRect();
-
-    window.scrollTo({
-      top: top,
-      left: 0,
-      behavior: "smooth",
-    });
+    if(currentTab === 1){ 
+      window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: "smooth",
+      })}
   }
   const contactRef = useRef<any>(null);
   const handleChange = (event: React.SyntheticEvent, newTab: number) => {
     setCurrentTab(newTab);
   };
+
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }, [])
   return (
     <Box sx={{ width: "100%", height: "100%" }} className="trainings-main">
       <PlaceHolder />
@@ -156,8 +165,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             </div>
             <div>Ceny za szkolenie grupowe ustalane są indywidualnie*</div>
             <div
-              style={{ width: "99vw", height: "40vh", margin: "4vh" }}
-              className="carousel-media"
+              className="carousel-media carousel-trainings"
             >
               <Carousel
                 swipeable={true}
@@ -179,11 +187,12 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                     <img
                       src={src}
                       alt={`${src}-${index}-alt`}
-                      style={{
-                        width: "30vw",
-                        height: "40vh",
-                        marginLeft: "1.25vw",
-                      }}
+                      className='carousel-trainings-item'
+                      // style={{
+                      //   width: "30vw",
+                      //   height: "40vh",
+                      //   marginLeft: "1.25vw",
+                      // }}
                     />
                   </div>
                 ))}

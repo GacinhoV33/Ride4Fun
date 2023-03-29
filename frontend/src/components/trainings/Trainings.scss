@@ -62,8 +62,23 @@
     }
 }
 
-.carousel-media{
-    // height: 70vh;
-    // width: 90vw;
-    // position: relative;
+.carousel-trainings{
+    width: 99vw;
+    height: 40vh; 
+    margin: 4vh;
+    @media (max-width: 900px){
+        height: 10vh;
+    }
+
+    .carousel-trainings-item{
+        width: 30vw;
+        height: 40vh;
+        margin-left: 1.25vw;
+        @media (max-width: 900px){
+            width: 45vw;
+            height: 15vh;
+            margin-left: 2.25vw;
+        }
+    }
 }
+
