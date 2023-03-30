@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FormComponent from "./FormComponent";
 import ContactInfo from "./ContactInfo";
-import PlaceHolder from "../common/PlaceHolder";
 import "./styles.scss";
 import { SocialIcon } from "react-social-icons";
 
 const Contact: React.FC = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
   return (
     <React.Fragment>
       {/* <PlaceHolder/> */}

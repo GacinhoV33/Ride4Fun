@@ -49,7 +49,8 @@ function ResponsiveAppBar() {
           
           <Box sx={{ flexGrow: 1, display: {xs: 'flex', md: "flex" } }} >
             {pages.map(({ menuItem, linkPath }, index) => (
-              <Link to={linkPath} style={{textDecoration: 'none'}} >
+              <Link to={linkPath} style={{textDecoration: 'none'}} key={`${menuItem}-${index}-link`}
+              >
                 <Button
                   key={`${menuItem}-${index}`}
                   sx={{ my: 1, color: "white", display: "block", marginRight: '1vw', fontWeight: '500', fontFamily: 'fantasy', letterSpacing: '0.2vw', zIndex: '20' }}

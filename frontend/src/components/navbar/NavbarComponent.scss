@@ -1,5 +1,8 @@
 .css-z5gn4u-MuiSvgIcon-root{
     display: none !important;
+    @media (max-width: 900px){
+        display: none !important;
+    }
 }
 
 .css-19r6kue-MuiContainer-root{
@@ -10,15 +13,12 @@
 }
 
 .nav-main-general{
-    background: rgba(10, 10, 10, 0.1);
+    background: rgba(10, 10, 10, 0.85) !important;
     border-bottom: 1px solid #fafafa;
-    // display: flex !important;
-    // text-align: left;
     padding-left: 0vh;
     justify-content: flex-start !important;
     @media(max-width: 900px){
         justify-content: center !important;
-        // padding-left: 10vw;
 
     }
 }
