@@ -188,8 +188,8 @@
     @media (max-width: 900px){
         width: 27vw;
         height: 27vw;
-        bottom: -1vh;
-        right: 1vh;
+        bottom: -5vh;
+        right: 7vw;
     }
 }
 }
@@ -309,5 +309,14 @@
         height: 3.5vh;
 
     }
+  }
+}
+
+.image-portfolio-main{
+  width: 40vw;
+  height: 60vh;
+  @media (max-width: 900px){
+    width: 77.5vw;
+    height: 40vh;
   }
 }

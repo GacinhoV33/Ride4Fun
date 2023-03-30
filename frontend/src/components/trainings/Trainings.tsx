@@ -20,26 +20,26 @@ export interface TrainingProps {
 const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
   function scrollToForm() {
     const { top } = contactRef.current.getBoundingClientRect();
-    if(currentTab === 1){ 
+    if (currentTab === 1) {
       window.scrollTo({
         top: top,
         left: 0,
         behavior: "smooth",
-      })}
+      });
+    }
   }
   const contactRef = useRef<any>(null);
   const handleChange = (event: React.SyntheticEvent, newTab: number) => {
     setCurrentTab(newTab);
   };
 
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth'
-    })
-  }, [])
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <Box sx={{ width: "100%", height: "100%" }} className="trainings-main">
       <PlaceHolder />
@@ -83,60 +83,26 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             dzieciaki chcący poznać nową zajawkę jak i profesjonalni zawodnicy
             przygotowujący się do zawodów.
           </p>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="image-container-trainings">
             <img
               src="./images/szkoleniaInd1.jpg"
               alt="szkolInd1"
-              style={{ width: "80%", marginTop: "2vh" }}
+              className="trainings-image1"
             />
-            <div
-              style={{
-                marginTop: "4vh",
-                fontSize: "3.5vh",
-                fontWeight: "700",
-                textAlign: "center",
-                color: "#fff",
-                marginBottom: "2vh",
-              }}
-            >
+            <div className="trainings-title-skills">
               Na szkoleniach pracujemy nad :
             </div>
             {trainingFeatures.map((featureName, index) => (
-              <div
-                key={`${featureName}-${index}`}
-                style={{
-                  height: "5vh",
-                  fontSize: "3vh",
-                  display: "flex",
-                  fontWeight: "700",
-                  alignItems: "center",
-                  gap: "0.75vw",
-                }}
-              >
+              <div key={`${featureName}-${index}`} className="trainings-skill">
                 {featureName}
                 <FontAwesomeIcon
                   icon={faCircleCheck}
-                  style={{ color: "lightgreen" }}
+                  className="icon-trainings"
                 />{" "}
               </div>
             ))}
 
-            <div
-              style={{
-                fontSize: "2.75vh",
-                textAlign: "center",
-                marginTop: "5vh",
-                fontFamily: "'Lato', sens-serif",
-              }}
-            >
+            <div className="trainings-text2">
               Program każdego szkolenia dobierany jest indywidualnie do Twoich
               potrzeb oraz postępów 💪 <br />
             </div>
@@ -163,10 +129,10 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             >
               3 godziny - <strong>220zł</strong>
             </div>
-            <div>Ceny za szkolenie grupowe ustalane są indywidualnie*</div>
-            <div
-              className="carousel-media carousel-trainings"
-            >
+            <div className="trainings-addInfo">
+              Ceny za szkolenie grupowe ustalane są indywidualnie*
+            </div>
+            <div className="carousel-media carousel-trainings">
               <Carousel
                 swipeable={true}
                 draggable={true}
@@ -187,12 +153,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                     <img
                       src={src}
                       alt={`${src}-${index}-alt`}
-                      className='carousel-trainings-item'
-                      // style={{
-                      //   width: "30vw",
-                      //   height: "40vh",
-                      //   marginLeft: "1.25vw",
-                      // }}
+                      className="carousel-trainings-item"
                     />
                   </div>
                 ))}
@@ -218,7 +179,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               treningi dla dzieci i młodzieży !
             </div>
             <h1 style={{ color: "#fafafa" }}>Masz pytania ? </h1>
-            <div style={{ fontSize: "2vh", marginBottom: '2vh' }}>
+            <div className='trainings-skontaktuj'>
               Skontaktuj się znami w zakładce <Link to="/contact">KONTAKT</Link>
             </div>
           </div>
@@ -241,7 +202,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             nowych rowerowych przyjaciół co w dalszej rowerowej przygodzie jest
             niezastąpione!
           </p>
-          <div style={{ display: "flex", gap: "5vw", alignItems: "center" }}>
+          <div className="trainings-portfolioImages">
             <ImagesPortfolio />
             <div
               style={{
@@ -269,70 +230,40 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               </div>
 
               <div
-                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              className='trainings-text-r4f'
               >
-                <b
-                  style={{
-                    color: "#B70000",
-                    fontFamily: "'Orbitron', sans-serif",
-                  }}
-                >
-                  Termin:
-                </b>{" "}
-                Dokładnie dni treningów podane zostaną po zakończeniu naboru
-                oraz ustaleniu grup. <br />
+                <b className="trainings-title-r4f">Termin:</b> Dokładnie dni
+                treningów podane zostaną po zakończeniu naboru oraz ustaleniu
+                grup. <br />
               </div>
               <div
-                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              className='trainings-text-r4f'
               >
-                <b
-                  style={{
-                    color: "#B70000",
-                    fontFamily: "'Orbitron', sans-serif",
-                  }}
-                >
-                  Lokalizacja:{" "}
-                </b>{" "}
-                Trenujemy w Bike Park Marcinka zlokalizowanym przy Ul.
-                Harcerskiej w Tarnowie. <br />
+                <b className="trainings-title-r4f">Lokalizacja: </b> Trenujemy w
+                Bike Park Marcinka zlokalizowanym przy Ul. Harcerskiej w
+                Tarnowie. <br />
               </div>
               <div
-                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              className='trainings-text-r4f'
               >
-                <b
-                  style={{
-                    color: "#B70000",
-                    fontFamily: "'Orbitron', sans-serif",
-                  }}
-                >
-                  Grupy:{" "}
-                </b>
+                <b className="trainings-title-r4f">Grupy: </b>
                 Początkująca i Średniozaawansowana dla dzieci od 8 roku życia.
                 Młodszych adeptów zapraszamy na zajęcia indywidualne ! <br />
               </div>
               <div
-                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              className='trainings-text-r4f'
               >
                 {" "}
-                <b
-                  style={{
-                    color: "#B70000",
-                    fontFamily: "'Orbitron', sans-serif",
-                  }}
-                >
-                  Czas trwania:{" "}
-                </b>{" "}
-                Trening trwa dwie godziny. <br />{" "}
+                <b className="trainings-title-r4f">Czas trwania: </b> Trening
+                trwa dwie godziny. <br />{" "}
               </div>
 
               <div
-                style={{ color: "#fafafa", fontFamily: "'Lato', sans-serif" }}
+              className='trainings-text-r4f'
               >
                 <b
-                  style={{
-                    color: "#B70000",
-                    fontFamily: "'Orbitron', sans-serif",
-                  }}
+                                className="trainings-title-r4f"
+
                 >
                   Cena:{" "}
                 </b>{" "}
@@ -340,7 +271,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               </div>
             </div>
           </div>
-
+      
           <ContactAcademy />
           <div ref={contactRef}></div>
         </div>
@@ -355,14 +286,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               fontSize: "2.5vh",
             }}
           >
-            <div
-              style={{
-                textAlign: "center",
-                fontFamily: "'Lato', sans-serif",
-                marginBottom: "5vh",
-                fontSize: "2.75vh",
-              }}
-            >
+            <div className="trainings-wyjazdy-main">
               Zapraszamy na jednodniowe wyjazdy szkoleniowe z Ride4Fun! <br />{" "}
               Cały dzień w najlepszych Polskich Bike Parkach pod okiem
               instruktora wraz z dobrą ekipą to recepta na udany weekend!
@@ -370,9 +294,9 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             <img
               alt="wyjazdy1"
               src="./images/wyjazdy1.jpg"
-              style={{ width: "66%" }}
+              className="trainings-wyjazdy-img"
             />
-            <h1>Terminy już wkrótce!!!</h1>
+            <h1 style={{ textAlign: "center" }}>Terminy już wkrótce!!!</h1>
           </div>
         </div>
       )}

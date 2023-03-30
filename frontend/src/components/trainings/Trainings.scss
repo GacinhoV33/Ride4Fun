@@ -11,22 +11,61 @@
 .section-styles{
     font-size: 2.5vh !important;
     font-weight: 700 !important;
-    // color: #fafafa;
-    // width: 15vw;
+    @media (max-width: 900px) {
+        font-size: 3.75vw !important;
+    }
 }   
+
+.trainings-skontaktuj{
+    font-size: 2vh; 
+    margin-bottom: 2vh;
+    @media(max-width: 900px){
+        font-size: 3vw;
+    }
+}
+
 
 .header-trainings{
     font-size: 4.25vh;
     font-weight: 800;
     color: #B70000;
     font-style: italic;
+    @media(max-width: 900px){
+        font-size: 6vw;
+    }
 }
 
 .content-text-trainings{
     font-size: 2.75vh;
     font-family: 'Lato', sans-serif;
     color: #fafafa;
+    @media (max-width: 900px){
+        font-size: 3.25vw;
+    }
+}
 
+
+.trainings-portfolioImages{
+    display:flex;
+    gap:5vw;
+    align-items:center;
+    @media (max-width: 900px){
+        flex-direction: column;
+    }
+}
+
+
+.trainings-title-r4f{
+    color: #B70000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.trainings-text-r4f{
+    color: #fafafa;
+    font-family: 'Lato', sans-serif;
+    @media (max-width:900px){
+        font-size: 3vw;
+    }
 }
 
 .trainings-main{
@@ -38,6 +77,98 @@
     color: #B70000;
     font-size: 4.5vh;
     font-style: italic;
+    @media (max-width: 900px){
+        font-size: 5.5vw;
+    }
+}
+
+.image-container-trainings{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+    @media (max-width: 900px){
+        // width: 
+    }
+
+    .trainings-image1{
+        width: 80%; 
+        margin-top: 2vh;
+        @media (max-width: 900px){
+            width: 80vw;
+        }
+    }
+
+    .trainings-title-skills{
+        margin-top:4vh;
+        font-size:3.5vh;
+        font-weight:700;
+        text-align:center;
+        color:#fff;
+        margin-bottom:2vh;
+        @media(max-width: 900px){
+            font-size: 5vw;
+        }
+    }
+    
+    .trainings-skill{
+        height:5vh;
+        font-size:3vh;
+        display:flex;
+        font-weight:700;
+        align-items:center;
+        gap:0.75vw;
+        @media(max-width: 900px){
+            font-size: 3vw;
+            margin-top: 3.5vw;
+            height: 100%;
+            text-align: center;
+            align-items: none;
+            display: block;
+        }
+        .icon-trainings{
+            color: lightgreen;
+            @media(max-width: 900px){
+                margin-left: 2vw;
+            }
+        }
+    }
+
+    .trainings-text2{
+        font-size:2.75vh;
+        text-align:center;
+        margin-top:5vh;
+        font-family: 'Lato', sens-serif;
+        
+        @media (max-width: 900px){
+            font-size: 4vw;
+        }
+    }
+
+    .trainings-addInfo{
+        @media(max-width: 900px){
+            font-size: 2.2vw;
+        }
+    }
+}
+
+
+.trainings-wyjazdy-main{
+    text-align:center;
+    font-family:'Lato', sans-serif;
+    margin-bottom:5vh;
+    font-size:2.75vh;
+    @media(max-width: 900px){
+        font-size: 3.5vw;
+    }
+    
+}
+.trainings-wyjazdy-img{
+    width: 66%;
+    @media (max-width: 900px){
+        width: 95%;
+    }
 }
 
 .text-of-trainings{
@@ -45,7 +176,9 @@
     color: #ddd;  
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    
+    @media (max-width: 900px){
+        font-size: 3.75vw;
+    }
 }
 
 .button-zapisz{

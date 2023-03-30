@@ -1,11 +1,39 @@
+.css-z5gn4u-MuiSvgIcon-root{
+    display: none !important;
+}
 
+.nav-main-general{
+    background: rgba(10, 10, 10, 0.1);
+    border-bottom: 1px solid #fafafa;
+    // display: flex !important;
+    // text-align: left;
+    padding-left: 0vh;
+    justify-content: flex-start !important;
+    @media(max-width: 900px){
+        justify-content: center !important;
+        padding-left: 10vw;
+
+    }
+}
+
+.navbar-main-content{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    @media (max-width: 900px){
+        justify-content: center !important;
+    }
+}
 
 .nav-img-logo{
+    padding-top: 0.5vh;
     width: 3.5vw;
     height: 3.5vw;
     @media (max-width: 900px){
         width: 5vw;
         height: 5vw;
+        // display: none !important;
+        // opacity: 0;
     }
 }
 

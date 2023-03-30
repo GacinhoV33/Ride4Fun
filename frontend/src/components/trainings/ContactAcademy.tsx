@@ -39,7 +39,7 @@ const sendEmail = (e: UserData) => {
       });
   };
   return (
-    <Box width='100%' display='flex' alignItems='center' flexDirection='column' marginTop='10vh' height='100%'>
+    <Box  className='trainings-contact'>
         {showAlert && <SendAlert setShowAlert={setShowAlert} success={isSuccess}/>}
         <Box className='contact-content'>
             <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>

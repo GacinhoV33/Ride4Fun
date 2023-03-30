@@ -2,13 +2,18 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import React from "react";
 
-const ImagesPortfolio: React.FC = ({}) => {
+export interface ImagesPortfolioProps{
+  width?: string,
+  height?: string,
+}
 
+const ImagesPortfolio: React.FC<ImagesPortfolioProps> = ({width='40vw', height='60vh'}) => {
 
   return (
       <div className='fifth-content'>
         <ImageList
-          sx={{ width: '40vw', height: '60vh'}}
+          // sx={{ width: width, height: height}}
+          className='image-portfolio-main'
           variant="quilted"
           cols={4}
           rowHeight={121}

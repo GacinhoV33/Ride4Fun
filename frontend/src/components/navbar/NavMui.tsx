@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import AdbIcon from "@mui/icons-material/Adb";
-import "./NavbarComponent.scss";
 import { Link } from "react-router-dom";
 import './NavbarComponent.scss';
 
@@ -19,8 +18,8 @@ const pages = [
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="fixed" style={{background: 'rgba(10, 10, 10, 1)', borderBottom: '1px solid #fafafa'}}>
-      <Container maxWidth="xl" style={{display: 'flex', justifyContent: 'flex-start !important', marginRight: '40vh'}}>
+    <AppBar position="fixed" className='nav-main-general'>
+      <Container className='navbar-main-content' maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -39,7 +38,7 @@ function ResponsiveAppBar() {
           >
             <div className="logo">
               <img
-                src="./images/Logo_biale.png"
+                src="./images/Logo_biale2.png"
                 alt="logo_navbar"
                 className='nav-img-logo'
               />
