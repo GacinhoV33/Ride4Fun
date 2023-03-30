@@ -318,11 +318,19 @@ const trainingFeatures = [
 ];
 
 const carouselItems = [
-  { src: "./images/AboutUs1.jpg", text: " blabla" },
-  { src: "./images/AboutUs1.jpg", text: " blabla" },
-  { src: "./images/AboutUs1.jpg", text: " blabla" },
-  { src: "./images/AboutUs1.jpg", text: " blabla" },
-  { src: "./images/AboutUs1.jpg", text: " blabla" },
+  { src: "./images/szkolenia/1.jpg", text: "none" },
+  { src: "./images/szkolenia/2.jpg", text: "none" },
+  { src: "./images/szkolenia/3.jpg", text: "none" },
+  { src: "./images/szkolenia/4.jpg", text: "none" },
+  { src: "./images/szkolenia/5.jpg", text: "none" },
+  // { src: "./images/szkolenia/6.jpg", text: "none" },
+  // { src: "./images/szkolenia/7.png", text: "none" },
+  { src: "./images/szkolenia/8.jpg", text: "none" },
+  // { src: "./images/szkolenia/8.jpg", text: "none" },
+  // { src: "./images/szkolenia/9.jpg", text: "none" },
+  // { src: "./images/szkolenia/10.jpg", text: "none" },
+  { src: "./images/szkolenia/11.jpg", text: "none" },
+  // { src: "./images/szkolenia/12.jpg", text: "none" },
 ];
 
 export const responsive = {

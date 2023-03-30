@@ -141,9 +141,16 @@ const AboutUs: React.FC = () => {
 export default AboutUs;
 
 const carouselItems = [
-  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
-  { src: "./images/aboutUsBartek2.jpg", text: " blabla" },
-  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
-  { src: "./images/aboutUsBartek2.jpg", text: " blabla" },
-  { src: "./images/aboutUsBartek.jpg", text: " blabla" },
+  { src: "./images/aboutUs/1.jpg", text: "none" },
+  { src: "./images/aboutUs/2.jpg", text: " none" },
+  { src: "./images/aboutUs/3.jpg", text: " none" },
+  { src: "./images/aboutUs/4.jpg", text: " none" },
+  { src: "./images/aboutUs/5.jpg", text: " none" },
+  { src: "./images/aboutUs/6.jpg", text: " none" },
+  { src: "./images/aboutUs/7.jpg", text: " none" },
+  { src: "./images/aboutUs/8.jpg", text: " none" },
+  { src: "./images/aboutUs/9.jpg", text: " none" },
+  { src: "./images/aboutUs/10.jpg", text: " none" },
+  { src: "./images/aboutUs/11.jpg", text: " none" },
+  { src: "./images/aboutUs/12.jpg", text: " none" },
 ];

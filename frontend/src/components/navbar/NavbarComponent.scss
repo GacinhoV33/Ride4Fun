@@ -2,6 +2,13 @@
     display: none !important;
 }
 
+.css-19r6kue-MuiContainer-root{
+    @media(max-width:900px){
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
 .nav-main-general{
     background: rgba(10, 10, 10, 0.1);
     border-bottom: 1px solid #fafafa;
@@ -11,7 +18,7 @@
     justify-content: flex-start !important;
     @media(max-width: 900px){
         justify-content: center !important;
-        padding-left: 10vw;
+        // padding-left: 10vw;
 
     }
 }
@@ -22,6 +29,7 @@
     align-items: center;
     @media (max-width: 900px){
         justify-content: center !important;
+        margin: auto !important;
     }
 }
 
@@ -39,6 +47,8 @@
 .nav-link-item{
     &:hover{
         background: rgba(10, 10, 10, 0.4) !important;
+        text-shadow: 2px 1px #666;
+
     }
 }
 

@@ -27,8 +27,17 @@
   justify-content: center;
   @media (max-width: 900px) {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 12.5vh;
+    font-size: 3vw;
 }
+}
+
+.text-contact{
+  font-size: 22px;
+  padding: 10px;
+  @media (max-width: 900px){
+    font-size: 18px;
+  }
 }
 
 .contact-content {
@@ -46,12 +55,12 @@
   width: 35vh;  
   height: 35vh;
   @media (max-width: 900px) {
-    width: 20vh;
-    height: 20vh;
-    top: 72vh;
-    left: 30.5vw;
-    opacity: 0.9;
-
+    // width: 20vh;
+    // height: 20vh;
+    // top: 73vh;
+    // left: 30.5vw;
+    // opacity: 0.9;
+    display: none;
   }
 }
 
@@ -74,15 +83,27 @@
   }
   @media (max-width: 900px) {
     flex-direction: row;
-    // top: none;
-    // bottom: -20vh;
-    // right: 30;
     height: 10vh;
-    top: 88%;
+    top: 90%;
     width: 100%;
     right: 0;
-    // justify-content: center;
-    // bottom: -95vh !important;
-    // left: 3vh;
+
+  }
+}
+
+.contact-napisz{
+  padding: 10px;
+  text-align: center; 
+  margin-top: 0.5vh; 
+  z-index: 1;
+  @media(max-width: 900px){
+    margin-bottom: 10vh;
+  }
+}
+
+.contact-zadzwon{
+  text-align: center;
+  @media (max-width: 900px){
+    margin-top: 0.5vh;
   }
 }

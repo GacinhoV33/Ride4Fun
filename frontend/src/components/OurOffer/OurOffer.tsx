@@ -80,7 +80,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
             showDots={false}
             responsive={responsive}
             infinite={true}
-            // autoPlay={true}
+            autoPlay={true}
             autoPlaySpeed={6000}
             keyBoardControl={true}
             transitionDuration={1500}
@@ -91,9 +91,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
           >
           {trainingItem.map((item, index) => (
             <div  key={`${item.icon} - carousel`}>
-              {/* <div style={{width: '45vw !important', border: '2px solid white', height: '10vh !important'}} key={`${item.icon} - carousel`}>
-                <img src='./images/Logo_biale2.png' alt={`${index} logo`} style={{width: '300px', height: '300px'}}/>
-              </div> */}
+              
               <TrainingItem
                   {...item}
                   key={`${item.buttonText} ${index}-mobile`}

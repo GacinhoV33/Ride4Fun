@@ -21,7 +21,7 @@ const ImagesPortfolio: React.FC<ImagesPortfolioProps> = ({width='40vw', height='
       {itemData.map((item, index) => (
           <ImageListItem key={item.img + index} cols={item.cols || 1} rows={item.rows || 1}>
             <img
-              src={`./images/${item.img}`}
+              src={`./images/r4f_academy/${item.img}`}
               style={{width: `${item.cols || 1 *  121}`, height: `${item.rows || 1 * 121}`}}
               alt={item.title}
               loading="lazy"
@@ -39,76 +39,99 @@ export default ImagesPortfolio;
 
 export const itemData = [
   {
-    img: 'BackgroundSlide1.jpg',
+    img: '7.png',
     title: 'Breakfast',
     rows: 2,
     cols: 2,
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "1.jpg",
     title: 'Burger',
   },
   {
-    img: "BackgroundSlide1.jpg",
+    img: "2.jpg",
     title: 'Camera',
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "3.jpg",
     title: 'Coffee',
     cols: 2,
   },
   {
-    img: "BackgroundSlide1.jpg",
+    img: "4.jpg",
     title: 'Hats',
     cols: 2,
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "5.jpg",
     title: 'Honey',
-    author: '@arwinneil',
     rows: 2,
     cols: 2,
   },
   {
-    img: "MemberBartek.jpg",
+    img: "6.jpg",
     title: 'Basketball',
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "8.jpg",
     title: 'Fern',
   },
   {
-    img: "MemberBartek.jpg",
+    img: "9.jpg",
     title: 'Mushrooms',
     rows: 2,
     cols: 2,
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "10.jpg",
     title: 'Tomato basil',
   },
   {
-    img: "MemberBartek.jpg",
+    img: "11.jpg",
     title: 'Sea star',
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "12.jpg",
     title: 'Bike',
     cols: 2,
   },
   {
-    img: "BackgroundSlide1.jpg",
+    img: "17.jpg",
     title: 'Bike',
     cols: 2,
   },
   {
-    img: "BackgroundSlide3.jpg",
+    img: "14.jpg",
     title: 'Bike',
     cols: 1,
   },
   {
-    img: "BackgroundSlide1.jpg",
+    img: "15.jpg",
     title: 'Bike',
     cols: 1,
+  },
+  {
+    img: "16.jpg",
+    title: 'Bike',
+    cols: 2,
+    rows: 2
+  },
+  {
+    img: "18.jpg",
+    title: 'Bike',
+    cols: 1,
+    rows: 2
+  },
+  {
+    img: "19.jpg",
+    title: 'Bike',
+    cols: 1,
+    rows: 1
+  },
+  {
+    img: "20.jpg",
+    title: 'Bike',
+    cols: 1,
+    rows: 1
   },
 ];

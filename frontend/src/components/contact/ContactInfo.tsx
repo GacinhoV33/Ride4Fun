@@ -7,7 +7,7 @@ const ContactInfo: React.FC = () => {
         <h1>
           Masz jakieś pytania? 
         </h1>
-        <div style={{fontSize: '22px'}}>
+        <div className='text-contact'>
           Skontaktuj się z nami za pomocą formularza 
         </div>
     </div>

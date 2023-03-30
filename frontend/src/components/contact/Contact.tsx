@@ -12,10 +12,10 @@ const Contact: React.FC = () => {
       <div className="contact">
         <ContactInfo />
         <FormComponent />
-        <div style={{ textAlign: "center" }}>
+        <div className='contact-zadzwon'>
           Lub zadzwoń na numer: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>+48 796 210 700</span> <br />
         </div>
-        <div style={{textAlign: 'center', marginTop: '2.5vh', zIndex: '1'}}>Albo napisz na mail: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>SzkoleniaRide4Fun@gmail.com</span> </div>
+        <div className='contact-napisz' style={{}}>Albo napisz na mail: <span style={{fontFamily: "'Lato', sans-serif", fontWeight: 800}}>SzkoleniaRide4Fun@gmail.com</span> </div>
         <img
           className="logo-first-slide"
           src={"./images/Logo_biale.png"}
