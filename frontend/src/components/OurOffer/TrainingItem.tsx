@@ -35,7 +35,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
     <div
       className='training-item'
     >
-      <div>
+      <div className='mobile-carousel-training-img'>
         <img
           className='training-img'
           src={`./images/${srcPath}`}
@@ -60,6 +60,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
         style={{
           borderRight: buttonText === "ZOBACZ WIĘCEJ" ? undefined : "1px solid #fafafa",
         }}
+        
       >
         <div
         className="content-training-item"
@@ -67,7 +68,7 @@ const TrainingItem: React.FC<TrainingItemProps> = ({
           {description}
         </div>
 
-        <div>
+        <div >
           <Link to={`${linkPath}`} style={{ textDecoration: "none" }}>
             <Button
               variant="contained"

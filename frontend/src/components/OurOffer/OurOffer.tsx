@@ -4,6 +4,9 @@ import TrainingItem from "./TrainingItem";
 import { faPersonBiking } from "@fortawesome/free-solid-svg-icons";
 import { faMountainSun } from "@fortawesome/free-solid-svg-icons";
 import { faCar } from "@fortawesome/free-solid-svg-icons";
+import Carousel from "react-multi-carousel";
+import { responsive } from "../trainings/Trainings";
+import "react-multi-carousel/lib/styles.css";
 
 export interface OurOfferProps {
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
@@ -69,6 +72,38 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
             index={index}
           />
         ))}
+      </div>
+      <div className='ouroffer-content-mobile carousel-media'>
+          <Carousel 
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            infinite={true}
+            // autoPlay={true}
+            autoPlaySpeed={6000}
+            keyBoardControl={true}
+            transitionDuration={1500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+          {trainingItem.map((item, index) => (
+            <div  key={`${item.icon} - carousel`}>
+              {/* <div style={{width: '45vw !important', border: '2px solid white', height: '10vh !important'}} key={`${item.icon} - carousel`}>
+                <img src='./images/Logo_biale2.png' alt={`${index} logo`} style={{width: '300px', height: '300px'}}/>
+              </div> */}
+              <TrainingItem
+                  {...item}
+                  key={`${item.buttonText} ${index}-mobile`}
+                  setCurrentTab={setCurrentTab}
+                  index={index}
+                />
+            </div>
+          
+        ))}
+        </Carousel>
       </div>
     </div>
   );
