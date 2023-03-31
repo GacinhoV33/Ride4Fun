@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43084a6a.css",
+    "main.js": "/static/js/main.04d9a0f2.js",
+    "static/media/main.jpg": "/static/media/main.6f502921f9064e97015a.jpg",
+    "static/media/fourthSlideNoLogo.png": "/static/media/fourthSlideNoLogo.fc67a168c22f3d9bbda5.png",
+    "static/media/main_phone.jpg": "/static/media/main_phone.94c5cde961e0ac23c7bc.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.43084a6a.css.map": "/static/css/main.43084a6a.css.map",
+    "main.04d9a0f2.js.map": "/static/js/main.04d9a0f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43084a6a.css",
+    "static/js/main.04d9a0f2.js"
+  ]
+}

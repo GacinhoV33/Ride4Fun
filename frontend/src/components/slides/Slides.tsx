@@ -4,8 +4,8 @@ import { FullPage, Slide } from 'react-full-page';
 import FirstSlide from "./FirstSlide";
 import FourthSlide from './FourthSlide';
 import SecondSlide from './SecondSlide';
-import ImagesPortfolio from './ImagesPortfolio';
 import ThirdSlide from './ThirdSlide';
+import { isMobile } from 'react-device-detect';
 
 
 export interface SlidesProps{
@@ -14,11 +14,11 @@ export interface SlidesProps{
 
 const Slides: React.FC<SlidesProps> = ({setCurrentTab}) => {
   return (
-    <FullPage >
+    <FullPage scrollMode={isMobile ? 'normal' : 'full-page'}>
             <Slide>
               <FirstSlide/>
             </Slide>
-            <Slide>
+            <Slide >
               <SecondSlide setCurrentTab={setCurrentTab}/>
             </Slide>
             <Slide>

@@ -1,9 +1,10 @@
 .contact {
   background: rgba(10, 10, 10, 0.1);
+  width: 100vw !important;
 }
 
 .formComponent-contact {
-  width: 100vw;
+  width: 99vw;
   display: flex;
   align-items: center;
   flex-direction: column;
