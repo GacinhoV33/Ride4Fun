@@ -322,7 +322,7 @@ const carouselItems = [
   { src: "./images/szkolenia/2.jpg", text: "none" },
   { src: "./images/szkolenia/3.jpg", text: "none" },
   { src: "./images/szkolenia/4.jpg", text: "none" },
-  { src: "./images/szkolenia/5.jpg", text: "none" },
+  { src: "./images/aboutUs3.jpg", text: "none" },
   // { src: "./images/szkolenia/6.jpg", text: "none" },
   // { src: "./images/szkolenia/7.png", text: "none" },
   { src: "./images/szkolenia/8.jpg", text: "none" },

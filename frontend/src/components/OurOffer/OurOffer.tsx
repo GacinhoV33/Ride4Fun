@@ -80,7 +80,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
             showDots={false}
             responsive={responsive}
             infinite={true}
-            autoPlay={true}
+            // autoPlay={true}
             autoPlaySpeed={6000}
             keyBoardControl={true}
             transitionDuration={1500}

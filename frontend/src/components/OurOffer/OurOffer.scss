@@ -37,19 +37,19 @@
     }
 }
 
-.mobile-carousel-training-img{
-    @media(max-width: 900px){
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #fafafa;
-    }
-}
+// .mobile-carousel-training-img{
+//     @media(max-width: 900px){
+//         display: flex;
+//         align-items: center;
+//         border-bottom: 1px solid #fafafa;
+//     }
+// }
 
-.mobile-button-trainings-border{
-    @media(max-width: 900px){
-        border-bottom: 1px solid #fafafa;
-    }
-}
+// .mobile-button-trainings-border{
+//     @media(max-width: 900px){
+//         border-bottom: 1px solid #fafafa;
+//     }
+// }
 
 .training-item{
     height:82.5vh;
@@ -60,9 +60,9 @@
     justify-content:flex-start;
     @media (max-width: 900px){
         height: 70vh !important;
-        width: 45vw !important;
-        margin-left: 1.25vw;
-        border-bottom: 1px solid #fafafa !important;
+        width: 95vw !important;
+        // margin-left: 1.25vw;
+        // border-bottom: 1px solid #fafafa !important;
         border-left: 1px solid #fafafa !important;
         border-right: 1px solid #fafafa !important;
 
@@ -75,7 +75,8 @@
         height:32.5vh;
         padding-bottom:0px;
         @media (max-width:900px){
-            width: 45vw !important;
+            width: 95vw !important;
+            height: 35vh !important;  
         }
     }
 
@@ -96,6 +97,7 @@
         margin-top:2.5vh;
         width:100%;
         text-align:center;
+        
     }
 
     .training-description{
@@ -128,6 +130,10 @@
         margin: 0px 0px; 
         height: 4vh; 
         color: #fafafa;
+        @media (max-width: 900px){
+            width: 10vw !important;
+            height: 10vw !important; 
+        }
     }
 
     
@@ -147,7 +153,8 @@
         .training-button{
             padding: 1px !important;
             font-size: 10px;
-            width: 31.5vw;
+            height: 3.75vh !important;
+            width: 51.5vw !important;
             font-weight: 800;
         }
        
@@ -180,7 +187,7 @@
     font-size: 1.75vh;
     font-weight: 600;
     @media (max-width: 900px){
-        font-size: 2.5vw;
+        font-size: 2.75vw;
     }
 }
 
@@ -191,7 +198,7 @@
     font-weight: 800;
     text-transform: uppercase;
     @media (max-width: 900px){
-        font-size: 2vw;
+        font-size: 4.5vw;
         // font-weight: 800;
     }
 }

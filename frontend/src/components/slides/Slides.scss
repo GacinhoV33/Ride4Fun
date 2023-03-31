@@ -5,7 +5,7 @@
   width: 99vw;
   @media (max-width: 900px) {
     width: 100vw;
-    background: url("../../../public/images/main_phone.png") !important;
+    background: url("../../../public/images/main_phone.jpg") !important;
     background-repeat: no-repeat;
     background-size: 100% 100% !important;
   }
@@ -64,24 +64,24 @@
     }
   }
 
-  .logo-container-first-slide {
+  .logo-container-first-slide-main {
     position: absolute;
-    left: 16vw;
-    top: 5vh;
+    left: 20vw;
+    top: 10vh;
     @media (max-width: 900px) {
       // position: relative;
-      left: 15vw;
-      top: 0vh !important;
+      left: 30vw;
+      top: 5vh !important;
     }
-    .logo-first-slide {
+    .logo-first-slide-main {
       width: 35vh;
       height: 35vh;
 
       @media (max-width: 900px) {
-        width:40vw;
+        width: 40vw;
         height: 40vw;
-        top: 5vh;
-        left: 15vw;
+        // top: 55vh;
+        // left: 15vw;
       }
     }
   }
@@ -204,6 +204,7 @@
   @media (max-width: 900px) {
     flex-direction: column;
     padding: 2vh;
+    align-items: center;
   }
 }
 
@@ -234,17 +235,19 @@
   @media (max-width: 900px) {
     // width: 100%;
     // flex: 3;
-    padding: 2.5vh;
+   
+    width: 90%;
+    // padding: 10vh;
     // margin-top: 0;
     .right-content-img {
-      top: 7.5vh;
-      width: 50vw !important;
-      height: 35vh !important;
+      top: 5.5vh;
+      width: 45vw !important;
+      height: 36vh !important;
     }
 
     .left-content-img {
-      width: 50vw !important;
-      height: 35vh !important;
+      width: 45vw !important;
+      height: 36vh !important;
     }
   }
 }
@@ -290,8 +293,8 @@
     justify-content: center;
     align-items: center;
     font-style: italic;
-    height: 7.5vh;
-    width: 11vw;
+    height: 5.5vh;
+    width: 17.5vw;
     font-size: 2vh;
     font-weight: 600;
     background-color: #b70000;
@@ -305,8 +308,8 @@
 
     @media (max-width: 900px){
         width: 75vw;
-        margin-left: 5vw;
-        height: 3.5vh;
+        // margin-left: 5vw;
+        height: 3.75vh;
 
     }
   }

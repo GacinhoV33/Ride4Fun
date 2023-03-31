@@ -51,7 +51,7 @@ const RightContent = () => {
             Dowiedz się więcej 
             <FontAwesomeIcon
               icon={faCaretRight}
-              style={{marginRight:'1vw', height: "3vh" }}
+              style={{marginRight:'1vw', marginLeft: '3vw', height: "2.75vh" }}
             />
           </Button>
         </Link>
