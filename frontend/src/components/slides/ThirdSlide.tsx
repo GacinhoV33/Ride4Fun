@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import PlaceHolder from "../common/PlaceHolder";
 import "./Slides.scss";
 import {faCaretRight} from '@fortawesome/free-solid-svg-icons'
+import { isMobile } from "react-device-detect";
 
 const ThirdSlide: React.FC = () => {
   return (
@@ -40,8 +41,8 @@ const RightContent = () => {
           Hej! Jestem Bartek. Pasjonuję się kolarstwem górskim od 13 lat. Od
           kilku lat jestem licencjonowanym instruktorem turystyki rowerowej,
           narciarstwa zjazdowego, a na Krakowskim AWF zbierałem niezbędne
-          doświadczenie w pracy z dziećmi i młodzieżą. Skutecznie zarażam pasją
-          do gór młodych i tych nieco starszych niezależnie czy to zima czy
+          doświadczenie w pracy {isMobile ? <br/> : null} z dziećmi {isMobile ? null : <br/>}i młodzieżą. Skutecznie zarażam pasją
+          do gór młodych i tych nieco starszych, niezależnie czy to zima czy
           lato!
         </p>
       </div>

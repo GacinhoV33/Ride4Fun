@@ -7,12 +7,13 @@ import { faCar } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-multi-carousel";
 import { responsive } from "../trainings/Trainings";
 import "react-multi-carousel/lib/styles.css";
-
+import {isMobile} from 'react-device-detect';
 export interface OurOfferProps {
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
+  console.log(isMobile)
   const trainingItem = [
     {
       textTitle: (
@@ -24,8 +25,8 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faPersonBiking,
-      description:
-        "Chciałbyś poprawić swoją technikę jazdy i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!",
+      description: <span>Chciałbyś poprawić swoją technikę jazdy {isMobile ? null : <br/>}i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!</span>,
+        // "Chciałbyś poprawić swoją technikę jazdy i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!",
       color: "#B70000",
       srcPath: "item1.jpg",
       linkPath: "trainings",
@@ -39,8 +40,8 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faMountainSun,
-      description:
-        "Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy i rozpoczęcie nowych znajomości!",
+      description: <span>Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy {isMobile ? <br/> : null}i rozpoczęcie nowych znajomości!</span>,
+        // "Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy i rozpoczęcie nowych znajomości!",
       color: "#B70000",
       srcPath: "item2.jpg",
       linkPath: "trainings",
@@ -53,8 +54,8 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faCar,
-      description:
-        "Szkolenia jednodniowe to dobra propozycja na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki w Polsce, zimą zaś szkolimy na nartach i snowboardzie.",
+      description: <span>Szkolenia jednodniowe to dobra propozycja {isMobile ? null : <br/>}na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki {isMobile ? <br/> : null}w Polsce, zimą zaś szkolimy na nartach {isMobile ? null : <br/>}i snowboardzie.</span>,
+        // "Szkolenia jednodniowe to dobra propozycja na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki w Polsce, zimą zaś szkolimy na nartach i snowboardzie.",
       color: "#B70000",
       srcPath: "item3.jpg",
       linkPath: "trainings",
@@ -80,7 +81,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
             showDots={false}
             responsive={responsive}
             infinite={true}
-            // autoPlay={true}
+            autoPlay={true}
             autoPlaySpeed={6000}
             keyBoardControl={true}
             transitionDuration={1500}

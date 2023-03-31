@@ -7,7 +7,7 @@ import './OurOffer.scss';
 
 export type TrainingItemProps = {
   textTitle: JSX.Element;
-  description: string;
+  description: string | any;
   icon: IconDefinition;
   color: string;
   srcPath: string;

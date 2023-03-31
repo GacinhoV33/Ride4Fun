@@ -200,7 +200,8 @@
     height: 40vh; 
     margin: 4vh;
     @media (max-width: 900px){
-        height: 10vh;
+        height: 25vh;
+        width: 97vw !important;
     }
 
     .carousel-trainings-item{
@@ -208,9 +209,10 @@
         height: 40vh;
         margin-left: 1.25vw;
         @media (max-width: 900px){
-            width: 45vw;
-            height: 15vh;
-            margin-left: 2.25vw;
+            width: 93vw;
+            height: 30vh;
+            margin-left: 2vw !important;
+            margin-right: 2vw !important;
         }
     }
 }

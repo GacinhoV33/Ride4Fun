@@ -12,6 +12,7 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
 import "react-multi-carousel/lib/styles.css";
+import { isMobile } from "react-device-detect";
 export interface TrainingProps {
   currentTab: number;
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
@@ -193,13 +194,13 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             Prowadzimy cotygodniowe zajęcia dla młodych adeptów kolarstwa
             górskiego, chcących w bezpieczny i kontrolowany sposób zgłębić
             tajniki jazdy Enduro i Downhill na rowerze górskim. Zajęcia
-            prowadzimy w dwóch grupach zaawansowania tak by każdy znalazł coś
+            prowadzimy w dwóch grupach zaawansowania, tak by każdy znalazł coś
             dla siebie. Stawiamy nacisk na profesjonalne szkolenie pod czujnym
-            okiem licencjonowanych instruktorów z wieloletnim doświadczeniem w
+            okiem licencjonowanych instruktorów {isMobile ? null : <br/>}z wieloletnim doświadczeniem w
             pracy z młodzieżą oraz przede wszystkim na uśmiechy i radość z jazdy
-            na rowerze. U nas nauczysz się szybko i skutecznie pokonywać leśne
-            szlaki oraz Bike Parkowe przeszkody a co najważniejsze poznasz
-            nowych rowerowych przyjaciół co w dalszej rowerowej przygodzie jest
+            na rowerze. {isMobile ? null : <br/>}U nas nauczysz się szybko i skutecznie pokonywać leśne
+            szlaki oraz Bike Parkowe przeszkody, a co najważniejsze poznasz
+            nowych rowerowych przyjaciół, co w dalszej rowerowej przygodzie jest
             niezastąpione!
           </p>
           <div className="trainings-portfolioImages">
@@ -233,7 +234,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               className='trainings-text-r4f'
               >
                 <b className="trainings-title-r4f">Termin:</b> Dokładnie dni
-                treningów podane zostaną po zakończeniu naboru oraz ustaleniu
+                treningów podane zostaną {isMobile ? null : <br/>}po zakończeniu naboru oraz ustaleniu
                 grup. <br />
               </div>
               <div
@@ -247,7 +248,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               className='trainings-text-r4f'
               >
                 <b className="trainings-title-r4f">Grupy: </b>
-                Początkująca i Średniozaawansowana dla dzieci od 8 roku życia.
+                Początkująca i Średniozaawansowana {isMobile ? null : <br/>}dla dzieci od 8 roku życia.
                 Młodszych adeptów zapraszamy na zajęcia indywidualne ! <br />
               </div>
               <div
