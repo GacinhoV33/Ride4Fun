@@ -53,9 +53,9 @@ function ResponsiveAppBar() {
               >
                 <Button
                   key={`${menuItem}-${index}`}
-                  sx={{ my: 1, color: "white", display: "block", marginRight: '1vw', fontWeight: '500', fontFamily: 'fantasy', letterSpacing: '0.2vw', zIndex: '20' }}
-                  className='navButton2 nav-link-item'
-                  
+                  sx={{ my: 1, color: "white", display: "block", marginRight: '1vw', fontWeight: '500', letterSpacing: '0.2vw', zIndex: '20' }}
+                  className='nav-link-item navButton2'
+
                 >
                   {menuItem}
                 </Button>

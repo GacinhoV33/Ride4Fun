@@ -98,8 +98,29 @@
   }
 }
 
+.contact-mail{
+  // padding: 10px;
+  text-align: center; 
+  // margin-top: 0.5vh; 
+  z-index: 1;
+  @media(max-width: 900px){
+    margin-bottom: 10vh;
+  }
+}
+
+.contact-mail1{
+  // padding: 10px;
+  text-align: center; 
+  // margin-top: 0.5vh; 
+  z-index: 1;
+  @media(max-width: 900px){
+    margin-bottom: 1vh;
+  }
+}
+
 .contact-zadzwon{
   text-align: center;
+  margin-bottom: 1.75vh;
   @media (max-width: 900px){
     margin-top: 0.5vh;
   }

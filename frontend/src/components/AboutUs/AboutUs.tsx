@@ -73,7 +73,7 @@ const AboutUs: React.FC = () => {
           responsive={responsive}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={6000}
+          autoPlaySpeed={5000}
           keyBoardControl={true}
           transitionDuration={1500}
           containerClass="carousel-container"

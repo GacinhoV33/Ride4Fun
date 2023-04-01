@@ -1,3 +1,4 @@
+
 .css-z5gn4u-MuiSvgIcon-root{
     display: none !important;
     @media (max-width: 900px){
@@ -58,9 +59,12 @@
 
 .navButton2{
     font-size: 1.5vw !important;
-
+    font-weight: 500 !important;
+    font-family: fantasy !important;
     @media (max-width: 900px){
-        font-size: 3vw !important;
+        font-size: 2.5vw !important;
+        font-weight: 600 !important;
+        font-family: 'Lato', sans-serif !important;
 
     }
     

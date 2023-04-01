@@ -81,7 +81,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             trasach, a może nauczyć się skakać i pokonywać trudne techniczne
             sekcje? Dobrze trafiłeś! Prowadzimy szkolenia Enduro/Downhill dla
             rowerzystów na każdym poziomie zaawansowania. Trenują z nami zarówno
-            dzieciaki chcący poznać nową zajawkę jak i profesjonalni zawodnicy
+            dzieciaki chcący poznać nową zajawkę, jak i profesjonalni zawodnicy
             przygotowujący się do zawodów.
           </p>
           <div className="image-container-trainings">
@@ -174,14 +174,15 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               w Całej Polsce!
             </div>
             <div
-              style={{ fontSize: "2vh", marginTop: "5vh", fontWeight: "700" }}
+              style={{ fontSize: "2.75vh", marginTop: "5vh", fontWeight: "700", fontFamily: "'Lato', sens-serif",
+            }}
             >
               Nadal trwa nabór do Szkółki Ride4Fun Academy na cotygodniowe
-              treningi dla dzieci i młodzieży !
+              treningi dla dzieci i młodzieży!
             </div>
-            <h1 style={{ color: "#fafafa" }}>Masz pytania ? </h1>
+            <h1 style={{ color: "#fafafa" }}>Masz pytania? </h1>
             <div className='trainings-skontaktuj'>
-              Skontaktuj się znami w zakładce <Link to="/contact">KONTAKT</Link>
+              Skontaktuj się z nami w zakładce <Link to="/contact" style={{color: '#B70000'}}>KONTAKT</Link>
             </div>
           </div>
         </div>
@@ -248,8 +249,8 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               className='trainings-text-r4f'
               >
                 <b className="trainings-title-r4f">Grupy: </b>
-                Początkująca i Średniozaawansowana {isMobile ? null : <br/>}dla dzieci od 8 roku życia.
-                Młodszych adeptów zapraszamy na zajęcia indywidualne ! <br />
+                Początkująca i Średniozaawansowana {isMobile ? null : <br/>}dla dzieci od 7 roku życia.
+                Młodszych adeptów zapraszamy na zajęcia indywidualne! <br />
               </div>
               <div
               className='trainings-text-r4f'
@@ -324,14 +325,8 @@ const carouselItems = [
   { src: "./images/szkolenia/3.jpg", text: "none" },
   { src: "./images/szkolenia/4.jpg", text: "none" },
   { src: "./images/aboutUs3.jpg", text: "none" },
-  // { src: "./images/szkolenia/6.jpg", text: "none" },
-  // { src: "./images/szkolenia/7.png", text: "none" },
   { src: "./images/szkolenia/8.jpg", text: "none" },
-  // { src: "./images/szkolenia/8.jpg", text: "none" },
-  // { src: "./images/szkolenia/9.jpg", text: "none" },
-  // { src: "./images/szkolenia/10.jpg", text: "none" },
   { src: "./images/szkolenia/11.jpg", text: "none" },
-  // { src: "./images/szkolenia/12.jpg", text: "none" },
 ];
 
 export const responsive = {

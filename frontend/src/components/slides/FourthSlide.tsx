@@ -47,7 +47,7 @@ const FourthSlide: React.FC = () => {
           różnym stopniu trudności zarówno dla początkujących jak i
           zaawansowanych rowerzystów. Mamy do dyspozycji również asfaltowy
           pumptrack. Wstęp jest darmowy lecz nie ma wyciągu. Na szkoleniach
-          podjeżdżamy „z łydy” bądź wypychamy rowery na sam szczyt. W przyszłym
+          podjeżdżamy „z łydy”, bądź wypychamy rowery na sam szczyt. W przyszłym
           roku planowana jest rozbudowa bike parku o kolejne dwie trasy
           zjazdowe.
           <br /> <br />

@@ -25,10 +25,10 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faPersonBiking,
-      description: <span>Chciałbyś poprawić swoją technikę jazdy {isMobile ? null : <br/>}i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!</span>,
+      description: <span style={{padding: isMobile ? undefined : '7.5px'}}>Chciałbyś poprawić swoją technikę jazdy {isMobile ? null : <br/>}i poczuć się pewniej w terenie? <br/> Na zajęciach indywidualnych zrobisz największy progres!</span>,
         // "Chciałbyś poprawić swoją technikę jazdy i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!",
       color: "#B70000",
-      srcPath: "item1.jpg",
+      srcPath: "szkolenia/1.jpg",
       linkPath: "trainings",
       buttonText: "SPRAWDŹ OFERTĘ",
     },
@@ -40,7 +40,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faMountainSun,
-      description: <span>Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy {isMobile ? <br/> : null}i rozpoczęcie nowych znajomości!</span>,
+      description: <span style={{padding: isMobile ? undefined : '7.5px'}}>Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy {isMobile ? <br/> : null}i rozpoczęcie nowych znajomości!</span>,
         // "Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy i rozpoczęcie nowych znajomości!",
       color: "#B70000",
       srcPath: "item2.jpg",
@@ -54,7 +54,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         </span>
       ),
       icon: faCar,
-      description: <span>Szkolenia jednodniowe to dobra propozycja {isMobile ? null : <br/>}na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki {isMobile ? <br/> : null}w Polsce, zimą zaś szkolimy na nartach {isMobile ? null : <br/>}i snowboardzie.</span>,
+      description: <span style={{padding: isMobile ? undefined : '7.5px'}}>Szkolenia jednodniowe to dobra propozycja {isMobile ? null : <br/>}na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki {isMobile ? <br/> : null}w Polsce, zimą zaś szkolimy na nartach {isMobile ? null : <br/>}i snowboardzie.</span>,
         // "Szkolenia jednodniowe to dobra propozycja na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki w Polsce, zimą zaś szkolimy na nartach i snowboardzie.",
       color: "#B70000",
       srcPath: "item3.jpg",
@@ -78,11 +78,11 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
           <Carousel 
             swipeable={true}
             draggable={true}
-            showDots={false}
+            showDots={true}
             responsive={responsive}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={6000}
+            autoPlaySpeed={4000}
             keyBoardControl={true}
             transitionDuration={1500}
             containerClass="carousel-container"

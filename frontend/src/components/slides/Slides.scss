@@ -116,7 +116,7 @@
 .fourth-slide {
   background: url("../../../public/images/fourthSlideNoLogo.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100% 100%;
   position: relative;
   font-family: "Lato", sans-serif;
   font-style: italic;
@@ -171,8 +171,7 @@
         font-size:2.95vh;
         font-weight:700;
         color: #fafafa;
-        padding:25px;
-
+        padding:25px;      
         @media(max-width: 900px){
             font-size: 1.45vh;
         }
@@ -183,7 +182,7 @@
     width: 27vh;
     height: 27vh;
     position: absolute;
-    bottom: -12.5vh;
+    bottom: -10.5vh;
     right: 5.5vh;
     @media (max-width: 900px){
         width: 27vw;
