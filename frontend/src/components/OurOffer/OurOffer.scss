@@ -111,6 +111,7 @@
         color: #fafafa;
         @media (max-width: 900px){
             // margin-left: 3.5vw;
+            height: auto !important;
             border-right: none !important;
         }
     }
@@ -147,7 +148,8 @@
 
         }
         .training-description{
-            height: 50vh;
+            // height: 50vh;
+            height: auto !important;
             justify-content: space-evenly;
         }
 
