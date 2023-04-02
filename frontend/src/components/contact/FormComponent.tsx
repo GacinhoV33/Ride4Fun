@@ -52,7 +52,7 @@ const sendEmail = (e: UserData) => {
                             <TextField fullWidth variant='filled' type='text' label='Nazwisko' onBlur={handleBlur} onChange={handleChange} value={values.lastName} name='lastName' error={!!touched.lastName && !!errors.lastName} helperText={touched.lastName && errors.lastName} sx={{gridColumn: 'span 2'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Email' onBlur={handleBlur} onChange={handleChange} value={values.email} name='email' error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} sx={{gridColumn: 'span 4'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Numer Telefonu' onBlur={handleBlur} onChange={handleChange} value={values.contact} name='contact' error={!!touched.contact && !!errors.contact} helperText={touched.contact && errors.contact} sx={{gridColumn: 'span 4'}}/>
-                            <TextField fullWidth variant='filled' type='text' label='Wiadomość' onBlur={handleBlur} onChange={handleChange} name='message' sx={{gridColumn: 'span 4'}}/>
+                            <TextField fullWidth variant='filled' type='text' label='Wiadomość' onBlur={handleBlur} onChange={handleChange} name='message' sx={{gridColumn: 'span 4'}} multiline={true}/>
                         </Box>
                         <Box display='flex' justifyContent='end' mt='20px'>
                             <Button type='submit' color='secondary' variant='contained'>

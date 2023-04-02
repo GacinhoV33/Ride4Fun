@@ -98,10 +98,14 @@
   }
 }
 
+.css-1rv476z-MuiInputBase-input-MuiFilledInput-input{
+  @media(max-width: 900px){
+    height: 2.75vh !important;
+  }
+}
+
 .contact-mail{
-  // padding: 10px;
   text-align: center; 
-  // margin-top: 0.5vh; 
   z-index: 1;
   @media(max-width: 900px){
     margin-bottom: 10vh;
@@ -109,9 +113,7 @@
 }
 
 .contact-mail1{
-  // padding: 10px;
   text-align: center; 
-  // margin-top: 0.5vh; 
   z-index: 1;
   @media(max-width: 900px){
     margin-bottom: 1vh;

@@ -1,13 +1,19 @@
 .contact-content {
     margin: 20px;
-    width: 50%;
+    width: 60% !important;
     @media (max-width: 900px) {
-      width: 85% !important;
+      width: 95% !important;
     }
   }
 
 .css-1rv476z-MuiInputBase-input-MuiFilledInput-input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 100px rgba(0.25, 0.25, 0.25, 0.5) inset !important;
+}
+
+.css-1rv476z-MuiInputBase-input-MuiFilledInput-input{
+  @media (max-width: 900px){
+    height: 2vh !important;
+  }
 }
 
 .trainings-contact{
