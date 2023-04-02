@@ -65,7 +65,7 @@ const LeftContent = () => {
   return (
     <div className="left-content">
       <img
-        src="./images/thirdSlideFirst.jpg"
+        src={isMobile ? "./images/thirdSlideFirst_phone.jpg" : "./images/thirdSlideFirst.jpg"}
         alt="left-content-img"
         className="left-content-img"
       />
@@ -73,7 +73,6 @@ const LeftContent = () => {
         src="./images/thirdSlideSecond.jpg"
         alt="right-content-img"
         className="right-content-img"
-        
       />
     </div>
   );

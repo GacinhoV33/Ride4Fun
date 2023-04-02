@@ -82,9 +82,9 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
             responsive={responsive}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={4000}
+            autoPlaySpeed={10000}
             keyBoardControl={true}
-            transitionDuration={1500}
+            transitionDuration={2000}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"

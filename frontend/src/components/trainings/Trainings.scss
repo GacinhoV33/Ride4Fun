@@ -202,18 +202,36 @@
     @media (max-width: 900px){
         height: 25vh;
         width: 97vw !important;
+        margin: 2vh 0 !important;
     }
 
+    .carousel-cont-img{
+        width: 99vw;
+        height: 40vh; 
+        margin-left: 1.5vw;
+        @media(max-width: 900px){
+            display: flex;
+            justify-content: center;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 95vw !important;
+            margin-left: 0.5vw !important;
+            margin-right: 1vw !important;
+        }
+    }
     .carousel-trainings-item{
         width: 30vw;
         height: 40vh;
-        margin-left: 1.25vw;
+        // margin-left: 1.25vw;
         @media (max-width: 900px){
-            width: 93vw;
+            width: 93vw !important;
             height: 30vh;
-            margin-left: 2.5vw !important;
-            margin-right: 2.5vw !important;
+            
         }
     }
 }
 
+.title-third-tab{
+    text-align: left !important;
+    width: 95%;
+}

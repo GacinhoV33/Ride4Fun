@@ -140,8 +140,8 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 showDots={false}
                 responsive={responsive}
                 infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={6000}
+                // autoPlay={true}
+                // autoPlaySpeed={6000}
                 keyBoardControl={true}
                 transitionDuration={1500}
                 containerClass="carousel-container"
@@ -150,7 +150,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 itemClass="carousel-item-padding-40-px"
               >
                 {carouselItems.map(({ text, src }, index) => (
-                  <div key={`${src}- ${index}`}>
+                  <div key={`${src}- ${index}`} className='carousel-cont-img'>
                     <img
                       src={src}
                       alt={`${src}-${index}-alt`}
@@ -174,7 +174,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               w Całej Polsce!
             </div>
             <div
-              style={{ fontSize: "2.75vh", marginTop: "5vh", fontWeight: "700", fontFamily: "'Lato', sens-serif",
+              style={{ fontSize: "2.75vh", marginTop: "5vh", fontWeight: "700", fontFamily: "'Lato', sens-serif", textAlign: 'center'
             }}
             >
               Nadal trwa nabór do Szkółki Ride4Fun Academy na cotygodniowe
@@ -287,9 +287,14 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               alignItems: "center",
               fontSize: "2.5vh",
             }}
-          >
+          > 
+
+        <h1 className="title-third-tab title-of-trainings">
+            {" "}
+            Jedniodniowe wyjazdy szkoleniowe{" "}
+          </h1>
             <div className="trainings-wyjazdy-main">
-              Zapraszamy na jednodniowe wyjazdy szkoleniowe z Ride4Fun! <br />{" "}
+              Zapraszamy na wyjazdy szkoleniowe z Ride4Fun! <br />{" "}
               Cały dzień w najlepszych Polskich Bike Parkach pod okiem
               instruktora wraz z dobrą ekipą to recepta na udany weekend!
             </div>
