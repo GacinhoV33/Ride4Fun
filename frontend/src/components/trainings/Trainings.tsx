@@ -91,7 +91,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               className="trainings-image1"
             />
             <div className="trainings-title-skills">
-              Na szkoleniach pracujemy nad :
+              Na szkoleniach pracujemy nad:
             </div>
             {trainingFeatures.map((featureName, index) => (
               <div key={`${featureName}-${index}`} className="trainings-skill">

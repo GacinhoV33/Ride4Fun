@@ -33,7 +33,6 @@ const ImagesPortfolio: React.FC<ImagesPortfolioProps> = ({width='40vw', height='
   return (
       <div className='fifth-content'>
         <ImageList
-          // sx={{ width: width, height: height}}
           className='image-portfolio-main'
           variant="quilted"
           cols={4}
@@ -43,11 +42,9 @@ const ImagesPortfolio: React.FC<ImagesPortfolioProps> = ({width='40vw', height='
           <ImageListItem key={item.img + index} cols={item.cols || 1} rows={item.rows || 1}>
             <img
               src={`./images/r4f_academy/${item.img}`}
-              style={{width: `${item.cols || 1 *  121}`, height: `${item.rows || 1 * 121}`}}
+              style={{width: `${item.cols || 1 *  121}`, height: `${item.rows || 1 * 121}`, objectFit: 'cover'}}
               alt={item.title}
-              loading="lazy"
-              // onClick={() => handleShow(item.img)}
-              
+              loading="lazy"              
             />
           </ImageListItem>
         ))}
