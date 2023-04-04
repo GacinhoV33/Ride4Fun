@@ -18,10 +18,8 @@ const form = useRef();
 
 function handleSubmit(success: boolean, error: any = null){
     if(success){
-        console.log("It's success");
         setSuccess(true);
     }else{
-        console.log("It's not success");
         setSuccess(false);
         if(error){
             console.log("error")

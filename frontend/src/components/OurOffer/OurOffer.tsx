@@ -13,7 +13,6 @@ export interface OurOfferProps {
 }
 
 const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
-  console.log(isMobile)
   const trainingItem = [
     {
       textTitle: (
