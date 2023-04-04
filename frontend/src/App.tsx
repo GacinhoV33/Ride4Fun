@@ -22,9 +22,9 @@ export default function App() {
           <NavMui/>
             <Routes>
               <Route path='/' element={<Slides setCurrentTab={setCurrentTab} key='route1'/>}/>
-              <Route path='/about' element={<AboutUs/>} key='route2'/>
-              <Route path='/contact' element={<Contact/>} key='route3'/>
-              <Route path='/trainings' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route4'/>
+              <Route path='/oNas' element={<AboutUs/>} key='route2'/>
+              <Route path='/kontakt' element={<Contact/>} key='route3'/>
+              <Route path='/szkolenia' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route4'/>
             </Routes>
         </div>
       </ThemeProvider>

@@ -7,11 +7,7 @@ export interface SecondSlideProps{
 }
 
 const SecondSlide: React.FC<SecondSlideProps> = ({setCurrentTab}) => {
-    const teamMembers: TeamMember[] = [
-     {name: 'Bartosz', surname: 'Wajda', title: 'title', imgPath: '../../images/MemberBartek.jpg', description: 'This is some basic description. Text is generated to visualize how it will look. This one is for Bartek.'},
-     {name: 'Justyna', surname: 'Wójtowicz', title: 'title', imgPath: 'none', description: 'This is second basic description. Text is generated to visualize how it will look. This one is for Justyna'}
-    ]
-  
+    
     return (
     <React.Fragment>
         <PlaceHolder/>
