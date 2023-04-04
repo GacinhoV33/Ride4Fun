@@ -1,6 +1,6 @@
 import { colorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider  } from '@mui/material';
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // Own Components
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -15,7 +15,6 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<number>(0);
 
   return (
-    <Router>
     <colorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
@@ -30,6 +29,5 @@ export default function App() {
         </div>
       </ThemeProvider>
     </colorModeContext.Provider>
-    </Router>
   );
 }
