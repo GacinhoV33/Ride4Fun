@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PlaceHolder from "../common/PlaceHolder";
 import "./AboutUs.scss";
 import { SocialIcon } from "react-social-icons";
@@ -10,6 +10,12 @@ import { responsive } from "../trainings/Trainings";
 import "react-multi-carousel/lib/styles.css";
 
 const AboutUs: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  })
   return (
     <div className="aboutUs-main">
       <PlaceHolder />

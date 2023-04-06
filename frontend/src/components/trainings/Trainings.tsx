@@ -182,7 +182,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             </div>
             <h1 style={{ color: "#fafafa" }}>Masz pytania? </h1>
             <div className='trainings-skontaktuj'>
-              Skontaktuj się z nami w zakładce <Link to="/contact" style={{color: '#B70000'}}>KONTAKT</Link>
+              Skontaktuj się z nami w zakładce <Link to="/kontakt" style={{color: '#B70000'}}>KONTAKT</Link>
             </div>
           </div>
         </div>

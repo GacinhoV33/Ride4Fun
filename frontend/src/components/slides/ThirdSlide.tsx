@@ -47,7 +47,7 @@ const RightContent = () => {
         </p>
       </div>
       <div>
-        <Link to="/about" style={{ textDecoration: "none" }}>
+        <Link to="/oNas" style={{ textDecoration: "none" }}>
           <Button onClick={() => handleClick()} className="button-about">
             Dowiedz się więcej 
             <FontAwesomeIcon
