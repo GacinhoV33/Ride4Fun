@@ -12,7 +12,7 @@ import NavMui from "./components/navbar/NavMui";
 
 export default function App() {
   const [theme, colorMode] = useMode();
-  const [currentTab, setCurrentTab] = useState<number>(0);
+  const [currentTab, setCurrentTab] = useState<number>(1);
 
   return (
     <colorModeContext.Provider value={colorMode}>
