@@ -113,6 +113,13 @@
   }
 }
 
+.img-list-portfolio{
+  &:hover{
+    border: 2px solid #eee !important;
+  }
+
+}
+
 .fourth-slide {
   background: url("../../../public/images/fourthSlideNoLogo.png");
   background-repeat: no-repeat;
@@ -320,11 +327,4 @@
     width: 77.5vw;
     height: 40vh;
   }
-}
-
-.modal-box-images{
-  top: 10vh;
-  left: 10vw;
-  transform: translate(-50%, -50%);
-
 }

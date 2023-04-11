@@ -34,6 +34,9 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
     setCurrentTab(newTab);
   };
 
+  const portfolioRef = useRef<any>(null);
+  const topScrollPortfolio  = portfolioRef.current ? portfolioRef.current.getBoundingClientRect().top : 400;
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -140,8 +143,6 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 showDots={false}
                 responsive={responsive}
                 infinite={true}
-                // autoPlay={true}
-                // autoPlaySpeed={6000}
                 keyBoardControl={true}
                 transitionDuration={1500}
                 containerClass="carousel-container"
@@ -204,8 +205,8 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             nowych rowerowych przyjaciół, co w dalszej rowerowej przygodzie jest
             niezastąpione!
           </p>
-          <div className="trainings-portfolioImages">
-            <ImagesPortfolio />
+          <div className="trainings-portfolioImages" ref={portfolioRef}>
+            <ImagesPortfolio topScroll={topScrollPortfolio}/>
             <div
               style={{
                 fontSize: "2.5vh",
