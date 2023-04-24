@@ -28,7 +28,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         // "Chciałbyś poprawić swoją technikę jazdy i poczuć się pewniej w terenie? Na zajęciach indywidualnych zrobisz największy progres!",
       color: "#B70000",
       srcPath: "szkolenia/1.jpg",
-      linkPath: "szkolenia",
+      linkPath: "szkolenia/szkolenia",
       buttonText: "SPRAWDŹ OFERTĘ",
     },
     {
@@ -43,7 +43,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         // "Szkółka Enduro/Downhill dla dzieci i młodzieży. Systematyczny trening pod okiem licencjonowanego instruktora to dobra szansa na szybkie postępy i rozpoczęcie nowych znajomości!",
       color: "#B70000",
       srcPath: "item2.jpg",
-      linkPath: "szkolenia",
+      linkPath: "szkolenia/r4f",
       buttonText: "DOŁĄCZ DO NAS",
     },
     {
@@ -57,7 +57,7 @@ const OurOffer: React.FC<OurOfferProps> = ({ setCurrentTab }) => {
         // "Szkolenia jednodniowe to dobra propozycja na aktywny dzień pod okiem naszej kadry! Latem odwiedzamy najlepsze miejscówki i Bike Parki w Polsce, zimą zaś szkolimy na nartach i snowboardzie.",
       color: "#B70000",
       srcPath: "item3.jpg",
-      linkPath: "szkolenia",
+      linkPath: "szkolenia/wyjazdy",
       buttonText: "ZOBACZ WIĘCEJ",
     },
   ];

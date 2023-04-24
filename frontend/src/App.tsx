@@ -25,7 +25,8 @@ export default function App() {
               <Route path='/' element={<Slides setCurrentTab={setCurrentTab} key='route1'/>}/>
               <Route path='/oNas' element={<AboutUs/>} key='route2'/>
               <Route path='/kontakt' element={<Contact/>} key='route3'/>
-              <Route path='/szkolenia' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route4'/>
+              <Route path='/szkolenia/:name' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route4'/>
+              <Route path='/szkolenia' element={<Trainings currentTab={currentTab} setCurrentTab={setCurrentTab}/>} key='route5'/>
               <Route path='*' element={<NotFound/>} key='route-non-found'/>
             </Routes>
         </div>

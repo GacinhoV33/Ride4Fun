@@ -10,7 +10,7 @@ import './NavbarComponent.scss';
 
 const pages = [
   { menuItem: "Strona Główna", linkPath: "/" },
-  { menuItem: "Szkolenia", linkPath: "/szkolenia" },
+  { menuItem: "Szkolenia", linkPath: "/szkolenia/r4f" },
   { menuItem: "O nas", linkPath: "/oNas" },
   { menuItem: "Kontakt", linkPath: "/kontakt" },
 ];

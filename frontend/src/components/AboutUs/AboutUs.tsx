@@ -128,15 +128,18 @@ const AboutUs: React.FC = () => {
           url={"https://www.facebook.com/profile.php?id=100083105601877"}
           target="_blank"
           className="social-icon-aboutUs"
+          fgColor="#f2f2f2"
         />
         <SocialIcon
           url={"https://www.instagram.com/szkoleniaride4fun.pl/"}
           target="_blank"
+          fgColor="#f2f2f2"
           className="social-icon-aboutUs"
         />
         <SocialIcon
           url={"https://www.youtube.com/channel/UCwR8Nug7AmiUP4W4t5SSJJA"}
           target="_blank"
+          fgColor="#f2f2f2"
           className="social-icon-aboutUs"
         />
       </div>

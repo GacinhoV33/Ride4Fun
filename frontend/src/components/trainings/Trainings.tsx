@@ -13,12 +13,18 @@ import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
 import "react-multi-carousel/lib/styles.css";
 import { isMobile } from "react-device-detect";
+import { useParams } from "react-router-dom";
+
 export interface TrainingProps {
   currentTab: number;
   setCurrentTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
+  
+  const { name } = useParams();
+ 
+  
   function scrollToForm() {
     const { top } = contactRef.current.getBoundingClientRect();
     if (currentTab === 1) {
@@ -38,12 +44,25 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
   const topScrollPortfolio  = portfolioRef.current ? portfolioRef.current.getBoundingClientRect().top : 400;
 
   useEffect(() => {
+   
+
+    if(name === 'r4f'){
+      setCurrentTab(1);
+    }
+    else if(name === 'szkolenia'){
+      setCurrentTab(0);
+    }
+    else if(name === 'wyjazdy'){
+      setCurrentTab(2);
+    }
+
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
   }, []);
+
   return (
     <Box sx={{ width: "100%", height: "100%" }} className="trainings-main">
       <PlaceHolder />
@@ -235,9 +254,11 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               <div
               className='trainings-text-r4f'
               >
-                <b className="trainings-title-r4f">Termin:</b> Dokładnie dni
+                {/* <b className="trainings-title-r4f">Termin:</b> Dokładnie dni
                 treningów podane zostaną {isMobile ? null : <br/>}po zakończeniu naboru oraz ustaleniu
-                grup. <br />
+                grup. <br /> */}
+               <b className="trainings-title-r4f">Terminy:</b>  <br/> Grupa średniozaawansowana: Piątek - 16:30 <br/>
+                 Grupa początkująca: Wtorek - 16:30 <br />
               </div>
               <div
               className='trainings-text-r4f'

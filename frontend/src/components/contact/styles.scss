@@ -71,6 +71,7 @@
   align-items: center;
   gap: 2vh;
   .social-icon-aboutUs {
+    // fg-color: #ffffff !important;
     height: 7vh !important;
     width: 7vh !important;
     @media (max-width: 900px) {
@@ -127,3 +128,4 @@
     margin-top: 0.5vh;
   }
 }
+

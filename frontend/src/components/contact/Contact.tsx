@@ -35,9 +35,9 @@ const Contact: React.FC = () => {
           alt="logo"
         />
         <div className='socials'>
-          <SocialIcon url={'https://www.facebook.com/profile.php?id=100083105601877'} target='_blank' className="social-icon-aboutUs"/>
-            <SocialIcon url={'https://www.instagram.com/_ride4fun.pl/'} target='_blank' className="social-icon-aboutUs"/>
-            <SocialIcon url={'https://www.youtube.com/channel/UCwR8Nug7AmiUP4W4t5SSJJA'} target='_blank' className="social-icon-aboutUs"/>
+          <SocialIcon url={'https://www.facebook.com/profile.php?id=100083105601877'} target='_blank' className="social-icon-aboutUs" fgColor="#f2f2f2"/>
+            <SocialIcon url={'https://www.instagram.com/_ride4fun.pl/'} target='_blank' className="social-icon-aboutUs" fgColor="#f2f2f2"/>
+            <SocialIcon url={'https://www.youtube.com/channel/UCwR8Nug7AmiUP4W4t5SSJJA'} target='_blank' className="social-icon-aboutUs" fgColor="#f2f2f2"/>
 
         </div>
       </div>
