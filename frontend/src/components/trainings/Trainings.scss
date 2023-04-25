@@ -236,3 +236,20 @@
     text-align: left !important;
     width: 100%;
 }
+
+.cards-trainings-items{
+    display: flex; 
+    gap: 1.5vw; 
+    justify-content: center;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+}
+
+.cards-size-trainings{
+    width: 50%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}

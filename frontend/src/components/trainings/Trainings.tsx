@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import PlaceHolder from "../common/PlaceHolder";
 import "./Trainings.scss";
-import { Button } from "@mui/material";
-import ContactAcademy from "./ContactAcademy";
+import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
+import ContactAcademy, { UserData } from "./ContactAcademy";
 import ImagesPortfolio from "../slides/ImagesPortfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
@@ -21,10 +21,75 @@ export interface TrainingProps {
 }
 
 const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
-  
+  const [initialValues, setInitialValues] = useState<UserData>(initialValuesPattern);
   const { name } = useParams();
- 
+
+  const card1 = (
+    <React.Fragment>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Grupa początkująca
+        </Typography>
+        <Typography variant="h5" component="div">
+          Wtorek 16:30
+        </Typography>
+        <Typography variant="body2">
+        Dzieci i młodzież od 7 roku życia. Poziom podstawowy.
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => handleBasic()}>Zapisz się</Button>
+      </CardActions>
+    </React.Fragment>
+  );
   
+  const card2 = (
+    <React.Fragment>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Grupa średnio zaawansowana
+        </Typography>
+        <Typography variant="h5" component="div">
+          Piątek 16:30
+        </Typography>
+        <Typography variant="body2">
+          Dzieci i młodzież. <br/> Poziom średnio zaawansowany. 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => handleSemiAdvanced()}>Zapisz się</Button>
+      </CardActions>
+    </React.Fragment>
+  );
+
+  function handleSemiAdvanced(){
+    const newInitialValues: UserData = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      contact: '',
+      message: ' ',
+      age: '',
+      level: 'Średnio zaawansowany'
+    }
+    setInitialValues(newInitialValues)
+    scrollToForm();
+  }
+
+  function handleBasic(){
+    const newInitialValues: UserData = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      contact: '',
+      message: ' ',
+      age: '',
+      level: 'Podstawowy'
+    }
+    setInitialValues(newInitialValues);
+    scrollToForm();
+  }
+
   function scrollToForm() {
     const { top } = contactRef.current.getBoundingClientRect();
     if (currentTab === 1) {
@@ -241,24 +306,23 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                   fontSize: "3.75vh",
                 }}
               >
-                <Button
+                {/* <Button
                   variant="contained"
                   // color="success"
                   onClick={() => scrollToForm()}
                   className="button-zapisz"
                 >
                   Zapisz się
-                </Button>
+                </Button> */}
               </div>
 
               <div
-              className='trainings-text-r4f'
+              className='trainings-text-r4f cards-trainings-items'
               >
-                {/* <b className="trainings-title-r4f">Termin:</b> Dokładnie dni
-                treningów podane zostaną {isMobile ? null : <br/>}po zakończeniu naboru oraz ustaleniu
-                grup. <br /> */}
-               <b className="trainings-title-r4f">Terminy:</b>  <br/> Grupa średniozaawansowana: Piątek - 16:30 <br/>
-                 Grupa początkująca: Wtorek - 16:30 <br />
+               
+              <Card variant="outlined" className="cards-size-trainings">{card1}</Card>
+              <Card variant="outlined" className="cards-size-trainings">{card2}</Card>
+
               </div>
               <div
               className='trainings-text-r4f'
@@ -296,7 +360,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
             </div>
           </div>
       
-          <ContactAcademy />
+          <ContactAcademy initialValues={initialValues} />
           <div ref={contactRef}></div>
         </div>
       )}
@@ -373,3 +437,15 @@ export const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
 };
+
+
+
+const initialValuesPattern: UserData = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  contact: '',
+  message: ' ',
+  age: '',
+  level: ''
+}

@@ -7,14 +7,16 @@ import emailjs from '@emailjs/browser';
 import SendAlert from '../contact/SendAlert';
 import './ContactAcademy.scss';
 
-const ContactAcademy: React.FC = () => {
+export interface ContactAcademyProps{
+    initialValues: UserData,
+}
+
+const ContactAcademy: React.FC<ContactAcademyProps> = ({initialValues}) => {
     
 const [showAlert, setShowAlert] = useState<boolean>(false);
 const [isSuccess, setSuccess] = useState<boolean>(false);
-
 const isNonMobile = useMediaQuery("(min-width: 600px");
 const form = useRef();
-
 function handleSubmit(success: boolean, error: any = null){
     if(success){
         setSuccess(true);
@@ -36,11 +38,12 @@ const sendEmail = (e: UserData) => {
             handleSubmit(false);
       });
   };
+
   return (
     <Box  className='trainings-contact'>
         {showAlert && <SendAlert setShowAlert={setShowAlert} success={isSuccess}/>}
         <Box className='contact-content'>
-            <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema}>
+            <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema} enableReinitialize={true}>
                 {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
                     //@ts-ignore
                     <form onSubmit={handleSubmit} ref={form}>
@@ -78,16 +81,6 @@ export type UserData  = {
     age: string;
     level: string;
 }
-
-const initialValues: UserData = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    contact: '',
-    message: ' ',
-    age: '',
-    level: ''
-  }
   
   const phoneRegExp = /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
   
