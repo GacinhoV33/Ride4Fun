@@ -31,9 +31,10 @@ function handleSubmit(success: boolean, error: any = null){
 
 const sendEmail = (e: UserData) => {
     //@ts-ignore
-    emailjs.sendForm('service_vpzn6cc', 'template_4c2k2il', form.current, 'wgvECPZIuSzFYwy-j').then((result) => {
+    emailjs.sendForm('service_77bl8zu', 'template_l6itr04', form.current, '9Pv7XQijLGFDF5Ob_').then((result) => {
           result.text == 'OK' ? handleSubmit(true) : handleSubmit(false);
       }, (error) => {
+        console.log(error)
             handleSubmit(false);
       });
   };

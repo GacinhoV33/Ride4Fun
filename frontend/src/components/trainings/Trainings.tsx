@@ -27,14 +27,14 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
   const card1 = (
     <React.Fragment>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15, fontWeight: 600 }} color="text.secondary" gutterBottom>
           Grupa początkująca
         </Typography>
         <Typography variant="h5" component="div">
           Wtorek 16:30
         </Typography>
         <Typography variant="body2">
-        Dzieci i młodzież od 7 roku życia. Poziom podstawowy.
+        Dzieci i młodzież od 7 roku życia rozpoczynające swoją przygodę <br/> z kolarstwem górskim.
         </Typography>
       </CardContent>
       <CardActions>
@@ -46,14 +46,14 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
   const card2 = (
     <React.Fragment>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15, fontWeight: 600 }} color="text.secondary" gutterBottom>
           Grupa średnio zaawansowana
         </Typography>
         <Typography variant="h5" component="div">
           Piątek 16:30
         </Typography>
         <Typography variant="body2">
-          Dzieci i młodzież. <br/> Poziom średnio zaawansowany. 
+          Dzieci i młodzież chcąca doskonalić umiejętności i wejść na jeszcze wyższy poziom.
         </Typography>
       </CardContent>
       <CardActions>

@@ -32,9 +32,10 @@ function handleSubmit(success: boolean, error: any = null){
 
 const sendEmail = (e: UserData) => {
     //@ts-ignore
-    emailjs.sendForm('service_vpzn6cc', 'template_ourwo1v', form.current, 'wgvECPZIuSzFYwy-j').then((result) => {
+    emailjs.sendForm('service_77bl8zu', 'template_jj4w6k8', form.current, '9Pv7XQijLGFDF5Ob_').then((result) => {
           result.text == 'OK' ? handleSubmit(true) : handleSubmit(false);
       }, (error) => {
+        console.log(error);
             handleSubmit(false);
       });
   };
@@ -48,8 +49,8 @@ const sendEmail = (e: UserData) => {
                     //@ts-ignore
                     <form onSubmit={handleSubmit} ref={form}>
                         <Box display='grid' gap='30px' gridTemplateColumns='repeat(4, minmax(0, 1fr)' sx={{"& > div" : {gridColumn: isNonMobile ? undefined : "span 4"}}}>
-                            <TextField fullWidth variant='filled' type='text' label='Imie' onBlur={handleBlur} onChange={handleChange} value={values.firstName} name='firstName' error={!!touched.firstName && !!errors.firstName} helperText={touched.firstName && errors.firstName} sx={{gridColumn: 'span 2'}}/>
-                            <TextField fullWidth variant='filled' type='text' label='Nazwisko' onBlur={handleBlur} onChange={handleChange} value={values.lastName} name='lastName' error={!!touched.lastName && !!errors.lastName} helperText={touched.lastName && errors.lastName} sx={{gridColumn: 'span 2'}}/>
+                            <TextField fullWidth variant='filled' type='text' label='Imie uczestnika' onBlur={handleBlur} onChange={handleChange} value={values.firstName} name='firstName' error={!!touched.firstName && !!errors.firstName} helperText={touched.firstName && errors.firstName} sx={{gridColumn: 'span 2'}}/>
+                            <TextField fullWidth variant='filled' type='text' label='Nazwisko uczestnika' onBlur={handleBlur} onChange={handleChange} value={values.lastName} name='lastName' error={!!touched.lastName && !!errors.lastName} helperText={touched.lastName && errors.lastName} sx={{gridColumn: 'span 2'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Email' onBlur={handleBlur} onChange={handleChange} value={values.email} name='email' error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} sx={{gridColumn: 'span 4'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Telefon kontaktowy' onBlur={handleBlur} onChange={handleChange} value={values.contact} name='contact' error={!!touched.contact && !!errors.contact} helperText={touched.contact && errors.contact} sx={{gridColumn: 'span 4'}}/>
                             <TextField fullWidth variant='filled' type='text' label='Wiek' onBlur={handleBlur} onChange={handleChange} name='age' value={values.age} sx={{gridColumn: 'span 2'}} error={!!touched.age && !!errors.age} helperText={touched.age && errors.age}/>
