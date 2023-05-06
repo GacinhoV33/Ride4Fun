@@ -7,3 +7,11 @@
     // grid-template-rows: 2dvh;
 
 }
+
+.tripcard{
+    &:hover{
+        border: 1px solid #B70000;
+        cursor: pointer;
+        // box-shadow: 1px 1px 1px 1px #AAA;
+    }
+}

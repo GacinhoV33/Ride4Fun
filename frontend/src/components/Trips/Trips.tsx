@@ -10,7 +10,6 @@ const Trips: React.FC = () => {
         Jedniodniowe wyjazdy szkoleniowe{" "}
       </h1>
       <CurrentTrips/>
-      {/* <OldTrips/> */}
     </div>
   );
 };
