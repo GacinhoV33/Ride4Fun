@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import "react-multi-carousel/lib/styles.css";
 import { isMobile } from "react-device-detect";
 import { useParams } from "react-router-dom";
+import Trips from "../Trips/Trips";
 
 export interface TrainingProps {
   currentTab: number;
@@ -365,33 +366,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
         </div>
       )}
       {currentTab === 2 && (
-        <div className="content-trainings">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              fontSize: "2.5vh",
-            }}
-          > 
-
-        <h1 className="title-third-tab title-of-trainings">
-            {" "}
-            Jedniodniowe wyjazdy szkoleniowe{" "}
-          </h1>
-            <div className="trainings-wyjazdy-main">
-              Zapraszamy na wyjazdy szkoleniowe z Ride4Fun! <br />{" "}
-              Cały dzień w najlepszych Polskich Bike Parkach pod okiem
-              instruktora wraz z dobrą ekipą to recepta na udany weekend!
-            </div>
-            <img
-              alt="wyjazdy1"
-              src="./images/wyjazdy1.jpg"
-              className="trainings-wyjazdy-img"
-            />
-            <h1 style={{ textAlign: "center" }}>Terminy już wkrótce!!!</h1>
-          </div>
-        </div>
+        <Trips/>
       )}
     </Box>
   );
