@@ -2,7 +2,7 @@
     display: grid;
     // max-width: 80%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 3dvw;
     // grid-template-rows: 2dvh;
 
@@ -14,4 +14,12 @@
         cursor: pointer;
         // box-shadow: 1px 1px 1px 1px #AAA;
     }
+}
+
+.trip-describtion{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 90vh;
+    width: 100%;
+    border: 1px solid white;
 }

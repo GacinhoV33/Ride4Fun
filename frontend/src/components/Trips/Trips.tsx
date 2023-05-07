@@ -1,6 +1,8 @@
 import React from "react";
 import "../trainings/Trainings.scss";
 import CurrentTrips from "./CurrentTrips";
+import './Trips.scss';
+import TripDescribtion from "./TripDescribtion";
 
 const Trips: React.FC = () => {
   return (
@@ -9,10 +11,23 @@ const Trips: React.FC = () => {
         {" "}
         Jedniodniowe wyjazdy szkoleniowe{" "}
       </h1>
-      <CurrentTrips/>
+      <CurrentTrips scrollToTripDescribtion={scrollToTripDescribtion}/>
+      <TripDescribtion/>
     </div>
   );
 };
+
+function scrollToTripDescribtion(){
+    const box = document.getElementById('trip-desc')?.getBoundingClientRect();
+    if(box){
+        window.scrollTo({
+            behavior: 'smooth',
+            top: box.bottom,
+            left: 0,
+        })
+    }
+}
+
 
 const TripsOld: React.FC = () => {
   return (
