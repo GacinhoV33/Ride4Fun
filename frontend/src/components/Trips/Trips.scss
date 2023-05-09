@@ -19,7 +19,13 @@
 .trip-describtion{
     margin-top: 2vh;
     margin-bottom: 1vh;
-    height: 90vh;
+    height: auto;
     width: 100%;
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 900px){
+        width: 90vw;
+    }
 }

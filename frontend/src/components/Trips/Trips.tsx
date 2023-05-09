@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../trainings/Trainings.scss";
 import CurrentTrips from "./CurrentTrips";
 import './Trips.scss';
 import TripDescribtion from "./TripDescribtion";
+import TripContact, { UserData } from "./TripContact";
 
 const Trips: React.FC = () => {
+  const [initialValues, setInitialValues] = useState<UserData>(initialValuesPattern);
+  const [currentTrip, setCurrentTrip] = useState<number>(0);
   return (
     <div className="content-trainings">
       <h1 className="title-third-tab title-of-trainings">
         {" "}
         Jedniodniowe wyjazdy szkoleniowe{" "}
       </h1>
-      <CurrentTrips scrollToTripDescribtion={scrollToTripDescribtion}/>
-      <TripDescribtion/>
+      <CurrentTrips scrollToTripDescribtion={scrollToTripDescribtion} currentTrip={currentTrip} setCurrentTrip={setCurrentTrip} setInitialValues={setInitialValues}/>
+      <TripDescribtion currentTrip={currentTrip}/>
+      <TripContact initialValues={initialValues}/>
     </div>
   );
 };
@@ -61,3 +65,14 @@ const TripsOld: React.FC = () => {
 };
 
 export default Trips;
+
+
+const initialValuesPattern: UserData = {
+  firstName: '',
+  lastName: '',
+  contact: '',
+  age: '',
+  tripDestination: '',
+  tripDate: '',
+  email: ''
+}
