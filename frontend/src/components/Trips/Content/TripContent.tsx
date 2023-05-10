@@ -8,6 +8,8 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
+import { Typography, TypographyTypeMap } from '@mui/material';
+import { isMobile } from 'react-device-detect';
 
 
 export const TimeLine1 = () => {
@@ -101,7 +103,7 @@ export const TripContentData: TripContentProps[] = [
       </span>
     ),
     bikeParkDescribtion: (
-      <span>
+      <span style={isMobile ? {width: '85vw'} : undefined}>
         {" "}
         Bikepark Słotwiny Arena posiada różnorodne, dobrze utrzymane trasy o
         łącznej długości 10 km, które zostały zaprojektowane z myślą o
@@ -113,18 +115,23 @@ export const TripContentData: TripContentProps[] = [
       </span>
     ),
     roadsDescribtion: (
-      <code style={{fontSize: '20px'}}>
+      <div style={{fontSize: '20px'}}>
         Na terenie parku znajdują się cztery trasy, w tym jedna czerwona, dwie
         niebieskie i jedna zielona. Wszystkie trasy są zbudowane z dala od
         pieszych szlaków, co zapewnia dodatkowe bezpieczeństwo, a dodatkowo
         posiadają odpowiednie nachylenie, miejsca do wytracania prędkości oraz
         bandy ułatwiające pokonywanie zakrętów. Park jest odpowiedni zarówno dla
         początkujących jak i doświadczonych rowerzystów.{" "}
-      </code>
+      </div>
     ),
     timeLine: <TimeLine1/>,
     city: 'Krynica',
-    date: '13.05.2023'
+    date: '13.05.2023',
+    additionalInfo: <Typography style={{ marginBottom: "15px" }}>
+    {" "}
+    *Ilość miejsc ograniczona <br/>
+    **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę 14.05.
+  </Typography>
   },
   // {
   //   title: "BIKE PARK SŁOTWINY ARENA 13.05.2024",
@@ -143,7 +150,8 @@ export interface TripContentProps {
   bikeParkDescribtion?: any;
   roadsDescribtion?: any;
   requirments?: any;
-  timeLine?: any
+  timeLine?: any;
+  additionalInfo?: any
 }
 
 

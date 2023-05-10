@@ -18,40 +18,35 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
     bikeParkDescribtion,
     roadsDescribtion,
     timeLine,
+    additionalInfo
   } = TripContentData[currentTrip];
   return (
     <div
       className="trip-describtion"
       id="trip-desc"
-      style={{ background: "rgba(38, 38, 38, 0.75)" }}
     >
-      <Typography variant="h3" sx={{ p: "20px" }}>
+      <Typography variant={isMobile ? 'h6' : 'h3'} sx={{ p: "20px" }}>
         {title}
       </Typography>
-      <img src={imgMain} width="70%" alt={`main-${title}`} />
+      <img src={imgMain} width={isMobile ? '90%' : '70%'} alt={`main-${title}`} />
       <Typography sx={{ p: "2% 10%", fontSize: "20px" }}>
         {contentHeader}
       </Typography>
       <br />
-      <Typography sx={{ color: "#ccc", p: "2% 10%", fontSize: "18px" }}>
+      <Typography sx={{ color: "#ccc", p: "2% 10%", fontSize: "18px" }} className='bike-park-desc'>
         {bikeParkDescribtion}
       </Typography>
-      <div style={isMobile ? { display: "flex", gap: "2.5%", flexDirection: 'column' }: { display: "flex", gap: "2.5%", flexDirection: 'row' }}>
-        <img src={imgMaps} alt={`maps-${title}`} width="500" />
+      <div className='roads-describtion'>
+        <img src={imgMaps} alt={`maps-${title}`} width={isMobile ? '300' : '500'} />
         <Typography
-          sx={{ color: "#ccc", p: "2%", fontSize: "18px", width: "600px" }}
+        className='text-road-desc'
         >
           {roadsDescribtion}
         </Typography>
       </div>
       <Typography
-        style={{
-          margin: "80px",
-          borderTop: "1px solid #eee",
-          padding: "0px 40px",
-          paddingTop: "50px",
-        }}
-        variant="h5"
+        className='instructors'
+        variant={isMobile ?  'h6' : 'h5' }
       >
         Nasi instruktorzy zapewnią opiekę oraz profesjonalne szkolenie rowerowe
         dostosowane do poziomu grupy, a co najważniejsze dużo jazdy i masę
@@ -116,11 +111,7 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
         Plan wyjazdu
       </Typography>
       {timeLine}
-      <Typography style={{ marginBottom: "15px" }}>
-        {" "}
-        *Ilość miejsc ograniczona <br/>
-        **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę 14.05.
-      </Typography>
+      {additionalInfo}
     </div>
   );
 };

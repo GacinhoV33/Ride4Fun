@@ -9,6 +9,7 @@ import "./Trips.scss";
 import { CurrentTripsContent } from "./Content/TripCardsContent";
 import { UserData } from "./TripContact";
 import { TripContentData } from "./Content/TripContent";
+import { isMobile } from "react-device-detect";
 
 export interface CurrentTripsProps {
   scrollToTripDescribtion: () => void;
@@ -26,7 +27,7 @@ const CurrentTrips: React.FC<CurrentTripsProps> = ({
 }) => {
   return (
     <div>
-            <Typography gutterBottom variant="h4" component="div">
+            <Typography gutterBottom variant={isMobile ? "h6" :"h4"} component="div">
             Nadchodzące wyjazdy:
             </Typography>
 
@@ -98,7 +99,7 @@ const TripCard: React.FC<TripCardProps> = ({
   }
   return (
     <Card
-      sx={{ width: 375 }}
+      sx={ isMobile ? {width: 300} :{ width: 375 }}
       className="tripcard"
       style={
         tripId === currentTrip ? { border: "1px solid #B70000" } : undefined
