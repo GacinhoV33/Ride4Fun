@@ -99,7 +99,7 @@ const TripCard: React.FC<TripCardProps> = ({
   }
   return (
     <Card
-      sx={ isMobile ? {width: 300} :{ width: 375 }}
+      // sx={ isMobile ? {width: 300} :{ width: 375 }}
       className="tripcard"
       style={
         tripId === currentTrip ? { border: "1px solid #B70000" } : undefined
@@ -124,7 +124,6 @@ const TripCard: React.FC<TripCardProps> = ({
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">Dowiedz się więcej </Button> */}
         <Button size="small" onClick={() => handleSign()}>Zapisz się </Button>
       </CardActions>
     </Card>

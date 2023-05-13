@@ -9,10 +9,14 @@
 }
 
 .tripcard{
+    width: 375px;
     &:hover{
         border: 1px solid #B70000;
         cursor: pointer;
         // box-shadow: 1px 1px 1px 1px #AAA;
+    }
+    @media (max-width:900px){
+        width: 300px;
     }
 }
 
@@ -39,6 +43,7 @@
     flex-direction: row;
     @media (max-width: 900px){
         flex-direction: column;
+        align-items: center;
     }
     margin-bottom: 20px;
     .text-road-desc{
@@ -47,20 +52,29 @@
         font-size: 18px;
         width: 600px;
         @media (max-width: 900px){
-            width: 350px;
+            width: 300px;
             font-size: 12px;
-            margin-left: 7.5vw;
+            // margin-left: 7.5vw;
         }
     }
 }
 
 .bike-park-desc{
     color: #ccc;
-    padding: 2% 10%; font-size: 18px;
+    padding: 2% 10%; 
+    font-size: 18px;
     @media (max-width: 900px){
-        padding: 0;
+        padding: 0px  0px !important;
         width: 75vw;
         font-size: 14px;
+    }
+}
+
+.img-maps{
+    width: 500px;
+    @media (max-width: 900px){
+        width: 300px;
+        margin: 20px;
     }
 }
 
@@ -70,7 +84,8 @@
     padding: 0px 40px;
     padding-top: 50px;
     @media (max-width: 900px){
-        padding: 15px 0;
+        padding: 0px 0px;
+        font-size: 18px;
         // padding-top: 20px;
     }
 }

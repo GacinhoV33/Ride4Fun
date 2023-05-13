@@ -16,7 +16,7 @@ export const TimeLine1 = () => {
 
   return (
     <Timeline
-    style={{width: '40vw'}}
+    style={isMobile ? {width: '80vw'} : {width: '40vw'}}
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: 0.2,
@@ -115,14 +115,14 @@ export const TripContentData: TripContentProps[] = [
       </span>
     ),
     roadsDescribtion: (
-      <div style={{fontSize: '20px'}}>
+      <span style={{fontSize: '16px'}}>
         Na terenie parku znajdują się cztery trasy, w tym jedna czerwona, dwie
         niebieskie i jedna zielona. Wszystkie trasy są zbudowane z dala od
         pieszych szlaków, co zapewnia dodatkowe bezpieczeństwo, a dodatkowo
         posiadają odpowiednie nachylenie, miejsca do wytracania prędkości oraz
         bandy ułatwiające pokonywanie zakrętów. Park jest odpowiedni zarówno dla
         początkujących jak i doświadczonych rowerzystów.{" "}
-      </div>
+      </span>
     ),
     timeLine: <TimeLine1/>,
     city: 'Krynica',

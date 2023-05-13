@@ -28,16 +28,16 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <Typography variant={isMobile ? 'h6' : 'h3'} sx={{ p: "20px" }}>
         {title}
       </Typography>
-      <img src={imgMain} width={isMobile ? '90%' : '70%'} alt={`main-${title}`} />
+      <img src={imgMain} width={isMobile ? '80vw' : '70%'} alt={`main-${title}`} />
       <Typography sx={{ p: "2% 10%", fontSize: "20px" }}>
         {contentHeader}
       </Typography>
       <br />
-      <Typography sx={{ color: "#ccc", p: "2% 10%", fontSize: "18px" }} className='bike-park-desc'>
+      <Typography className='bike-park-desc'>
         {bikeParkDescribtion}
       </Typography>
       <div className='roads-describtion'>
-        <img src={imgMaps} alt={`maps-${title}`} width={isMobile ? '300' : '500'} />
+        <img src={imgMaps} className='img-maps' alt={`maps-${title}`} />
         <Typography
         className='text-road-desc'
         >
@@ -46,7 +46,7 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       </div>
       <Typography
         className='instructors'
-        variant={isMobile ?  'h6' : 'h5' }
+        variant={isMobile ?  undefined : 'h5' }
       >
         Nasi instruktorzy zapewnią opiekę oraz profesjonalne szkolenie rowerowe
         dostosowane do poziomu grupy, a co najważniejsze dużo jazdy i masę
@@ -58,11 +58,11 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
           </div>
           <Typography variant="h6">
             Sprawny rower górski z amortyzacją z przodu{" "}
-            <FontAwesomeIcon icon={faCircleCheck} style={{ width: "3vh" }} />
+            <FontAwesomeIcon icon={faCircleCheck} style={isMobile ? {width: '3vw'} : { width: "3vh" }} />
           </Typography>
           <Typography variant="h6">
             Kask (full face) i ochraniacze{" "}
-            <FontAwesomeIcon icon={faCircleCheck} style={{ width: "3vh" }} />
+            <FontAwesomeIcon icon={faCircleCheck} style={isMobile ? {width: '3vw'} : { width: "3vh" }} />
           </Typography>
           <Typography variant="h6">
             Dużo zajawki i chęci jazdy
