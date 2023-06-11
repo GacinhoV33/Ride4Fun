@@ -80,7 +80,7 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
             Cena Obejmuje:
           </Typography>
           <Typography variant="h6">
-          - 5h szkolenia rowerowego pod okiem instruktora 
+          - 6h szkolenia rowerowego pod okiem instruktora 
           </Typography>
           <Typography variant="h6">
           - Transport 
