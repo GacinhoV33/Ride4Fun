@@ -13,7 +13,7 @@ export const CurrentTripsContent: TripCardProps[] = [
       title: "BIKE PARK SŁOTWINY ARENA",
       content: <span>Wyjazd szkoleniowy dla dzieci i młodzieży. <br/>6 godzin szkolenia - Poziom Średniozaawansowany.</span>,
       tripId: 0,
-      date: '18.06.2023',
+      date: 'Sobota 17.06.2023',
     },
     // {
     //   imgPath: "test_trip_img.jpg",

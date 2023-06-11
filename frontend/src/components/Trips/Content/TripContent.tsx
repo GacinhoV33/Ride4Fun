@@ -92,7 +92,7 @@ export const TimeLine1 = () => {
 
 export const TripContentData: TripContentProps[] = [
   {
-    title: "BIKE PARK SŁOTWINY ARENA 18.06.2023",
+    title: "BIKE PARK SŁOTWINY ARENA 17.06.2023",
     imgMain: "./images/content/content1.jpg",
     imgMaps: "./images/content/maps1.jpg",
     contentHeader: (
@@ -126,11 +126,11 @@ export const TripContentData: TripContentProps[] = [
     ),
     timeLine: <TimeLine1/>,
     city: 'Krynica',
-    date: '18.06.2023',
+    date: '17.06.2023',
     additionalInfo: <Typography style={{ marginBottom: "15px" }}>
     {" "}
     *Ilość miejsc ograniczona <br/>
-    **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę 19.06.
+    **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę 18.06.
   </Typography>
   },
   // {
