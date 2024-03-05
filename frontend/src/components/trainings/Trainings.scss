@@ -29,7 +29,7 @@
     font-size: 4.25vh;
     font-weight: 800;
     color: #B70000;
-    font-style: italic;
+    // font-style: italic;
     @media(max-width: 900px){
         font-size: 6vw;
     }
@@ -240,6 +240,7 @@
 .cards-trainings-items{
     display: flex; 
     gap: 1.5vw; 
+    min-width: 8vw;
     justify-content: center;
     @media (max-width: 900px) {
         flex-direction: column;
