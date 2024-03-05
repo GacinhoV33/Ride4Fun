@@ -425,7 +425,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 <b className="trainings-title-r4f">Lokalizacja: </b> Trenujemy w
                 Bike Park Marcinka zlokalizowanym przy Ul. Harcerskiej w
                 Tarnowie. <br />
-                <div style={isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
+                <div style={!isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
                   *W przypadku deszczu, Trening Motorczyny odbywa się w hali
                   sportowej
                 </div>
@@ -440,7 +440,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
                 {" "}
                 <b className="trainings-title-r4f">Czas trwania: </b> Trening
                 trwa dwie godziny. <br />{" "}
-                <div style={isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
+                <div style={!isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
                   *Trening motoryczny trwa jedną godzinę i odbywa się co dwa tygodnie
                 </div>
               </div>
@@ -448,7 +448,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
               <div className="trainings-text-r4f">
                 <b className="trainings-title-r4f">Cena: </b> 250pln/miesiąc{" "}
                 <br />
-                <div style={isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
+                <div style={!isMobile ? {fontSize: '1.45vh'} : {fontSize: '1vh'}}>
                   *Cena zajęć rozszerzona o trening motoryczny realizowany raz na dwa tygodnie <br></br>wynosi 350pln
                 </div>
               </div>
