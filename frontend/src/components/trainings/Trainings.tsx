@@ -69,7 +69,7 @@ const Trainings: React.FC<TrainingProps> = ({ currentTab, setCurrentTab }) => {
           Grupa średnio zaawansowana
         </Typography>
         <Typography variant="h5" component="div">
-          Poniedziałek 16:30
+          Poniedziałek 17:00
         </Typography>
         <Typography variant="body2">
           Dzieci i młodzież chcąca doskonalić umiejętności i wejść na jeszcze
