@@ -91,8 +91,8 @@ const TripCard: React.FC<TripCardProps> = ({
         lastName: '',
         contact: '',
         age: '',
-        tripDestination: city,
-        tripDate: date,
+        // tripDestination: city,
+        // tripDate: date,
         email: ''
       })
     }

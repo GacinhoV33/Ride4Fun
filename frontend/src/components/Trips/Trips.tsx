@@ -12,11 +12,14 @@ const Trips: React.FC = () => {
     <div className="content-trainings">
       <h1 className="title-third-tab title-of-trainings">
         {" "}
-        Jedniodniowe wyjazdy szkoleniowe{" "}
+        Wyjazdy szkoleniowe{" "}
       </h1>
       <CurrentTrips scrollToTripDescribtion={scrollToTripDescribtion} currentTrip={currentTrip} setCurrentTrip={setCurrentTrip} setInitialValues={setInitialValues}/>
       <TripDescribtion currentTrip={currentTrip}/>
       <TripContact initialValues={initialValues}/>
+      <h2>Zapraszamy!</h2>
+      <img src="images/beskidcamp1.jpeg" style={{width: "100%"}} alt="rider"/>
+
     </div>
   );
 };
@@ -72,7 +75,7 @@ const initialValuesPattern: UserData = {
   lastName: '',
   contact: '',
   age: '',
-  tripDestination: '',
-  tripDate: '',
+  // tripDestination: '',
+  // tripDate: '',
   email: ''
 }

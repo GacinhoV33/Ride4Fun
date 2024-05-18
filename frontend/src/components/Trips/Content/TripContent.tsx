@@ -1,42 +1,41 @@
-import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import * as React from "react";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
-} from '@mui/lab/TimelineOppositeContent';
-import { Typography, TypographyTypeMap } from '@mui/material';
-import { isMobile } from 'react-device-detect';
-
+} from "@mui/lab/TimelineOppositeContent";
+import { Typography } from "@mui/material";
+import { isMobile } from "react-device-detect";
 
 export const TimeLine1 = () => {
-
   return (
     <Timeline
-    style={isMobile ? {width: '80vw'} : {width: '40vw'}}
+      style={isMobile ? { width: "80vw" } : { width: "40vw" }}
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: 0.2,
         },
       }}
     >
-      <TimelineItem >
+      <TimelineItem>
         <TimelineOppositeContent color="textSecondary">
-          7:30 
+          7:30
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Zbiórka na parkingu koło sklepu Action przy ul. Dąbrowskiego w Tarnowie</TimelineContent>
+        <TimelineContent>
+          Zbiórka na parkingu koło sklepu Action przy ul. Dąbrowskiego w
+          Tarnowie
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent color="textSecondary">
-          
-        </TimelineOppositeContent>
+        <TimelineOppositeContent color="textSecondary"></TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -50,49 +49,47 @@ export const TimeLine1 = () => {
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
-
         </TimelineSeparator>
-        <TimelineContent >Start szkolenia rowerowego Enduro Downhill </TimelineContent>
+        <TimelineContent>
+          Start szkolenia rowerowego Enduro Downhill{" "}
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent color="textSecondary"></TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          6h szkolenia z przerwą na posiłek w Restauracji „Widokowa”{" "}
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="textSecondary">
-          
+          16:00
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
-
         </TimelineSeparator>
-        <TimelineContent >6h szkolenia z przerwą na posiłek w Restauracji „Widokowa”  </TimelineContent>
+        <TimelineContent> Powrót do Tarnowa </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="textSecondary">
-            16:00
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-
-        </TimelineSeparator>
-        <TimelineContent > Powrót do Tarnowa  </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent color="textSecondary">
-            17:30
+          17:30
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent > Przyjazd na miejsce zbiórki  </TimelineContent>
+        <TimelineContent> Przyjazd na miejsce zbiórki </TimelineContent>
       </TimelineItem>
     </Timeline>
   );
-}
-  
+};
 
 export const TripContentData: TripContentProps[] = [
   {
-    title: "BIKE PARK SŁOTWINY ARENA 17.06.2023",
+    title: "BESKIDCAMP 21-27 Lipiec 2024",
     imgMain: "./images/content/content1.jpg",
     imgMaps: "./images/content/maps1.jpg",
     contentHeader: (
@@ -103,7 +100,7 @@ export const TripContentData: TripContentProps[] = [
       </span>
     ),
     bikeParkDescribtion: (
-      <span style={isMobile ? {width: '85vw'} : undefined}>
+      <span style={isMobile ? { width: "85vw" } : undefined}>
         {" "}
         Bikepark Słotwiny Arena posiada różnorodne, dobrze utrzymane trasy o
         łącznej długości 10 km, które zostały zaprojektowane z myślą o
@@ -115,7 +112,7 @@ export const TripContentData: TripContentProps[] = [
       </span>
     ),
     roadsDescribtion: (
-      <span style={{fontSize: '16px'}}>
+      <span style={{ fontSize: "16px" }}>
         Na terenie parku znajdują się cztery trasy, w tym jedna czerwona, dwie
         niebieskie i jedna zielona. Wszystkie trasy są zbudowane z dala od
         pieszych szlaków, co zapewnia dodatkowe bezpieczeństwo, a dodatkowo
@@ -124,15 +121,63 @@ export const TripContentData: TripContentProps[] = [
         początkujących jak i doświadczonych rowerzystów.{" "}
       </span>
     ),
-    timeLine: <TimeLine1/>,
-    city: 'Krynica',
-    date: '17.06.2023',
-    additionalInfo: <Typography style={{ marginBottom: "15px" }}>
-    {" "}
-    *Ilość miejsc ograniczona <br/>
-    **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę 18.06.
-  </Typography>
+    timeLine: <TimeLine1 />,
+    city: "Beskidcamp",
+    date: "17.06.2023",
+    additionalInfo: (
+      <Typography style={{ marginBottom: "15px" }}>
+        {" "}
+        *Ilość miejsc ograniczona <br />
+        **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę
+        18.06.
+      </Typography>
+    ),
   },
+  // {
+  //   title: "BIKE PARK SŁOTWINY ARENA 17.06.2023",
+  //   imgMain: "./images/content/content1.jpg",
+  //   imgMaps: "./images/content/maps1.jpg",
+  //   contentHeader: (
+  //     <span>
+  //       Zapraszamy na pierwszy klubowy wyjazd na jednodniowe szkolenie rowerowe
+  //       z RIDE4FUN! <br /> Naszą pierwszą odwiedzoną miejscówką będzie Bike Park
+  //       Słotwiny Arena w Krynicy Zdroju.
+  //     </span>
+  //   ),
+  //   bikeParkDescribtion: (
+  //     <span style={isMobile ? { width: "85vw" } : undefined}>
+  //       {" "}
+  //       Bikepark Słotwiny Arena posiada różnorodne, dobrze utrzymane trasy o
+  //       łącznej długości 10 km, które zostały zaprojektowane z myślą o
+  //       bezpieczeństwie i dobrej zabawie rowerzystów. Na szkoleniu skupimy się
+  //       na poznaniu tras w Bike Parku, bezpiecznym i skutecznym pokonywaniu
+  //       nowych przeszkód, doskonaleniu umiejętności zdobytych podczas treningów
+  //       w Tarnowie, a przede wszystkim na dobrze spędzonym dniu na rowerze z
+  //       kumplami!
+  //     </span>
+  //   ),
+  //   roadsDescribtion: (
+  //     <span style={{ fontSize: "16px" }}>
+  //       Na terenie parku znajdują się cztery trasy, w tym jedna czerwona, dwie
+  //       niebieskie i jedna zielona. Wszystkie trasy są zbudowane z dala od
+  //       pieszych szlaków, co zapewnia dodatkowe bezpieczeństwo, a dodatkowo
+  //       posiadają odpowiednie nachylenie, miejsca do wytracania prędkości oraz
+  //       bandy ułatwiające pokonywanie zakrętów. Park jest odpowiedni zarówno dla
+  //       początkujących jak i doświadczonych rowerzystów.{" "}
+  //     </span>
+  //   ),
+  //   timeLine: <TimeLine1 />,
+  //   city: "Krynica",
+  //   date: "17.06.2023",
+  //   additionalInfo: (
+  //     <Typography style={{ marginBottom: "15px" }}>
+  //       {" "}
+  //       *Ilość miejsc ograniczona <br />
+  //       **W przypadku złej pogody możliwość przeniesienia wyjazdu na Niedzielę
+  //       18.06.
+  //     </Typography>
+  //   ),
+  // },
   // {
   //   title: "BIKE PARK SŁOTWINY ARENA 13.05.2024",
   //   imgMain: "test_img.jpg",
@@ -151,7 +196,5 @@ export interface TripContentProps {
   roadsDescribtion?: any;
   requirments?: any;
   timeLine?: any;
-  additionalInfo?: any
+  additionalInfo?: any;
 }
-
-

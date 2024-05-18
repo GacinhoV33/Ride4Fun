@@ -40,7 +40,7 @@ const TripContact: React.FC<TripContactProps> = ({initialValues}) => {
       };
     
       return (
-        <Box  className='trainings-contact'>
+        <Box  className='trainings-contact' >
             {showAlert && <SendAlert setShowAlert={setShowAlert} success={isSuccess}/>}
             <Box className='contact-content'>
                 <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={userSchema} enableReinitialize={true}>
@@ -53,8 +53,8 @@ const TripContact: React.FC<TripContactProps> = ({initialValues}) => {
                                 <TextField fullWidth variant='filled' type='text' label='Telefon kontaktowy' onBlur={handleBlur} onChange={handleChange} value={values.contact} name='contact' error={!!touched.contact && !!errors.contact} helperText={touched.contact && errors.contact} sx={{gridColumn: 'span 1'}}/>
                                 <TextField fullWidth variant='filled' type='text' label='Wiek' onBlur={handleBlur} onChange={handleChange} name='age' value={values.age} sx={{gridColumn: 'span 1'}} error={!!touched.age && !!errors.age} helperText={touched.age && errors.age}/>
                                 <TextField fullWidth variant='filled' type='text' label='Email' onBlur={handleBlur} onChange={handleChange} name='email' value={values.email} sx={{gridColumn: 'span 2'}} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email}/>
-                                <TextField fullWidth variant='filled' type='text' label='Miejsce Wyjazdu' onBlur={handleBlur} onChange={handleChange} name='tripDestination' value={values.tripDestination} sx={{gridColumn: 'span 1'}} error={!!touched.tripDestination && !!errors.tripDestination} helperText={touched.tripDestination && errors.tripDestination}/>
-                                <TextField fullWidth variant='filled' type='text' label='Data' onBlur={handleBlur} onChange={handleChange} name='tripDate' value={values.tripDate} sx={{gridColumn: 'span 1 '}} error={!!touched.tripDate && !!errors.tripDate} helperText={touched.tripDate && errors.tripDate}/>
+                                {/* <TextField fullWidth variant='filled' type='text' label='Miejsce Wyjazdu' onBlur={handleBlur} onChange={handleChange} name='tripDestination' value={values.tripDestination} sx={{gridColumn: 'span 1'}} error={!!touched.tripDestination && !!errors.tripDestination} helperText={touched.tripDestination && errors.tripDestination}/>
+                                <TextField fullWidth variant='filled' type='text' label='Data' onBlur={handleBlur} onChange={handleChange} name='tripDate' value={values.tripDate} sx={{gridColumn: 'span 1 '}} error={!!touched.tripDate && !!errors.tripDate} helperText={touched.tripDate && errors.tripDate}/> */}
 
                             </Box>
                             <Box display='flex' justifyContent='end' mt='20px'>
@@ -77,9 +77,9 @@ const TripContact: React.FC<TripContactProps> = ({initialValues}) => {
         firstName: string;
         lastName: string; 
         contact: string;
-        tripDestination: string;
+        // tripDestination: string;
         age: string;
-        tripDate: string;
+        // tripDate: string;
         email: string;
     }
       
@@ -90,8 +90,8 @@ const TripContact: React.FC<TripContactProps> = ({initialValues}) => {
         lastName: yup.string().required("Wymagane"),
         contact: yup.string().matches(phoneRegExp, "Nieprawidłowy numer").required('Wymagane'), //Regex validation and required
         age: yup.string().required('Wymagane'),
-        tripDestination: yup.string().required("Wymagane"),
-        tripDate: yup.string().required("Wymagane"), // TODO regex for correct date
+        // tripDestination: yup.string().required("Wymagane"),
+        // tripDate: yup.string().required("Wymagane"), // TODO regex for correct date
         email: yup.string().email("Nieprawidłowy email").required("Podaj swój e-mail"),
     })
       
