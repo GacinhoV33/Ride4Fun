@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../trainings/Trainings.scss";
 import CurrentTrips from "./CurrentTrips";
-import './Trips.scss';
+import "./Trips.scss";
 import TripDescribtion from "./TripDescribtion";
 import TripContact, { UserData } from "./TripContact";
 
 const Trips: React.FC = () => {
-  const [initialValues, setInitialValues] = useState<UserData>(initialValuesPattern);
+  const [initialValues, setInitialValues] =
+    useState<UserData>(initialValuesPattern);
   const [currentTrip, setCurrentTrip] = useState<number>(0);
   return (
     <div className="content-trainings">
@@ -14,27 +15,44 @@ const Trips: React.FC = () => {
         {" "}
         Wyjazdy szkoleniowe{" "}
       </h1>
-      <CurrentTrips scrollToTripDescribtion={scrollToTripDescribtion} currentTrip={currentTrip} setCurrentTrip={setCurrentTrip} setInitialValues={setInitialValues}/>
-      <TripDescribtion currentTrip={currentTrip}/>
-      <TripContact initialValues={initialValues}/>
-      <h2>Zapraszamy!</h2>
-      <img src="images/beskidcamp1.jpeg" style={{width: "100%"}} alt="rider"/>
+      <CurrentTrips
+        scrollToTripDescribtion={scrollToTripDescribtion}
+        currentTrip={currentTrip}
+        setCurrentTrip={setCurrentTrip}
+        setInitialValues={setInitialValues}
+      />
+      <TripDescribtion currentTrip={currentTrip} />
+      <TripContact initialValues={initialValues} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h2>Zapraszamy!</h2>
 
+        <img
+          src="images/beskidcamp1.jpeg"
+          style={{ width: "75%" }}
+          alt="rider"
+        />
+      </div>
     </div>
   );
 };
 
-function scrollToTripDescribtion(){
-    const box = document.getElementById('trip-desc')?.getBoundingClientRect();
-    if(box){
-        window.scrollTo({
-            behavior: 'smooth',
-            top: box.bottom,
-            left: 0,
-        })
-    }
+function scrollToTripDescribtion() {
+  const box = document.getElementById("trip-desc")?.getBoundingClientRect();
+  if (box) {
+    window.scrollTo({
+      behavior: "smooth",
+      top: box.bottom,
+      left: 0,
+    });
+  }
 }
-
 
 const TripsOld: React.FC = () => {
   return (
@@ -69,13 +87,12 @@ const TripsOld: React.FC = () => {
 
 export default Trips;
 
-
 const initialValuesPattern: UserData = {
-  firstName: '',
-  lastName: '',
-  contact: '',
-  age: '',
+  firstName: "",
+  lastName: "",
+  contact: "",
+  age: "",
   // tripDestination: '',
   // tripDate: '',
-  email: ''
-}
+  email: "",
+};

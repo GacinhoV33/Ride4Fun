@@ -12,142 +12,86 @@ export interface TripDescribtionProps {
 const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <h1> Program Campu </h1>
+      <h1> Zakończenie lata w Auuuuuustrii</h1>
       <p>
-        Podczas obozu skupiamy się na szkoleniu rowerowym enduro/downhill
-        prowadzonym przez wykwalifikowanych instruktorów. Codzienne treningi
-        obejmują doskonalenie zdobytych już umiejętności a także poznanie nowych
-        elementów jazdy na rowerze zjazdowym.{" "}
+        Niepowtarzalne przeżycia prawdziwej alpejskiej przygody. Rowerowa gratka
+        dla pasjonatów ekstremy. Szalone wakacje dla miłośników dwóch kółek. Tak
+        można określić nasz wyjazd do Saalbach-Hinterglemm i nie będzie w tym
+        przesady.
       </p>
-      <p>
-        W tym roku planujemy odwiedzić aż 3 Bike Parki w okolicy ośrodka w
-        którym będziemy zakwaterowani. (Skolnity, Soszów, Szczyrk){" "}
-      </p>
-      <img src="images/beskidcamp2.jpeg" style={{width: "100%"}} alt="rider"/>
-      <p>
-        Ale to nie koniec atrakcji! Po intensywnych godzinach na rowerze
-        zapewniamy chwile relaksu w sportowym stylu połączonych ze wspólną
-        integracją. Zajęcia popołudniowe wypełnione będą grami zespołowymi,
-        wyjściem na basen, konkursami o tematyce rowerowej. Na zakończenie
-        wyjazdu czeka nas ognisko oraz podsumowanie wspólnie spędzonego czasu.
-      </p>
-      <h2> Szkolenie obejmuje: </h2>
-      <ul>
-        <li>Minimum 5h szkolenia rowerowego ( 5h x 6 dni=30h )</li>
-        <li>
-          Możliwa również dodatkowa jazda popołudniowa by zaspokoić najbardziej
-          wytrwałych!
-        </li>
-        <li>
-          Podział na małe grupy (grupa średniozaawansowana, zaawansowana){" "}
-        </li>
-        <li>Naukę i doskonalenie techniki zjazdów </li>
-        <li>Zawody na koniec obozu </li>
-      </ul>
-      <h2> Kazdy uczestnik musi posiadać: </h2>
-      <ul>
-        <li>Sprawny rower górski</li>
-        <li>Kask rowerowy - obowiązkowo full face</li>
-        <li>Gogle rowerowe</li>
-        <li>Ochraniacze na kolana</li>
-        <li>Ochraniacze na łokcie, zbroja (zalecane)</li>
-        <li>Odzież przeciwdeszczową </li>
-        <li>Zapasowe dętki </li>
-        <li>Buty sportowe na rower najlepiej z płaską podeszwą </li>
-      </ul>
-      <img src="images/beskidcamp3.jpeg" style={{width: "100%"}} alt="rider"/>
-
-      <h2>ATRAKCJE </h2>
-      <ul>
-        <li>Gry zespołowe na terenie ośrodka</li>
-        <li>Wyjście na basen</li>
-        <li>Wspólne ognisko</li>
-        <li>
-          Zajęcia popołudniowe o tematyce rowerowej (serwis roweru, poprawne
-          ustawianie zawieszenia)
-        </li>
-        <li>Warsztaty z Fizjoterapeutą: prewencja kontuzji, pierwsza pomoc</li>
-        <li>Trening motoryczny w Kolarstwie zjazdowym</li>
-        <li>
-          Konkursy o tematyce rowerowej (Bunny hop, rowerowy zbijak, stójka)
-        </li>
-        <li>Wideoanaliza techniki jazdy</li>
-        <li>Rowerowe Kino plenerowe</li>
-      </ul>
-      <h2> ZAKWATEROWANIE </h2>
-      <p>Miejsce zakwaterowania : OW KŁOS , 43-460 Wisła ul.Na Stoku 2</p>
-      <p>
-        Link do ośrodka:{" "}
-        <a
-          href="https://klos.wisla.pl/"
-          target="_blank"
-          style={{ textDecoration: "none" }}
-        >
-          https://klos.wisla.pl/
-        </a>
-      </p>
-      <p>
-        OW KŁOS to magiczne miejsce ukryte w dolinie Wisły – Nowej Osady.
-        Ośrodek oferuje wiele atrakcji: Boisko, piłkarzyki stołowe, bilard,
-        siłownia, miejsce na ognisko, miejsce do integracji oraz malowniczą
-        okolicę, zadbaną stołówkę i świetlicę.
-      </p>
-      <p>Pokoje : 2, 3 i 4 osobowe z łazienką. </p>
-      <h2>WYŻYWIENIE</h2>
-      <p>
-        Gwarantujemy 3 pełnowartościowe posiłki (śniadanie, dwudaniowy obiad +
-        deser, kolacja) oraz nieograniczoną wodę do picia. Dodatkowo drożdżówki
-        podczas przerwy na bike parku.
-      </p>
-      <h2>TRANSPORT</h2>
-      <p>
-        Zapewniamy transport busami wraz z rowerami w obie strony ( transport
-        wliczony w cenę całościową){" "}
-        <p>Miejsca zbiórki: Tarnów, Kraków, Myślenice.</p>
-        <p>Podczas przejazdu zapewniamy opiekę teamu R4F.</p>
-      </p>
-      <h2> RAMOWY PROGRAM DNIA</h2>
-      <p>7:30 Pobudka</p>
-      <p>8:00 Śniadanie</p>
-      <p>9:30-14:30 Szkolenie w Bike Parku</p>
-      <p>15:00 Obiad</p>
-      <p>16:00-19:00 Zajęcia popołudniowe/ popołudniowa jazda</p>
-      <p>19:00 Kolacja</p>
-      <p>19:30 Zajęcia wieczorne/ dyżur serwisowy</p>
-      <p>21:30 Toaleta wieczorna</p>
-      <p>22:00 Cisza nocna</p>
-      <h2>CENA </h2>
-      <p>2999 zł + cena karnetów w bike parkach </p>
-      <h3>Cena objemuje </h3>
-      <ul>
-        <li>Transport w obie strony wraz z rowerami</li>
-        <li>Transport na Bike Parki oddalone nieco dalej od ośrodka</li>
-        <li>Opiekę wychowawców</li>
-        <li>Ubezpieczenie NNW od sportów ekstremalnych</li>
-        <li>Szkolenie pod okiem wykwalifikowanych instruktorów</li>
-        <li>Zakwaterowanie wraz z wyżywieniem</li>
-        <li>Odwiedzenie trzech Bike parków w okolicy Wisły</li>
-        <li>Atrakcje i zajęcia popołudniowe</li>
-        <li>Gadżety R4F i nagrody</li>
-        <li>Obsługę medialną (fotorelacja)</li>
-      </ul>
-      <h3> Cena nie obejmuje</h3>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "40px 0" }}
+      >
+        <img src="images/trip21.png" style={{ width: "50%" }} alt="rider" />
+      </div>
+      <h3>
+        Jednak, trzymając się faktów i tego, co pragniemy Wam zaoferować, możemy
+        ten wyjazd opisać też konkretami:{" "}
+      </h3>
       <ul>
         <li>
-          Kosztów karnetów (ok. 600 pln)* Dokładną cenę podamy 2 tygodnie przed
-          wyjazdem Wypożyczenia{" "}
+          {" "}
+          7 nocy w pięknej, alpejskiej chacie w pobliżu Saalbach-Hinterglemm.
         </li>
         <li>
-          sprzętu (istnieje możliwość wypożyczenia roweru za dodatkową opłatą i
-          wcześniejszą informacją){" "}
+          6 dni jazdy w najlepszych austriackich bikeparkach- Saalbach,
+          Hinterglemm, Leogang oraz Schladming.{" "}
         </li>
+        <li>
+          {" "}
+          Dwóch doświadczonych instruktorów, którzy zadbają o dobrą atmosferę i
+          służą pomocą 24h/dobę.
+        </li>
+        <li>Transport komfortowym busem 9 osobowym z przyczepką na rowery.</li>
+        <li> Codzienne, pyszne śniadanka.</li>
+        <li> Możliwość odbycia szkoleń z techniki jazdy.</li>
+        <li> Wsparcie serwisowe. </li>
+        <li> Ubezpieczenie od sportów ekstremalnych. </li>
+        <li> Sesje foto, obecność fotografa przez cały wyjazd! </li>
+        <li> Gadżety firmy BIKEWEAR</li>
       </ul>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
+      >
+        <img src="images/trip22.png" style={{ width: "50%" }} alt="rider" />
+      </div>
+      <h2>Bike parki: </h2>
+      <p>
+        Ponad 90 km najlepszych linii i szlaków oraz aż 9 ultranowoczesnych
+        wyciągów w 7 górach zapewnia nieograniczoną przyjemność z jazdy na
+        rowerze. Sześć nowoczesnych kolejek linowych w Saalbach Hinterglemm,
+        dwie w Leogang i jedna w Fieberbrunn szybko i wygodnie zabiorą Was na
+        najpiękniejsze szczyty górskie i najfajniejsze trasy. Odkryjemy setki
+        kilometrów najlepszych tras zjazdowych o różnym stopniu trudności.
+        Saalbach Hinterglemm to największy region rowerowy w Austrii. Będziemy
+        jeździć na słynnych na całym świecie trasach takich jak 99 jumps,
+        Hacklberg-Trail czy też trasa Mistrzostw Świata w Epic Bike Park
+        Leogang!{" "}
+      </p>
+      <h2>Plan wyjazdu: </h2>
+      • 21.09.2024 wyjazd z Polski (trasa
+      Tarnów-Kraków-Bielsko-Biała-Saalbach-Hinterglemm <br />• 22-27.09 jazda w
+      bikeparkach (jeździmy w Saalbach-Hinterglemm/Leogang/Schladming) wspólna
+      integracja, sesyjki na Hopach i sporo jazdy i co najważniejsze wspaniała
+      zabawa na rowerze! <br />• 28.09.2024 powrót do Polski (trasa
+      Saalbach-Hinterglemm-Bielsko-Biała-Kraków-Tarnów)
+      <h2>Cena:</h2>
+      <div> 3500 PLN </div>
+      <h3 style={{ color: "#AAA" }}> CENA NIE OBEJMUJE </h3>
+      • Kosztów karnetów (262 Euro) <br />• Wyżywienia w Bike Parku oraz na
+      Mieście
+      <h3>
+        Poziom Średniozaawansowany/Zaawansowany <br />
+        Minimalny wiek uczestnika 16 lat.
+      </h3>
       <h2>Kontakt</h2>
-      <h4>Telefon:</h4> 
-      <span id="trip-desc">796210700</span>
+      
+      <span id="trip-desc">Bartek 796210700</span>
+      <span id="trip-desc">Piotrek 506172468</span>
+
       <h4>Email:</h4>
-      <span>SzkoleniaRide4Fun@gmail.com</span>
-      <h2 >ZAPISY</h2>
+      <span>szkoleniaride4fun@gmail.com</span>
+      <h2 style={{marginBottom: 0}}>ZAPISY</h2>
     </div>
   );
 };
