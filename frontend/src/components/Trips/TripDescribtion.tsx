@@ -22,7 +22,11 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <div
         style={{ display: "flex", justifyContent: "center", margin: "40px 0" }}
       >
-        <img src="images/a2.png" style={{ width: "50%", marginBottom: '-200px' }} alt="rider" />
+        <img
+          src="images/a2.png"
+          style={{ width: "50%", marginBottom: isMobile ? "-60px" : "-200px" }}
+          alt="rider"
+        />
       </div>
       <h3>
         Jednak, trzymając się faktów i tego, co pragniemy Wam zaoferować, możemy
@@ -53,9 +57,22 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
-        <img src="images/a1.png" style={{ width: "50%", marginBottom: '-230px' }} alt="rider" />
+        <img
+          src="images/a1.png"
+          style={{ width: "50%", marginBottom: isMobile ? "-50px" : "-230px" }}
+          alt="rider"
+        />
       </div>
       <h2>Bike parki: </h2>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
+      >
+        <img
+          src="images/a23.jpeg"
+          style={{ width: "100%"}}
+          alt="rider"
+        />
+      </div>
       <p>
         Ponad 90 km najlepszych linii i szlaków oraz aż 9 ultranowoczesnych
         wyciągów w 7 górach zapewnia nieograniczoną przyjemność z jazdy na
@@ -83,20 +100,18 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
-        <img src="images/a3.JPG" style={{ width: "75%",}} alt="rider" />
+        <img src="images/a3.JPG" style={{ width: "75%" }} alt="rider" />
       </div>
       <h3>
         Poziom Średniozaawansowany/Zaawansowany <br />
         Minimalny wiek uczestnika 16 lat.
       </h3>
       <h2>Kontakt</h2>
-      
       <span id="trip-desc">Bartek 796210700</span>
       <span id="trip-desc">Piotrek 506172468</span>
-
       <h4>Email:</h4>
       <span>szkoleniaride4fun@gmail.com</span>
-      <h2 style={{marginBottom: 0}}>ZAPISY</h2>
+      <h2 style={{ marginBottom: 0 }}>ZAPISY</h2>
     </div>
   );
 };
