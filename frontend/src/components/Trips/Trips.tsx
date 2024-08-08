@@ -23,22 +23,6 @@ const Trips: React.FC = () => {
       />
       <TripDescribtion currentTrip={currentTrip} />
       <TripContact initialValues={initialValues} />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <h2>Zapraszamy!</h2>
-
-        <img
-          src="images/beskidcamp1.jpeg"
-          style={{ width: "75%" }}
-          alt="rider"
-        />
-      </div>
     </div>
   );
 };

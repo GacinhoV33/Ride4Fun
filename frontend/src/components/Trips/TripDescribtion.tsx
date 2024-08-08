@@ -22,7 +22,7 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <div
         style={{ display: "flex", justifyContent: "center", margin: "40px 0" }}
       >
-        <img src="images/trip21.png" style={{ width: "50%" }} alt="rider" />
+        <img src="images/a2.png" style={{ width: "50%", marginBottom: '-200px' }} alt="rider" />
       </div>
       <h3>
         Jednak, trzymając się faktów i tego, co pragniemy Wam zaoferować, możemy
@@ -53,7 +53,7 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
-        <img src="images/trip22.png" style={{ width: "50%" }} alt="rider" />
+        <img src="images/a1.png" style={{ width: "50%", marginBottom: '-230px' }} alt="rider" />
       </div>
       <h2>Bike parki: </h2>
       <p>
@@ -80,6 +80,11 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       <h3 style={{ color: "#AAA" }}> CENA NIE OBEJMUJE </h3>
       • Kosztów karnetów (262 Euro) <br />• Wyżywienia w Bike Parku oraz na
       Mieście
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
+      >
+        <img src="images/a3.JPG" style={{ width: "75%",}} alt="rider" />
+      </div>
       <h3>
         Poziom Średniozaawansowany/Zaawansowany <br />
         Minimalny wiek uczestnika 16 lat.
