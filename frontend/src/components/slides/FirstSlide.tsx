@@ -20,20 +20,21 @@ const FirstSlide: React.FC<FirstSlideProps> = ({}) => {
         
       >
         SZKOLENIA <br />
-        ROWEROWE
+        ROWEROWE <br /> 
+        I NARCIARSKIE
       </div>
       <div
       className="navs-first-slide"
         
       >
-        <Link to="/szkolenia" style={{ textDecoration: "none" }}>
+        <Link to="/szkolenia/r4f" style={{ textDecoration: "none" }}>
           <div className="navs">SZKÓŁKA R4F ACADEMY</div>
         </Link>
-        <Link to="/szkolenia" style={{ textDecoration: "none" }}>
+        <Link to="/szkolenia/wyjazdy" style={{ textDecoration: "none" }}>
           <div className="navs">WYJAZDY</div>
         </Link>
-        <Link to="/szkolenia" style={{ textDecoration: "none" }}>
-          <div className="navs">PÓŁKOLONIE</div>
+        <Link to="/szkolenia/szkolenia" style={{ textDecoration: "none" }}>
+          <div className="navs">SZKOLENIA</div>
         </Link>
       </div>
 

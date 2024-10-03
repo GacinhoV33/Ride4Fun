@@ -76,6 +76,7 @@ const initialValuesPattern: UserData = {
   lastName: "",
   contact: "",
   age: "",
+  turnus: "",
   // tripDestination: '',
   // tripDate: '',
   email: "",

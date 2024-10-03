@@ -12,49 +12,73 @@ export interface TripDescribtionProps {
 const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <h1> Zakończenie lata w Auuuuuustrii</h1>
+      {isMobile ? (
+        <h3>
+          {" "}
+          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W TARNOWIE FERIE PEŁNE ZIMOWEJ
+          ZAJAWKI!{" "}
+        </h3>
+      ) : (
+        <h1>
+          {" "}
+          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W TARNOWIE FERIE PEŁNE ZIMOWEJ
+          ZAJAWKI!{" "}
+        </h1>
+      )}
       <p>
-        Niepowtarzalne przeżycia prawdziwej alpejskiej przygody. Rowerowa gratka
-        dla pasjonatów ekstremy. Szalone wakacje dla miłośników dwóch kółek. Tak
-        można określić nasz wyjazd do Saalbach-Hinterglemm i nie będzie w tym
-        przesady.
+        Zapraszamy na wyjątkowe półkolonie narciarskie i snowboardowe dla dzieci
+        i młodzieży w wieku od 7 do 17 lat! <br /> Nasza zimowa przygoda to
+        idealna okazja, aby spędzić aktywnie ferie zimowe na stokach w
+        malowniczych ośrodkach narciarskich w Krynicy-Zdroju. Podczas półkolonii
+        nasi uczestnicy będą mieli okazję uczyć się i doskonalić swoje
+        umiejętności w trzech renomowanych ośrodkach, które oferują doskonałe
+        warunki dla narciarzy na każdym poziomie zaawansowania. Pod opieką
+        doświadczonych instruktorów oraz wykwalifikowanej kadry wychowawczej,
+        dzieci będą mogły rozwijać swoją pasję do sportów zimowych w bezpiecznym
+        i przyjaznym otoczeniu a oprócz nowych umiejętności spędzą tydzień na
+        wspaniałej zabawie na świeżym powietrzu. W końcu nazwa naszej firmy nie
+        wzięła się znikąd! <br />
+        Na czym nie jeździmy, zawsze – Ride4FUN!
       </p>
       <div
-        style={{ display: "flex", justifyContent: "center", margin: "40px 0" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          margin: isMobile ? "20px 0" : "40px 0",
+        }}
       >
         <img
-          src="images/a2.png"
-          style={{ width: "50%", marginBottom: isMobile ? "-60px" : "-200px" }}
+          src="images/new_main/dziecko_narty.png"
+          style={{ width: isMobile ? "95%" : "75%" }}
+          // style={{ width: "50%", marginBottom: isMobile ? "-60px" : "-200px" }}
           alt="rider"
         />
       </div>
-      <h3>
-        Jednak, trzymając się faktów i tego, co pragniemy Wam zaoferować, możemy
-        ten wyjazd opisać też konkretami:{" "}
-      </h3>
+      <h3>CO OFERUJEMY?</h3>
       <ul>
         <li>
-          {" "}
-          7 nocy w pięknej, alpejskiej chacie w pobliżu Saalbach-Hinterglemm.
+          Codzienne wyjazdy z Tarnowa do ośrodków narciarskich w Krynicy-Zdroju
+          (Słotwiny Arena, Master Ski, Tylicz Ski).
         </li>
         <li>
-          6 dni jazdy w najlepszych austriackich bikeparkach- Saalbach,
-          Hinterglemm, Leogang oraz Schladming.{" "}
+          Profesjonalne szkolenie wykwalifikowanych instruktorów narciarstwa i
+          snowboardu SITN, SITS, PZN, MENIS (5 dni x 4,5h szkolenia).
         </li>
         <li>
-          {" "}
-          Dwóch doświadczonych instruktorów, którzy zadbają o dobrą atmosferę i
-          służą pomocą 24h/dobę.
+          Zajęcia dostosowane do poziomu zaawansowania – zarówno dla
+          początkujących, jak i zaawansowanych narciarzy i snowboardzistów.
         </li>
-        <li>Transport komfortowym busem 9 osobowym z przyczepką na rowery.</li>
-        <li> Codzienne, pyszne śniadanka.</li>
-        <li> Możliwość odbycia szkoleń z techniki jazdy.</li>
-        <li> Wsparcie serwisowe. </li>
-        <li> Ubezpieczenie od sportów ekstremalnych. </li>
-        <li> Sesje foto, obecność fotografa przez cały wyjazd! </li>
-        <li> Gadżety firmy BIKEWEAR</li>
+        <li>Transport autobusem z Tarnowa na stok oraz z powrotem.</li>
+        <li>
+          Opieka wykwalifikowanej kadry (opieka na miejscu zbiórki, podczas
+          transportu, na stoku w czasie przerwy).
+        </li>
+        <li>Obiad oraz ciepła herbata na stoku.</li>
+        <li>Ubezpieczenie NNW dla każdego uczestnika.</li>
+        <li>Fotorelacja z wyjazdu.</li>
+        <li>Zawody z nagrodami!</li>
       </ul>
-      <div
+      {/* <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
         <img
@@ -62,18 +86,31 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
           style={{ width: "50%", marginBottom: isMobile ? "-50px" : "-230px" }}
           alt="rider"
         />
-      </div>
-      <h2>Bike parki: </h2>
-      <div
+      </div> */}
+      <h2>DLACZEGO WARTO WYBRAĆ NASZĄ OFERTĘ? </h2>
+      <ul>
+        <li>Indywidualne podejście do każdego uczestnika.</li>
+        <li>Doświadczona energiczna kadra instruktorska i wychowawcza.</li>
+        <li>
+          Nauka poprzez zabawę – tworzymy atmosferę sprzyjającą rozwojowi, ale
+          też dobrej zabawie i generowaniu fantastycznych wspomnień.
+        </li>
+        <li>
+          Małe grupy – dzięki temu zapewniamy skuteczną i bezpieczną naukę.
+        </li>
+        <li>
+          Brak nudy! – Nie jeździmy 5 dni po stoku z dwoma trasami. Odwiedzimy
+          aż trzy lubiane ośrodki narciarskie w okolicy Krynicy z trasami
+          dostosowanymi do nauki na każdym poziomie. Oprócz nauki na pewno
+          wpadniemy pobawić się na fantastycznym Snowparku w Słotwiny Arena!
+        </li>
+      </ul>
+      {/* <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
-        <img
-          src="images/a23.jpeg"
-          style={{ width: "100%"}}
-          alt="rider"
-        />
-      </div>
-      <p>
+        <img src="images/a23.jpeg" style={{ width: "100%" }} alt="rider" />
+      </div> */}
+      {/* <p>
         Ponad 90 km najlepszych linii i szlaków oraz aż 9 ultranowoczesnych
         wyciągów w 7 górach zapewnia nieograniczoną przyjemność z jazdy na
         rowerze. Sześć nowoczesnych kolejek linowych w Saalbach Hinterglemm,
@@ -84,34 +121,71 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
         jeździć na słynnych na całym świecie trasach takich jak 99 jumps,
         Hacklberg-Trail czy też trasa Mistrzostw Świata w Epic Bike Park
         Leogang!{" "}
-      </p>
-      <h2>Plan wyjazdu: </h2>
-      • 21.09.2024 wyjazd z Polski (trasa
+      </p> */}
+      <h2>KIEDY?</h2>
+      <div className="turnus-container">
+        <h2 className="turnus-header">Zimowe Ferie 2025</h2>
+
+        <div className="turnus-item">
+          <h3>TURNUS I</h3>
+          <p>20-24.01.2025 (Pierwszy tydzień ferii małopolskich)</p>
+        </div>
+
+        <div className="turnus-item">
+          <h3>TURNUS II</h3>
+          <p>27-31.01.2025 (Drugi tydzień ferii małopolskich)</p>
+        </div>
+      </div>
+      {/* • 21.09.2024 wyjazd z Polski (trasa
       Tarnów-Kraków-Bielsko-Biała-Saalbach-Hinterglemm <br />• 22-27.09 jazda w
       bikeparkach (jeździmy w Saalbach-Hinterglemm/Leogang/Schladming) wspólna
       integracja, sesyjki na Hopach i sporo jazdy i co najważniejsze wspaniała
       zabawa na rowerze! <br />• 28.09.2024 powrót do Polski (trasa
-      Saalbach-Hinterglemm-Bielsko-Biała-Kraków-Tarnów)
-      <h2>Cena:</h2>
-      <div> 3500 PLN </div>
-      <h3 style={{ color: "#AAA" }}> CENA NIE OBEJMUJE </h3>
-      • Kosztów karnetów (262 Euro) <br />• Wyżywienia w Bike Parku oraz na
-      Mieście
-      <div
+      Saalbach-Hinterglemm-Bielsko-Biała-Kraków-Tarnów) */}
+      <h2>MIEJSCE ZBIÓRKI </h2>
+      <p>Parking przy Kościele Św. Gabriela w Tarnowie ul. Gumniska 24.</p>
+      <h2>GODZINA ZBIÓRKI/ POWROTU </h2>
+      <p>Zbiórka: 7:30 </p>
+      <p>Wyjazd z Tarnowa: 7:45</p>
+      <p>Szkolenie narciarskie/snowboardowe 10:00-12:30</p>
+      <p>Przerwa na ciepły posiłek 12:30-13:00</p>
+      <p>Szkolenie narciarskie/snowboardowe 13:00-14:30</p>
+      <p>
+        Powrót : 16:45* <br />
+        <br />
+        *Godzina powrotu może ulec zmianie o czym będziemy informować na
+        bieżąco.
+      </p>
+      <h2>CENA</h2>
+      <div> 1499 PLN </div>
+      <h3 style={{ color: "#F26" }}> CENA NIE ZAWIERA </h3>
+      Kosztu karnetów ( ok 500 pln* dokładny koszt podamy gdy poznamy cenniki na
+      sezon 2025) , wypożyczenia sprzętu narciarskiego/snowboardowego
+      {/* <div
         style={{ display: "flex", justifyContent: "center", margin: "10px 0" }}
       >
         <img src="images/a3.JPG" style={{ width: "75%" }} alt="rider" />
-      </div>
-      <h3>
+      </div> */}
+      <h2>LICZBA MIEJSC </h2>
+      <p> 30 </p>
+      <p>
+        Nie czekaj, zarezerwuj miejsce dla swojego dziecka już dziś! Półkolonie
+        narciarskie to gwarancja niezapomnianych wspomnień, nowych przyjaźni i
+        oczywiście – ogromnej dawki sportowych emocji!
+      </p>
+      <h2>ZAPRASZAMY DO ZAPISÓW ORAZ PO WIĘCEJ INFORMACJI</h2>
+      {/* <h3>
         Poziom Średniozaawansowany/Zaawansowany <br />
         Minimalny wiek uczestnika 16 lat.
-      </h3>
-      <h2>Kontakt</h2>
-      <span id="trip-desc">Bartek 796210700</span>
-      <span id="trip-desc">Piotrek 506172468</span>
-      <h4>Email:</h4>
-      <span>szkoleniaride4fun@gmail.com</span>
-      <h2 style={{ marginBottom: 0 }}>ZAPISY</h2>
+      </h3> */}
+      <h2>Tel. </h2>
+      <span id="trip-desc">Bartek: +48 796 210 700</span>
+      <span id="trip-desc">Justyna: +48 535 933 437</span>
+      {/* <h4>Email:</h4>
+      <span>szkoleniaride4fun@gmail.com</span> */}
+      <h4>Do zobaczenia na stoku!</h4>
+      <h2>EKIPA RIDE4FUN</h2>
+      <h2 style={{ marginBottom: 0, textAlign: "center" }}>ZAPISY</h2>
     </div>
   );
 };

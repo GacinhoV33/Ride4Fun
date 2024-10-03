@@ -2,16 +2,17 @@ import { TripCardProps } from "../CurrentTrips";
 
 export const CurrentTripsContent: TripCardProps[] = [
   {
-    imgPath: "./images/trip20.jpg",
-    title: "Zakończenie lata w Auuuuustrii",
+    imgPath: "./images/new_main/kolonia1.jpeg",
+    title: "Półkolonie Narciarskie i Snowboardowe",
     content: (
       <span>
-        Sześć dni mocnej jazdy w trzech najlepszych Austriackich Bike Parkach !
-        Saalbach-Hinterglemm, Leogang, Schladming
+        {/* Sześć dni mocnej jazdy w trzech najlepszych Austriackich Bike Parkach !
+        Saalbach-Hinterglemm, Leogang, Schladming */}
       </span>
     ),
     tripId: 0,
-    date: "21-28 Września 2024",
+    date1: "I termin: 20-24.01.2025 ",
+    date2: "II termin: 27-31.01.2025"
   },
   // {
   //   imgPath: "./images/cards/card4.png",

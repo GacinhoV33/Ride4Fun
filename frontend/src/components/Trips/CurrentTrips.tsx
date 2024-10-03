@@ -52,7 +52,8 @@ export interface TripCardProps {
   imgPath: string;
   title: string;
   content: any;
-  date: string;
+  date1: string;
+  date2: string;
   tripId: number;
   currentTrip?: number;
   setCurrentTrip?: React.Dispatch<React.SetStateAction<number>>;
@@ -65,7 +66,8 @@ const TripCard: React.FC<TripCardProps> = ({
   title,
   content,
   tripId,
-  date,
+  date1,
+  date2,
   currentTrip,
   setCurrentTrip,
   scrollToTripDescribtion,
@@ -84,13 +86,14 @@ const TripCard: React.FC<TripCardProps> = ({
     if (scrollToTripDescribtion) {
       scrollToTripDescribtion();
     }
-    const {date, city} = TripContentData[tripId];
+    const {date1, date2, city} = TripContentData[tripId];
     if(setInitialValues){
       setInitialValues({
         firstName: '',
         lastName: '',
         contact: '',
         age: '',
+        turnus: '',
         // tripDestination: city,
         // tripDate: date,
         email: ''
@@ -113,11 +116,17 @@ const TripCard: React.FC<TripCardProps> = ({
         image={imgPath}
       />
       <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography gutterBottom variant="h6" component="div">
+        {/* <Typography gutterBottom variant="h6" component="div">
           {date}
+        </Typography> */}
+        <Typography gutterBottom variant="h6" component="div">
+          {date1}
+        </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          {date2}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {content}

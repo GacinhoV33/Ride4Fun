@@ -89,7 +89,7 @@ export const TimeLine1 = () => {
 
 export const TripContentData: TripContentProps[] = [
   {
-    title: "BESKIDCAMP 21-27 Lipiec 2024",
+    title: "PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W TARNOWIE FERIE PEŁNE ZIMOWEJ ZAJAWKI! ",
     imgMain: "./images/content/content1.jpg",
     imgMaps: "./images/content/maps1.jpg",
     contentHeader: (
@@ -123,7 +123,8 @@ export const TripContentData: TripContentProps[] = [
     ),
     timeLine: <TimeLine1 />,
     city: "Beskidcamp",
-    date: "17.06.2023",
+    date1: "17.06.2023",
+    date2: "fsafa",
     additionalInfo: (
       <Typography style={{ marginBottom: "15px" }}>
         {" "}
@@ -190,7 +191,8 @@ export interface TripContentProps {
   imgMain: string;
   imgMaps: string;
   city: string;
-  date: string;
+  date1: string;
+  date2: string;
   contentHeader?: any;
   bikeParkDescribtion?: any;
   roadsDescribtion?: any;
