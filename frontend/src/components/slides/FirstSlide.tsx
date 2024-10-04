@@ -36,6 +36,9 @@ const FirstSlide: React.FC<FirstSlideProps> = ({}) => {
         <Link to="/szkolenia/szkolenia" style={{ textDecoration: "none" }}>
           <div className="navs">SZKOLENIA</div>
         </Link>
+        <Link to="/szkolenia/wyjazdy" style={{ textDecoration: "none" }}>
+          <div className="navs">PÓŁKOLONIE</div>
+        </Link>
       </div>
 
     </div>

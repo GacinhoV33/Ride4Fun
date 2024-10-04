@@ -15,14 +15,16 @@ const TripDescribtion: React.FC<TripDescribtionProps> = ({ currentTrip }) => {
       {isMobile ? (
         <h3>
           {" "}
-          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W TARNOWIE FERIE PEŁNE ZIMOWEJ
-          ZAJAWKI!{" "}
+          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W{" "}
+          <span style={{ color: "##B70000" }}> TARNOWIE </span> <br /> FERIE PEŁNE
+          ZIMOWEJ ZAJAWKI!{" "}
         </h3>
       ) : (
         <h1>
           {" "}
-          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W TARNOWIE FERIE PEŁNE ZIMOWEJ
-          ZAJAWKI!{" "}
+          PÓŁKOLONIE NARCIARSKIE I SNOWBOARDOWE W{" "}
+          <span style={{ color: "##B70000" }}> TARNOWIE</span> <br /> FERIE PEŁNE
+          ZIMOWEJ ZAJAWKI!{" "}
         </h1>
       )}
       <p>
